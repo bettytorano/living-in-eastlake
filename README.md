@@ -49,7 +49,7 @@ Forms email you via **Resend** (free up to 3,000 emails/month) and also go into 
 
 **Lofty**
 1. In Lofty, go to **Settings → Integrations → Open API** (or ask Lofty support for an "Open API key") and generate a key.
-2. Lofty's API details can change. If leads don't appear in Lofty after a test, check the current endpoint and auth format at Lofty's developer docs and set `LOFTY_API_URL` if it differs. Email delivery keeps working either way.
+2. Lofty's API details can change. If leads don't appear in Lofty after a test, see https://developer.lofty.com (create lead: POST /v1.0/leads, header "Authorization: token <API key>"). Set `LOFTY_API_URL` only if Lofty changes its base address (default https://api.lofty.com/v1.0). Email delivery keeps working either way.
 
 **Add the settings in Cloudflare**: go to **Workers & Pages → living-in-eastlake → Settings → Variables and Secrets** and add these for **Production**:
 

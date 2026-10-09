@@ -6,7 +6,7 @@
 //   LEAD_TO_EMAIL             where leads are emailed, e.g. betty.torano@exprealty.com
 //   LEAD_FROM_EMAIL           sender, e.g. "Living in Eastlake <leads@sellingeastlake.com>"
 //   LOFTY_API_KEY   (secret)  optional: Lofty Open API key
-//   LOFTY_API_URL             optional: defaults to https://api.lofty.com/v1.0/leads
+//   LOFTY_API_URL             optional: defaults to https://api.lofty.com/v1.0
 
 const FORM_LABELS = {
   "home-value": "Home Value Request",
@@ -100,28 +100,45 @@ async function sendEmail(env, lead) {
 
 async function sendToLofty(env, lead) {
   if (!env.LOFTY_API_KEY) return false;
+  const base = (env.LOFTY_API_URL || "https://api.lofty.com/v1.0").replace(/\/leads\/?$/, "");
+  const headers = { Authorization: `token ${env.LOFTY_API_KEY}`, "Content-Type": "application/json" };
   const label = FORM_LABELS[lead.formType] || "Website Lead";
+
+  // 1) Create the lead (Lofty lead types: Seller = 1, Buyer = 2)
+  const res = await fetch(`${base}/leads`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      firstName: lead.firstName,
+      lastName: lead.lastName,
+      emails: [lead.email],
+      phones: lead.phone ? [lead.phone.replace(/[^\d+]/g, "").slice(0, 20)] : [],
+      leadTypes: [lead.formType === "home-value" ? 1 : 2],
+      source: "SellingEastlake.com",
+      tags: ["SellingEastlake.com", label],
+      leadAlert: true,
+    }),
+  });
+  const text = await res.text();
+  if (!res.ok) throw new Error(`Lofty ${res.status}: ${text}`);
+
+  // 2) Attach the form details as a note. Lead IDs are 64-bit, so keep the ID as text.
+  const id = (text.match(/"(?:leadId|id)"\s*:\s*"?(\d+)/) || [])[1];
   const notes = [
     `${label} from SellingEastlake.com`,
     lead.address && `Property: ${lead.address}`,
     lead.neighborhood && `Neighborhood: ${lead.neighborhood}`,
     lead.timeframe && `Timeframe: ${lead.timeframe}`,
     lead.message && `Message: ${lead.message}`,
+    lead.page && `Page: ${lead.page}`,
   ].filter(Boolean).join("\n");
-
-  const res = await fetch(env.LOFTY_API_URL || "https://api.lofty.com/v1.0/leads", {
-    method: "POST",
-    headers: { Authorization: `token ${env.LOFTY_API_KEY}`, "Content-Type": "application/json" },
-    body: JSON.stringify({
-      firstName: lead.firstName,
-      lastName: lead.lastName,
-      emails: [lead.email],
-      phones: lead.phone ? [lead.phone] : [],
-      source: "SellingEastlake.com",
-      leadTypes: [lead.formType === "home-value" ? 1 : 2], // 1 = seller, 2 = buyer
-      note: notes,
-    }),
-  });
-  if (!res.ok) throw new Error(`Lofty ${res.status}: ${await res.text()}`);
+  if (id) {
+    const noteRes = await fetch(`${base}/notes`, {
+      method: "POST",
+      headers,
+      body: `{"leadId":${id},"content":${JSON.stringify(notes)},"isPin":false}`,
+    });
+    if (!noteRes.ok) console.error("Lofty note failed:", noteRes.status, await noteRes.text());
+  }
   return true;
 }
