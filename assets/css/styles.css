@@ -204,3 +204,32 @@ a.card:hover { transform: translateY(-3px); }
   .section { padding: 56px 0; }
   .hero { padding: 72px 0 60px; }
 }
+
+/* Interactive neighborhood map (Leaflet) */
+.nbmap-wrap { margin-top: 32px; }
+#eastlake-map {
+  height: 520px; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--line);
+  z-index: 0; font-family: var(--sans);
+}
+@media (max-width: 640px) { #eastlake-map { height: 420px; } }
+.nbmap-hint { text-align: center; color: var(--muted); font-size: .92rem; margin-top: 12px; }
+
+.nb-pin { background: none; border: 0; }
+.nb-pin-dot {
+  position: absolute; left: 0; top: 0; width: 18px; height: 18px; border-radius: 50%;
+  background: var(--gold); border: 3px solid var(--white); box-shadow: 0 2px 6px rgba(0,0,0,.35);
+}
+.nb-pin-label {
+  position: absolute; left: 22px; top: -4px; white-space: nowrap;
+  background: var(--navy); color: var(--white); font-weight: 600; font-size: 13px;
+  padding: 4px 10px; border-radius: 999px; box-shadow: 0 2px 6px rgba(0,0,0,.25); cursor: pointer;
+}
+.nb-pin:hover .nb-pin-label, .nb-pin:focus .nb-pin-label { background: var(--gold); }
+@media (max-width: 640px) { .nb-pin-label { font-size: 11px; padding: 3px 8px; } }
+
+.nb-popup .tag { font-size: .72rem; font-weight: 700; color: var(--lake); text-transform: uppercase; letter-spacing: .08em; }
+.nb-popup h3 { font-size: 1.15rem; margin: 2px 0 6px; }
+.nb-popup p { margin: 0 0 12px; font-size: .9rem; line-height: 1.5; color: var(--ink); }
+.nb-popup .btn { color: var(--white); display: block; text-align: center; margin-bottom: 8px; }
+.nb-popup-more { display: block; font-size: .88rem; font-weight: 600; margin-top: 4px; }
+.leaflet-popup-content-wrapper { border-radius: 12px; }

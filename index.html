@@ -16,7 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=3">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <!-- META PIXEL: paste your Meta Pixel code here (Events Manager > Data sources > your pixel > Install code) -->
 </head>
 <body>
@@ -100,7 +101,11 @@
       <h2>Seven neighborhoods, one Eastlake</h2>
       <p class="lead">Each Eastlake neighborhood has its own HOA, amenities and tax picture. Here's where to start.</p>
     </div>
-    <div class="grid grid-4" style="margin-top:36px">
+    <div class="nbmap-wrap">
+      <div id="eastlake-map" role="region" aria-label="Map of Eastlake neighborhoods"></div>
+      <p class="nbmap-hint">Tap a neighborhood to see homes for sale and local details.</p>
+    </div>
+    <div class="grid grid-4" style="margin-top:28px">
       <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Hills</h3><p><a href="/neighborhoods#eastlake-hills">Explore Eastlake Hills →</a><br><a href="https://bettytorano.com/neighborhood/159144632/eastlakehills" rel="noopener">Homes for sale →</a></p></div>
       <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Shores</h3><p><a href="/neighborhoods#eastlake-shores">Explore Eastlake Shores →</a><br><a href="https://bettytorano.com/neighborhood/159144633/eastlakeshores" rel="noopener">Homes for sale →</a></p></div>
       <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Greens</h3><p><a href="/neighborhoods#eastlake-greens">Explore Eastlake Greens →</a><br><a href="https://bettytorano.com/neighborhood/159144634/eastlakegreens" rel="noopener">Homes for sale →</a></p></div>
@@ -201,6 +206,8 @@
   <a class="call" href="tel:+16198516028">Call Betty</a>
   <a class="value" href="/home-value">Home Value</a>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="/assets/js/eastlake-map.js?v=1" defer></script>
 <script src="/assets/js/main.js?v=2" defer></script>
 </body>
 </html>

@@ -16,7 +16,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=2">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=3">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <!-- META PIXEL: paste your Meta Pixel code here (Events Manager > Data sources > your pixel > Install code) -->
 </head>
 <body>
@@ -45,6 +46,14 @@
     <h1>A local's guide to Eastlake's seven neighborhoods</h1>
     <p class="lead">Each neighborhood has its own character, HOA and tax picture. Pick one to start, or ask me which fits you best.</p>
     <div class="btn-row"><a class="btn secondary small" href="#eastlake-hills">Eastlake Hills</a> <a class="btn secondary small" href="#eastlake-shores">Eastlake Shores</a> <a class="btn secondary small" href="#eastlake-greens">Eastlake Greens</a> <a class="btn secondary small" href="#eastlake-trails">Eastlake Trails</a> <a class="btn secondary small" href="#eastlake-trails-north">Eastlake Trails North</a> <a class="btn secondary small" href="#the-woods">The Woods</a> <a class="btn secondary small" href="#eastlake-vistas">Eastlake Vistas</a></div>
+  </div>
+</section>
+<section class="section" style="padding-top:8px;padding-bottom:24px">
+  <div class="wrap">
+    <div class="nbmap-wrap">
+      <div id="eastlake-map" role="region" aria-label="Map of Eastlake neighborhoods"></div>
+      <p class="nbmap-hint">Tap a neighborhood to see homes for sale and local details.</p>
+    </div>
   </div>
 </section>
 
@@ -229,6 +238,8 @@
   <a class="call" href="tel:+16198516028">Call Betty</a>
   <a class="value" href="/home-value">Home Value</a>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="/assets/js/eastlake-map.js?v=1" defer></script>
 <script src="/assets/js/main.js?v=2" defer></script>
 </body>
 </html>
