@@ -37,7 +37,12 @@ const person = {
   worksFor: { "@id": `${SITE}/#agent` },
   homeLocation: { "@type": "Place", name: "Eastlake, Chula Vista, CA" },
   memberOf: { "@type": "Organization", name: "Chula Vista Woman's Club" },
-  hasCredential: { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "California DRE License #01922296", recognizedBy: { "@type": "GovernmentOrganization", name: "California Department of Real Estate" } },
+  hasCredential: [
+    { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "California DRE License #01922296", recognizedBy: { "@type": "GovernmentOrganization", name: "California Department of Real Estate" } },
+    { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Seniors Real Estate Specialist® (SRES®)", recognizedBy: { "@type": "Organization", name: "National Association of REALTORS®" } },
+    { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Master Certified Negotiation Expert (MCNE®)", recognizedBy: { "@type": "Organization", name: "Real Estate Negotiation Institute" } },
+    { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Certified Luxury Home Marketing Specialist™ (CLHMS)", recognizedBy: { "@type": "Organization", name: "The Institute for Luxury Home Marketing" } }
+  ],
   sameAs: ["https://www.instagram.com/bettytorano/"]
 };
 

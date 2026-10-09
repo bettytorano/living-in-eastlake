@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=5">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=6">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <!-- META PIXEL: paste your Meta Pixel code here (Events Manager > Data sources > your pixel > Install code) -->
   <!-- schema:start -->
@@ -83,15 +83,44 @@
         "@type": "Organization",
         "name": "Chula Vista Woman's Club"
       },
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "license",
-        "name": "California DRE License #01922296",
-        "recognizedBy": {
-          "@type": "GovernmentOrganization",
-          "name": "California Department of Real Estate"
+      "hasCredential": [
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "license",
+          "name": "California DRE License #01922296",
+          "recognizedBy": {
+            "@type": "GovernmentOrganization",
+            "name": "California Department of Real Estate"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "designation",
+          "name": "Seniors Real Estate Specialist® (SRES®)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "National Association of REALTORS®"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "designation",
+          "name": "Master Certified Negotiation Expert (MCNE®)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Real Estate Negotiation Institute"
+          }
+        },
+        {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "designation",
+          "name": "Certified Luxury Home Marketing Specialist™ (CLHMS)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "The Institute for Luxury Home Marketing"
+          }
         }
-      },
+      ],
       "sameAs": [
         "https://www.instagram.com/bettytorano/"
       ]
@@ -131,8 +160,8 @@
 <header class="site-header">
   <div class="wrap">
     <a class="brand" href="/">
-      <strong>Living in Eastlake</strong>
-      <span>with Betty Torano, REALTOR® · Eastlake since 1987</span>
+      <img class="brand-logo" src="/assets/img/logo-betty-torano.png" alt="Betty Torano, REALTOR®, SRES®" width="456" height="297">
+      <span class="brand-text"><strong>Living in Eastlake</strong><span>Eastlake since 1987</span></span>
     </a>
     <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰ Menu</button>
     <nav class="nav">
@@ -177,6 +206,9 @@
       <ul class="checks">
         <li>Eastlake resident since 1987</li>
         <li>REALTOR® with eXp Realty · CA DRE #01922296</li>
+        <li>Seniors Real Estate Specialist® (SRES®)</li>
+        <li>Master Certified Negotiation Expert (MCNE®)</li>
+        <li>Certified Luxury Home Marketing Specialist™ (CLHMS)</li>
         <li>President, Chula Vista Woman's Club</li>
         <li>Helping sellers, buyers and investors</li>
       </ul>
@@ -281,7 +313,9 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
+        <img class="footer-logo" src="/assets/img/logo-betty-torano-white.png" alt="Betty Torano, REALTOR®, SRES®" width="456" height="297" loading="lazy">
         <h3>Betty Torano, REALTOR®</h3>
+        <p class="designations">SRES® · MCNE® · CLHMS</p>
         <p>An Eastlake resident since 1987, helping sellers, buyers and investors across Eastlake, Chula Vista and San Diego's South County.</p>
         <p><a href="tel:+16198516028">619-851-6028</a><br><a href="mailto:betty.torano@exprealty.com">betty.torano@exprealty.com</a></p>
       </div>
