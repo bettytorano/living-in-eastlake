@@ -423,7 +423,7 @@ html { scroll-padding-top: 170px; }
 }
 
 /* Full credentials section on the home page */
-.credentials { background: var(--sand); }
+.credentials { background: var(--white); border-top: 1px solid var(--line); }
 .cred-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 56px; max-width: 960px; margin: 36px auto 0; }
 .cred-lists h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; color: var(--gold); font-family: var(--sans); font-weight: 700; margin: 0 0 12px; }
 .cred-lists ul + h3 { margin-top: 26px; }
