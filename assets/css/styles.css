@@ -385,3 +385,13 @@ html { scroll-padding-top: 170px; }
 
 /* Deep navy footer */
 .site-footer { background: var(--ink); }
+/* Polish: headline size and a soft, blurred backdrop behind the portrait */
+.hero-home h1 { font-size: clamp(2.4rem, 5vw, 3.9rem); }
+.portrait-photo { background: var(--ink-2); }
+.portrait-photo::before {
+  background: url("../img/eastlake-shores.jpg") center/cover no-repeat;
+  filter: blur(7px) brightness(.72) saturate(.85);
+  transform: scale(1.12);
+}
+.portrait-photo::after { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 55% at 50% 45%, rgba(255,255,255,.10), rgba(11,26,42,.45)); }
+.portrait-photo img { z-index: 1; filter: drop-shadow(0 14px 22px rgba(0,0,0,.35)); }
