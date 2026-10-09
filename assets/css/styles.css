@@ -496,3 +496,7 @@ h1 { line-height: 1.12; }
 .hero-light .btn-row { margin-top: 26px; }
 .hero-light .btn.secondary { color: var(--ink); border-color: var(--ink); background: rgba(255,255,255,.6); }
 .hero-light .btn.secondary:hover { background: var(--ink); color: #fff; }
+/* Light hero that also holds a form (Home Value page) */
+.hero-light-form { padding: 72px 0; }
+.hero-light-form .checks { color: var(--ink); }
+.hero-light-form .split { align-items: start; }
