@@ -80,6 +80,14 @@ const FAQ = {
     ["When did the Eastlake schools open?", "EastLake Elementary opened in 1989, Eastlake High School in 1992, and EastLake Middle School in 2003, about 16 years after the first residents moved in."],
     ["Can you help me compare the total monthly cost of two Eastlake homes?", "Yes. I'll line up price, HOA dues, Mello-Roos and other special taxes, and estimated property tax side by side so you can compare the real monthly cost. <a href=\"#ask\">Send me your question</a>."]
   ],
+  "sellers-guide.html":    { url: "/sellers-guide",     type: "WebPage",        crumbs: [["Seller's Guide", "/sellers-guide"]] },
+  "sellers-guide.html": [
+    ["How do I find out what my Eastlake home is worth?", "Request a free home value. I prepare it personally using recent Eastlake sales near you, and I account for things online estimates miss, like views, upgrades, HOA and Mello-Roos status."],
+    ["What documents do Eastlake sellers need?", "Along with standard California disclosures, Eastlake sellers usually need HOA documents for the Eastlake I, II or III association (Civil Code §4525) and the Notice of Special Tax for any Mello-Roos district on the home (Civil Code §1102.6b)."],
+    ["Should I stage my Eastlake home before selling?", "In most cases, yes. Staged homes photograph better and help buyers picture themselves living there. As a former staging business owner, I'll tell you exactly what's worth doing and what isn't."],
+    ["Do you help with senior moves and probate or trust sales?", "Yes. I'm a Seniors Real Estate Specialist® (SRES®) and hold the C.A.R. Probate & Trust Certification, so I can help with downsizing, estate and trust sales alongside your attorney or trustee."],
+    ["How long does it take to sell a home in Eastlake?", "It depends on price, condition and the market at the time. I'll share current Eastlake days-on-market data for homes like yours when we talk about your plan."]
+  ],
   "home-value.html": [
     ["Is the Eastlake home value report really free?", "Yes. It's free, private and there is no obligation to list or sell."],
     ["How is this different from an online estimate?", "Online estimates can't see your upgrades, your view or your lot, and they don't know whether your neighborhood still pays Mello-Roos. I prepare your report personally using recent Eastlake sales near you."],

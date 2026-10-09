@@ -481,3 +481,11 @@ h1 { line-height: 1.12; }
 .hoa-public { margin: 0; padding-left: 18px; font-size: .9rem; color: var(--muted); }
 .hoa-public li { margin-bottom: 4px; }
 @media (max-width: 960px) { .hoa-grid { grid-template-columns: 1fr; max-width: 560px; margin-inline: auto; } }
+
+/* Numbered process steps (Seller's Guide) */
+.process { list-style: none; padding: 0; margin: 28px 0 0; counter-reset: none; }
+.process li { display: grid; grid-template-columns: 56px 1fr; gap: 18px; padding: 22px 0; border-top: 1px solid var(--line); }
+.process li:first-child { border-top: 0; }
+.step-num { width: 48px; height: 48px; border: 1px solid var(--gold); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1.4rem; }
+.process h3 { margin: 4px 0 6px; font-size: 1.3rem; }
+.process p { margin: 0; color: #3d4852; }
