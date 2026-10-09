@@ -15,7 +15,7 @@ var EASTLAKE_NEIGHBORHOODS = [
   { name: "Eastlake Trails", slug: "eastlake-trails", hoa: "Eastlake III", lat: 32.6392, lng: -116.9498,
     desc: "Home of the permanent Eastlake Little League fields and Arroyo Vista Elementary.",
     listings: "https://bettytorano.com/neighborhood/159144636/eastlaketrails" },
-  { name: "Eastlake Trails North", slug: "eastlake-trails-north", hoa: "Eastlake III", lat: 32.6518, lng: -116.9512,
+  { name: "Eastlake Trails North", slug: "eastlake-trails-north", hoa: "Eastlake III", lat: 32.6500, lng: -116.9512,
     desc: "Part of the Eastlake III association alongside the Trails, Vistas and the Woods.",
     listings: "https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" },
   { name: "The Woods", slug: "the-woods", hoa: "Eastlake III", lat: 32.6556, lng: -116.9450,
