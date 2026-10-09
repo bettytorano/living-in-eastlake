@@ -489,3 +489,10 @@ h1 { line-height: 1.12; }
 .step-num { width: 48px; height: 48px; border: 1px solid var(--gold); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--serif); font-size: 1.4rem; }
 .process h3 { margin: 4px 0 6px; font-size: 1.3rem; }
 .process p { margin: 0; color: #3d4852; }
+
+/* Light hero: supporting text and buttons on the cream background */
+.hero-light .reviewed { color: #5b6670; }
+.hero-light h1 { margin-bottom: 18px; }
+.hero-light .btn-row { margin-top: 26px; }
+.hero-light .btn.secondary { color: var(--ink); border-color: var(--ink); background: rgba(255,255,255,.6); }
+.hero-light .btn.secondary:hover { background: var(--ink); color: #fff; }
