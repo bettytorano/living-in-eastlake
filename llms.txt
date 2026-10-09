@@ -14,6 +14,7 @@
 
 ## Key pages
 - [Home](https://sellingeastlake.com/): Betty's Eastlake story, history series and neighborhoods
+- [About Betty](https://sellingeastlake.com/about): Betty's story, credentials, awards and community work
 - [Eastlake Neighborhoods](https://sellingeastlake.com/neighborhoods): interactive map, HOA for each neighborhood, homes for sale links
 - [Mello-Roos in Eastlake](https://sellingeastlake.com/mello-roos-eastlake): which districts apply, what ends and what doesn't, how to check any home
 - [Eastlake Buyer's Guide](https://sellingeastlake.com/buyers-guide): HOAs, Mello-Roos and schools

@@ -105,6 +105,7 @@ const PAGES = {
   "home-value.html":       { url: "/home-value",        type: "WebPage",        crumbs: [["Home Value", "/home-value"]] },
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
+  "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
   "privacy.html":          { url: "/privacy",           type: "WebPage",        crumbs: [["Privacy Policy", "/privacy"]] }
 };
 
@@ -144,6 +145,7 @@ for (const [file, cfg] of Object.entries(PAGES)) {
       mainEntityOfPage: pageUrl
     });
   }
+  if (cfg.type === "ProfilePage") page.mainEntity = { "@id": `${SITE}/#betty` };
   if (cfg.crumbs.length) page.breadcrumb = { "@id": `${pageUrl}#breadcrumb` };
 
   const graph = [agent, person, website, page];
