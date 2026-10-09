@@ -288,3 +288,100 @@ a.card:hover { transform: translateY(-3px); }
 /* Keep in-page links (#faq, #ask) from hiding under the sticky header */
 html { scroll-padding-top: 170px; }
 @media (max-width: 900px) { html { scroll-padding-top: 76px; } }
+
+/* ============================================================
+   "Coastal luxury" look: deep navy + gold, inspired by greggcostin.com
+   ============================================================ */
+:root { --ink: #0b1a2a; --ink-2: #102338; --gold: #c9a84c; --gold-soft: #dcc078; }
+
+/* Buttons: square corners, gold */
+.btn { border-radius: 2px; background: var(--gold); color: var(--ink); letter-spacing: .02em; }
+.btn:hover { background: var(--gold-soft); color: var(--ink); }
+.btn.secondary { border-radius: 2px; }
+.btn-square { padding: 16px 26px; font-size: .95rem; }
+.btn-square span { margin-left: 10px; }
+.btn-outline-light { background: transparent; color: #fff; border: 1px solid rgba(255,255,255,.7); }
+.btn-outline-light:hover { background: #fff; color: var(--ink); }
+
+/* Dark header */
+.site-header { background: rgba(11,26,42,.97); border-bottom: 1px solid rgba(255,255,255,.08); }
+.brand-logo { height: 82px; }
+.header-exp img { height: 52px; }
+.header-phone { color: var(--gold); font-size: 1.3rem; }
+.header-phone:hover { color: var(--gold-soft); }
+.header-email { color: var(--gold); font-size: .8rem; letter-spacing: .04em; }
+.header-email:hover { color: var(--gold-soft); }
+.header-nav { border-top: 0; }
+.nav { gap: 22px; padding-block: 6px 12px; }
+.nav a { color: rgba(255,255,255,.88); text-transform: uppercase; font-size: .74rem; font-weight: 600; letter-spacing: .12em; padding-block: 6px; border-bottom: 2px solid transparent; }
+.nav a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+.nav a.btn, .nav a.btn:hover { border: 1px solid var(--gold); padding: 8px 14px; }
+.nav a.btn { background: transparent; color: var(--gold); }
+.nav a.btn:hover { background: var(--gold); color: var(--ink); }
+.nav-toggle { color: #fff; border-color: rgba(255,255,255,.3); }
+@media (max-width: 900px) {
+  .nav { background: var(--ink); padding: 0; }
+  .nav a { border-top: 1px solid rgba(255,255,255,.08); border-bottom: 0; padding: 14px 20px; }
+  .nav a.btn { margin: 12px 20px; }
+}
+
+/* Inner-page heroes in the same deep navy */
+.hero {
+  background:
+    linear-gradient(180deg, rgba(11,26,42,.72) 0%, rgba(11,26,42,.93) 100%),
+    url("../img/hero-eastlake.jpg") center/cover no-repeat,
+    var(--ink);
+}
+.hero .eyebrow { color: var(--gold); letter-spacing: .2em; font-size: .72rem; }
+
+/* Home hero: copy on the left, framed portrait card on the right */
+.hero-home {
+  background:
+    linear-gradient(90deg, rgba(11,26,42,.94) 0%, rgba(11,26,42,.80) 55%, rgba(11,26,42,.55) 100%),
+    url("../img/hero-eastlake.jpg") center/cover no-repeat,
+    var(--ink);
+  padding: 72px 0 84px;
+}
+.hero-grid { display: grid; grid-template-columns: 1.25fr .85fr; gap: 56px; align-items: center; }
+.hero-name { font-family: var(--serif); font-size: clamp(2.1rem, 4vw, 3.1rem); color: #fff; margin: 6px 0 2px; line-height: 1.1; }
+.hero-role { color: rgba(255,255,255,.86); font-size: 1.15rem; margin: 0 0 30px; }
+.hero-home h1 { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.05; margin-bottom: 28px; }
+.hero-home h1 em { color: var(--gold); font-style: italic; }
+.hero-home .lead { color: rgba(255,255,255,.84); font-size: 1.05rem; max-width: 560px; }
+.hero-home .btn-row { margin-top: 30px; }
+
+.portrait-card { margin: 0; border: 1px solid rgba(201,168,76,.45); background: rgba(11,26,42,.78); padding: 12px; box-shadow: 0 24px 60px rgba(0,0,0,.35); }
+.portrait-photo {
+  position: relative; aspect-ratio: 4 / 5; overflow: hidden; display: flex; align-items: flex-end; justify-content: center;
+  background: url("../img/eastlake-shores.jpg") center/cover no-repeat;
+}
+.portrait-photo::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,26,42,.10) 0%, rgba(11,26,42,.35) 100%); }
+.portrait-photo img { position: relative; height: 94%; width: auto; max-width: none; }
+.portrait-card figcaption { display: flex; justify-content: space-between; align-items: flex-end; gap: 12px; padding: 18px 10px 6px; color: #fff; }
+.pc-eyebrow { display: block; color: var(--gold); text-transform: uppercase; font-size: .66rem; font-weight: 700; letter-spacing: .2em; margin-bottom: 4px; }
+.portrait-card strong { font-family: var(--serif); font-size: 1.8rem; font-weight: 600; }
+.pc-meta { text-align: right; font-size: .78rem; color: rgba(255,255,255,.78); line-height: 1.5; }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 40px; }
+  .portrait-card { max-width: 400px; width: 100%; justify-self: center; }
+}
+
+/* Stat band under the hero */
+.stat-band { background: var(--ink-2); border-top: 1px solid rgba(201,168,76,.35); color: #fff; }
+.stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 26px; }
+.stat-grid div { padding: 6px 20px; border-left: 1px solid rgba(255,255,255,.1); }
+.stat-grid div:first-child { border-left: 0; }
+.stat-grid strong { display: block; font-family: var(--serif); font-size: 2rem; color: var(--gold); line-height: 1.1; }
+.stat-grid span { font-size: .85rem; color: rgba(255,255,255,.75); }
+@media (max-width: 700px) {
+  .stat-grid { grid-template-columns: 1fr 1fr; gap: 12px 0; }
+  .stat-grid div:nth-child(3) { border-left: 0; }
+}
+
+/* Meet Betty photo with caption */
+.meet-photo { margin: 0; position: relative; aspect-ratio: 4 / 5; }
+.meet-photo img { width: 100%; height: 100%; object-fit: cover; }
+.meet-photo figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 18px; color: #fff; font-size: .85rem; background: linear-gradient(0deg, rgba(11,26,42,.85), rgba(11,26,42,0)); }
+
+/* Deep navy footer */
+.site-footer { background: var(--ink); }
