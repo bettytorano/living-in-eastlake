@@ -421,3 +421,11 @@ html { scroll-padding-top: 170px; }
   .cred-grid { grid-template-columns: 1fr 1fr; gap: 22px 0; }
   .cred-grid div:nth-child(3) { border-left: 0; }
 }
+
+/* Full credentials section on the home page */
+.credentials { background: var(--sand); }
+.cred-lists { display: grid; grid-template-columns: 1fr 1fr; gap: 20px 56px; max-width: 960px; margin: 36px auto 0; }
+.cred-lists h3 { font-size: 1rem; text-transform: uppercase; letter-spacing: .14em; color: var(--gold); font-family: var(--sans); font-weight: 700; margin: 0 0 12px; }
+.cred-lists ul + h3 { margin-top: 26px; }
+.cred-lists .checks li { margin-bottom: 8px; }
+@media (max-width: 760px) { .cred-lists { grid-template-columns: 1fr; } }

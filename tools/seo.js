@@ -36,12 +36,18 @@ const person = {
   jobTitle: "REALTOR®",
   worksFor: { "@id": `${SITE}/#agent` },
   homeLocation: { "@type": "Place", name: "Eastlake, Chula Vista, CA" },
-  memberOf: { "@type": "Organization", name: "Chula Vista Woman's Club" },
+  memberOf: [
+    { "@type": "Organization", name: "Chula Vista Woman's Club" },
+    { "@type": "Organization", name: "The Institute for Luxury Home Marketing" }
+  ],
+  award: ["Top 5% of REALTORS® in San Diego County, PSAR", "Circle of Excellence Award, SDAR"],
+  alumniOf: { "@type": "CollegeOrUniversity", name: "San Diego State University" },
+  knowsAbout: ["Eastlake, Chula Vista real estate", "Mello-Roos and HOAs", "Home staging", "Seniors real estate", "Probate and trust sales", "Real estate digital marketing"],
   hasCredential: [
     { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "California DRE License #01922296", recognizedBy: { "@type": "GovernmentOrganization", name: "California Department of Real Estate" } },
     { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Seniors Real Estate Specialist® (SRES®)", recognizedBy: { "@type": "Organization", name: "National Association of REALTORS®" } },
     { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Master Certified Negotiation Expert (MCNE®)", recognizedBy: { "@type": "Organization", name: "Real Estate Negotiation Institute" } },
-    { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Certified Luxury Home Marketing Specialist™ (CLHMS)", recognizedBy: { "@type": "Organization", name: "The Institute for Luxury Home Marketing" } }
+    { "@type": "EducationalOccupationalCredential", credentialCategory: "certificate", name: "Probate & Trust Certification", recognizedBy: { "@type": "Organization", name: "California Association of REALTORS®" } }
   ],
   sameAs: ["https://www.instagram.com/bettytorano/"]
 };
