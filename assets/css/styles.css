@@ -61,7 +61,7 @@ p { margin: 0 0 1em; }
 .nav a.btn, .nav a.btn:hover { color: var(--white); }
 .nav-toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font-size: 1rem; cursor: pointer; }
 
-@media (max-width: 1140px) {
+@media (max-width: 1240px) {
   .nav-toggle { display: block; }
   .nav { display: none; position: absolute; left: 0; right: 0; top: 68px; background: var(--white);
          flex-direction: column; align-items: stretch; gap: 0; border-bottom: 1px solid var(--line); }
@@ -266,7 +266,7 @@ a.card:hover { transform: translateY(-3px); }
 /* Logo in header and footer */
 .brand { display: flex; align-items: center; gap: 12px; }
 .brand-logo { height: 52px; width: auto; }
-.brand-text { border-left: 1px solid var(--line); padding-left: 12px; line-height: 1.15; }
+.brand-text { border-left: 1px solid var(--line); padding-left: 12px; line-height: 1.15; white-space: nowrap; color: var(--navy); }
 .brand-text strong { display: block; font-family: var(--serif); font-size: 1.2rem; }
 .brand-text span { font-size: .75rem; color: var(--muted); letter-spacing: .04em; }
 @media (max-width: 420px) { .brand-logo { height: 42px; } .brand-text strong { font-size: 1.02rem; } }
