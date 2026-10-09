@@ -45,29 +45,48 @@ p { margin: 0 0 1em; }
 .center { text-align: center; }
 .center .lead { margin-left: auto; margin-right: auto; }
 
-/* Header */
+/* Header: eXp logo | Betty logo | phone & email, then a centered menu row */
 .site-header {
   position: sticky; top: 0; z-index: 50;
-  background: rgba(255,255,255,.96); backdrop-filter: blur(6px);
+  background: rgba(255,255,255,.97); backdrop-filter: blur(6px);
   border-bottom: 1px solid var(--line);
 }
-.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 68px; }
-.brand { text-decoration: none; color: var(--navy); line-height: 1.1; }
-.brand strong { display: block; font-family: var(--serif); font-size: 1.3rem; }
-.brand span { font-size: .78rem; color: var(--muted); letter-spacing: .04em; }
-.nav { display: flex; align-items: center; gap: 22px; }
+.header-top { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 16px; padding-block: 10px 6px; }
+.header-exp { justify-self: start; }
+.header-exp img { height: 56px; width: auto; display: block; }
+.brand { justify-self: center; display: block; text-decoration: none; }
+.brand-logo { height: 76px; width: auto; display: block; }
+.brand-combo { display: none; }
+.header-contact { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; gap: 2px; }
+.header-phone { color: var(--gold); font-size: 1.3rem; font-weight: 700; letter-spacing: .03em; text-decoration: none; white-space: nowrap; }
+.header-phone:hover { color: #b5852f; }
+.header-email { color: var(--muted); font-size: .82rem; text-decoration: none; }
+.header-email:hover { color: var(--lake); }
+.header-nav { border-top: 1px solid var(--line); }
+.nav { display: flex; align-items: center; justify-content: center; gap: 26px; padding-block: 8px; }
 .nav a { text-decoration: none; color: var(--ink); font-weight: 500; font-size: .95rem; white-space: nowrap; }
 .nav a:hover { color: var(--lake); }
 .nav a.btn, .nav a.btn:hover { color: var(--white); }
 .nav-toggle { display: none; background: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; font-size: 1rem; cursor: pointer; }
 
-@media (max-width: 1240px) {
+@media (max-width: 900px) {
+  .header-top { grid-template-columns: auto 1fr auto; padding-block: 8px; }
+  .header-exp, .brand-logo, .header-email { display: none; }
+  .brand { justify-self: start; }
+  .brand-combo { display: block; height: 44px; width: auto; }
+  .header-phone { font-size: 1rem; }
   .nav-toggle { display: block; }
-  .nav { display: none; position: absolute; left: 0; right: 0; top: 68px; background: var(--white);
-         flex-direction: column; align-items: stretch; gap: 0; border-bottom: 1px solid var(--line); }
+  .header-nav { border-top: 0; }
+  .nav { display: none; position: absolute; left: 0; right: 0; top: 100%; background: var(--white); padding: 0;
+         flex-direction: column; align-items: stretch; gap: 0; border-bottom: 1px solid var(--line); max-width: none; }
   .nav.open { display: flex; }
   .nav a { padding: 14px 20px; border-top: 1px solid var(--line); }
   .nav .btn { margin: 12px 20px; text-align: center; }
+}
+@media (max-width: 420px) {
+  .brand-combo { height: 36px; }
+  .header-phone { font-size: .9rem; }
+  .header-top { gap: 10px; }
 }
 
 /* Buttons */
@@ -263,15 +282,9 @@ a.card:hover { transform: translateY(-3px); }
 }
 .photo-frame.portrait img { width: auto; height: 100%; max-height: 100%; object-fit: contain; margin: 0 auto; }
 
-/* Logo in header and footer */
-.brand { display: flex; align-items: center; gap: 12px; }
-.brand-logo { height: 52px; width: auto; }
-.brand-text { border-left: 1px solid var(--line); padding-left: 12px; line-height: 1.15; white-space: nowrap; color: var(--navy); }
-.brand-text strong { display: block; font-family: var(--serif); font-size: 1.2rem; }
-.brand-text span { font-size: .75rem; color: var(--muted); letter-spacing: .04em; }
-@media (max-width: 420px) { .brand-logo { height: 42px; } .brand-text strong { font-size: 1.02rem; } }
-.footer-logo { height: 96px; width: auto; margin-bottom: 14px; }
+/* Footer logo and designations */
+.footer-logo { height: 84px; width: auto; margin-bottom: 14px; }
 .designations { letter-spacing: .12em; font-size: .85rem; color: #f1cf8f; margin-top: -6px; }
-.brand { flex-shrink: 0; }
-/* Laptop widths: full menu fits only without the text beside the logo */
-@media (min-width: 1241px) and (max-width: 1420px) { .brand-text { display: none; } }
+/* Keep in-page links (#faq, #ask) from hiding under the sticky header */
+html { scroll-padding-top: 170px; }
+@media (max-width: 900px) { html { scroll-padding-top: 76px; } }
