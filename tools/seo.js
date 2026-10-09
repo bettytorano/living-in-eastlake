@@ -42,7 +42,7 @@ const person = {
   ],
   award: ["Top 5% of REALTORS® in San Diego County, PSAR", "Circle of Excellence Award, SDAR"],
   alumniOf: { "@type": "CollegeOrUniversity", name: "San Diego State University" },
-  knowsAbout: ["Eastlake, Chula Vista real estate", "Mello-Roos and HOAs", "Home staging", "Seniors real estate", "Probate and trust sales", "Real estate digital marketing"],
+  knowsAbout: ["Eastlake, Chula Vista real estate", "Mello-Roos and HOAs", "Interior decor and home staging", "Seniors real estate", "Probate and trust sales", "Real estate digital marketing"],
   hasCredential: [
     { "@type": "EducationalOccupationalCredential", credentialCategory: "license", name: "California DRE License #01922296", recognizedBy: { "@type": "GovernmentOrganization", name: "California Department of Real Estate" } },
     { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Seniors Real Estate Specialist® (SRES®)", recognizedBy: { "@type": "Organization", name: "National Association of REALTORS®" } },
@@ -83,7 +83,7 @@ const FAQ = {
   "sellers-guide.html": [
     ["How do I find out what my Eastlake home is worth?", "Request a free home value. I prepare it personally using recent Eastlake sales near you, and I account for things online estimates miss, like views, upgrades, HOA and Mello-Roos status."],
     ["What documents do Eastlake sellers need?", "Along with standard California disclosures, Eastlake sellers usually need HOA documents for the Eastlake I, II or III association (Civil Code §4525) and the Notice of Special Tax for any Mello-Roos district on the home (Civil Code §1102.6b)."],
-    ["Should I stage my Eastlake home before selling?", "In most cases, yes. Staged homes photograph better and help buyers picture themselves living there. As a former staging business owner, I'll tell you exactly what's worth doing and what isn't."],
+    ["Should I stage my Eastlake home before selling?", "In most cases, yes. Staged homes photograph better and help buyers picture themselves living there. With my background in interior decor and staging homes for agents, I'll tell you exactly what's worth doing and what isn't."],
     ["Do you help with senior moves and probate or trust sales?", "Yes. I'm a Seniors Real Estate Specialist® (SRES®) and hold the C.A.R. Probate & Trust Certification, so I can help with downsizing, estate and trust sales alongside your attorney or trustee."],
     ["How long does it take to sell a home in Eastlake?", "It depends on price, condition and the market at the time. I'll share current Eastlake days-on-market data for homes like yours when we talk about your plan."]
   ],
