@@ -80,7 +80,6 @@ const FAQ = {
     ["When did the Eastlake schools open?", "EastLake Elementary opened in 1989, Eastlake High School in 1992, and EastLake Middle School in 2003, about 16 years after the first residents moved in."],
     ["Can you help me compare the total monthly cost of two Eastlake homes?", "Yes. I'll line up price, HOA dues, Mello-Roos and other special taxes, and estimated property tax side by side so you can compare the real monthly cost. <a href=\"#ask\">Send me your question</a>."]
   ],
-  "sellers-guide.html":    { url: "/sellers-guide",     type: "WebPage",        crumbs: [["Seller's Guide", "/sellers-guide"]] },
   "sellers-guide.html": [
     ["How do I find out what my Eastlake home is worth?", "Request a free home value. I prepare it personally using recent Eastlake sales near you, and I account for things online estimates miss, like views, upgrades, HOA and Mello-Roos status."],
     ["What documents do Eastlake sellers need?", "Along with standard California disclosures, Eastlake sellers usually need HOA documents for the Eastlake I, II or III association (Civil Code §4525) and the Notice of Special Tax for any Mello-Roos district on the home (Civil Code §1102.6b)."],
@@ -110,6 +109,7 @@ const PAGES = {
   "index.html":            { url: "/",                  type: "WebPage",        crumbs: [] },
   "neighborhoods.html":    { url: "/neighborhoods",     type: "CollectionPage", crumbs: [["Neighborhoods", "/neighborhoods"]], places: true },
   "buyers-guide.html":     { url: "/buyers-guide",      type: "WebPage",        crumbs: [["Buyer's Guide", "/buyers-guide"]] },
+  "sellers-guide.html":    { url: "/sellers-guide",     type: "WebPage",        crumbs: [["Seller's Guide", "/sellers-guide"]] },
   "home-value.html":       { url: "/home-value",        type: "WebPage",        crumbs: [["Home Value", "/home-value"]] },
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
