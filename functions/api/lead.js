@@ -12,6 +12,7 @@ const FORM_LABELS = {
   "home-value": "Home Value Request",
   "buyer": "Buyer Question",
   "neighborhood": "Neighborhood Question",
+  "mello-roos": "Mello-Roos Question",
 };
 
 export async function onRequestPost({ request, env }) {

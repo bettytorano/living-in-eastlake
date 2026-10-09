@@ -233,3 +233,25 @@ a.card:hover { transform: translateY(-3px); }
 .nb-popup .btn { color: var(--white); display: block; text-align: center; margin-bottom: 8px; }
 .nb-popup-more { display: block; font-size: .88rem; font-weight: 600; margin-top: 4px; }
 .leaflet-popup-content-wrapper { border-radius: 12px; }
+
+/* Long-form guides */
+.article { max-width: 820px; }
+.article h2 { margin-top: 1.8em; }
+.article h3 { margin-top: 1.4em; }
+.article .callout h2.h3, h2.h3 { font-size: 1.25rem; margin-top: 0; }
+.reviewed { font-size: .9rem; color: rgba(255,255,255,.8); margin-top: 18px; }
+.section .reviewed { color: var(--muted); }
+.steps { padding-left: 1.3em; }
+.steps li { margin-bottom: 12px; padding-left: 4px; }
+.sources { font-size: .92rem; color: var(--muted); padding-left: 1.2em; }
+.sources li { margin-bottom: 8px; }
+.fine { font-size: .85rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 14px; margin-top: 28px; }
+
+/* FAQ */
+.faq { max-width: 820px; }
+.faq details { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 0 20px; margin-bottom: 12px; box-shadow: 0 4px 14px rgba(18,48,74,.05); }
+.faq summary { cursor: pointer; font-weight: 600; color: var(--navy); padding: 18px 28px 18px 0; list-style: none; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; position: absolute; right: 0; top: 14px; font-size: 1.4rem; color: var(--gold); }
+.faq details[open] summary::after { content: "–"; }
+.faq details p { margin: 0 0 18px; }

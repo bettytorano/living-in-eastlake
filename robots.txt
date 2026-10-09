@@ -1,6 +1,32 @@
+# robots.txt for sellingeastlake.com
+# Living in Eastlake, Betty Torano, REALTOR(R), Eastlake, Chula Vista, CA
+# Search engines and AI assistants are welcome to read and cite this site.
+
 User-agent: *
 Allow: /
 Disallow: /thank-you
 Disallow: /form-error
+Disallow: /api/
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
 
 Sitemap: https://sellingeastlake.com/sitemap.xml
