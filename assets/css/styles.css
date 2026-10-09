@@ -272,3 +272,6 @@ a.card:hover { transform: translateY(-3px); }
 @media (max-width: 420px) { .brand-logo { height: 42px; } .brand-text strong { font-size: 1.02rem; } }
 .footer-logo { height: 96px; width: auto; margin-bottom: 14px; }
 .designations { letter-spacing: .12em; font-size: .85rem; color: #f1cf8f; margin-top: -6px; }
+.brand { flex-shrink: 0; }
+/* Laptop widths: full menu fits only without the text beside the logo */
+@media (min-width: 1241px) and (max-width: 1420px) { .brand-text { display: none; } }
