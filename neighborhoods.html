@@ -15,8 +15,8 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=14">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=15">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <!-- META PIXEL: paste your Meta Pixel code here (Events Manager > Data sources > your pixel > Install code) -->
   <!-- schema:start -->
@@ -371,9 +371,9 @@
   </div>
   <div class="header-nav">
     <nav class="nav wrap">
-      <a href="https://bettytorano.com/neighborhood/158384753/eastlake" rel="noopener">Search Homes</a>
+      <a href="/buyers-guide">Buy</a>
+      <a href="/home-value">Sell</a>
       <a href="/neighborhoods">Neighborhoods</a>
-      <a href="/buyers-guide">Buyer's Guide</a>
       <a href="/eastlake-history">Eastlake History</a>
       <a href="/about">About Betty</a>
       <a class="btn small" href="/home-value">What's My Home Worth?</a>
@@ -388,6 +388,7 @@
     <h1>A local's guide to Eastlake's seven neighborhoods</h1>
     <p class="lead">Each neighborhood has its own character, HOA and tax picture. Pick one to start, or ask me which fits you best.</p>
     <p class="reviewed">By Betty Torano, REALTOR® · Eastlake resident since 1987 · Last reviewed October 8, 2026</p>
+    <div class="btn-row"><a class="btn btn-square" href="https://bettytorano.com/neighborhood/158384753/eastlake" rel="noopener">Search all Eastlake homes <span aria-hidden="true">↗</span></a></div>
     <div class="btn-row"><a class="btn secondary small" href="#eastlake-hills">Eastlake Hills</a> <a class="btn secondary small" href="#eastlake-shores">Eastlake Shores</a> <a class="btn secondary small" href="#eastlake-greens">Eastlake Greens</a> <a class="btn secondary small" href="#eastlake-trails">Eastlake Trails</a> <a class="btn secondary small" href="#eastlake-trails-north">Eastlake Trails North</a> <a class="btn secondary small" href="#the-woods">The Woods</a> <a class="btn secondary small" href="#eastlake-vistas">Eastlake Vistas</a></div>
   </div>
 </section>
@@ -395,10 +396,54 @@
   <div class="wrap">
     <div class="nbmap-wrap">
       <div id="eastlake-map" role="region" aria-label="Map of Eastlake neighborhoods"></div>
-      <p class="nbmap-hint">Tap a neighborhood to see homes for sale and local details.</p>
+      <p class="nbmap-hint">Tap a neighborhood to see homes for sale and local details, or <a href="https://bettytorano.com/neighborhood/158384753/eastlake" rel="noopener">search all Eastlake homes</a>.</p>
     </div>
   </div>
 </section>
+
+<section class="section alt" id="hoas">
+  <div class="wrap">
+    <div class="center">
+      <span class="eyebrow">HOAs &amp; amenities</span>
+      <h2>Eastlake's 3 HOAs and what each one offers</h2>
+      <p class="lead">Eastlake is organized into three homeowners associations, each with its own clubs, pools and parks. Which one you belong to depends on your neighborhood.</p>
+    </div>
+    <div class="hoa-grid">
+      <article class="hoa-card">
+        <img src="/assets/img/eastlake-sand-volleyball.jpg" alt="Eastlake Beach Club lagoon and sand volleyball courts" width="1000" height="667" loading="lazy">
+        <div class="hoa-body">
+          <h3>Eastlake I</h3>
+          <div class="hoa-hoods"><a href="#eastlake-hills">Eastlake Hills</a><a href="#eastlake-shores">Eastlake Shores</a></div>
+          <h4>HOA amenities</h4>
+          <ul class="checks hoa-list"><li>Eastlake Beach Club and Pavilion</li><li>Eastlake Lagoon and sand volleyball courts</li><li>Eastlake Swim &amp; Tennis Club</li><li>Eastlake Shorebird Pool</li><li>Paddleboats and the lake walking path</li><li>Parks and playgrounds</li></ul>
+          
+        </div>
+      </article>
+      <article class="hoa-card">
+        <img src="/assets/img/eastlake-greens.jpg" alt="Eastlake Greens tennis and swim club" width="1000" height="667" loading="lazy">
+        <div class="hoa-body">
+          <h3>Eastlake II</h3>
+          <div class="hoa-hoods"><a href="#eastlake-greens">Eastlake Greens</a></div>
+          <h4>HOA amenities</h4>
+          <ul class="checks hoa-list"><li>Eastlake Tennis &amp; Swim Club, with pickleball</li><li>Eastlake Dolphin Beach</li><li>Augusta Park and Pool</li><li>Parks and playgrounds</li></ul>
+          <h4>Public amenities nearby</h4><ul class="hoa-public"><li>Enagic Golf Club at Eastlake</li><li>Chula Vista Community Park</li><li>Sunset View Park</li></ul>
+        </div>
+      </article>
+      <article class="hoa-card">
+        <img src="/assets/img/eastlake-trails.jpg" alt="Eastlake III clubhouse pool" width="1000" height="667" loading="lazy">
+        <div class="hoa-body">
+          <h3>Eastlake III</h3>
+          <div class="hoa-hoods"><a href="#eastlake-trails">Eastlake Trails</a><a href="#eastlake-trails-north">Trails North</a><a href="#eastlake-vistas">Eastlake Vistas</a><a href="#the-woods">The Woods</a></div>
+          <h4>HOA amenities</h4>
+          <ul class="checks hoa-list"><li>Eastlake Creekside Clubhouse</li><li>Eastlake Woods Clubhouse</li><li>Eastlake Pond</li><li>Parks and playgrounds</li></ul>
+          <h4>Public amenities nearby</h4><ul class="hoa-public"><li>Eastlake Little League fields</li><li>Salt Creek Park and soccer arena</li><li>Mountain Hawk Park</li><li>Centennial Trail</li><li>Upper Otay Reservoir trailhead</li><li>Elite Athlete Training Center (former Olympic Training Center)</li></ul>
+        </div>
+      </article>
+    </div>
+    <p class="center" style="margin-top:28px">HOA dues are separate from Mello-Roos. See my <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a>, or <a href="/buyers-guide#ask">ask me</a> about a specific home.</p>
+  </div>
+</section>
+
 
 <section class="section" id="eastlake-hills">
   <div class="wrap split">
