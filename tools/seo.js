@@ -16,7 +16,7 @@ const agent = {
   url: `${SITE}/`,
   telephone: "+1-619-851-6028",
   email: "betty.torano@exprealty.com",
-  image: `${SITE}/assets/img/betty-torano.jpg`,
+  image: `${SITE}/assets/img/betty-torano.png`,
   description: "Eastlake, Chula Vista real estate agent and Eastlake resident since 1987, helping sellers, buyers and investors in Eastlake and San Diego's South County.",
   address: { "@type": "PostalAddress", streetAddress: "10620 Treena St", addressLocality: "San Diego", addressRegion: "CA", postalCode: "92131", addressCountry: "US" },
   areaServed: [

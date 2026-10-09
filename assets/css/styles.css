@@ -255,3 +255,10 @@ a.card:hover { transform: translateY(-3px); }
 .faq summary::after { content: "+"; position: absolute; right: 0; top: 14px; font-size: 1.4rem; color: var(--gold); }
 .faq details[open] summary::after { content: "–"; }
 .faq details p { margin: 0 0 18px; }
+
+/* Full-length cut-out portrait on a soft lake background */
+.photo-frame.portrait {
+  background: radial-gradient(120% 80% at 50% 30%, #ffffff 0%, var(--lake-light) 55%, #cfe3ea 100%);
+  align-items: flex-end; padding-top: 24px;
+}
+.photo-frame.portrait img { width: auto; height: 100%; max-height: 100%; object-fit: contain; margin: 0 auto; }
