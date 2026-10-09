@@ -10,7 +10,7 @@ var EASTLAKE_NEIGHBORHOODS = [
     desc: "Built around Eastlake's lake, home of the Beach Club and lagoon.",
     listings: "https://bettytorano.com/neighborhood/159144633/eastlakeshores" },
   { name: "Eastlake Greens", slug: "eastlake-greens", hoa: "Eastlake II", lat: 32.6433, lng: -116.9625,
-    desc: "Surrounding the Eastlake Country Club golf course, with its own association and amenities.",
+    desc: "Surrounding the Enagic Golf Club at Eastlake (formerly EastLake Country Club), with its own association and amenities.",
     listings: "https://bettytorano.com/neighborhood/159144634/eastlakegreens" },
   { name: "Eastlake Trails", slug: "eastlake-trails", hoa: "Eastlake III", lat: 32.6392, lng: -116.9498,
     desc: "Home of the permanent Eastlake Little League fields and Arroyo Vista Elementary.",
@@ -31,7 +31,7 @@ var EASTLAKE_LANDMARKS = [
   { name: "Olympic View Elementary", lat: 32.6378, lng: -116.9652 },
   { name: "Arroyo Vista Elementary", lat: 32.6387, lng: -116.9535 },
   { name: "EastLake Middle School (opened 2003)", lat: 32.6544, lng: -116.9480 },
-  { name: "Eastlake Country Club", lat: 32.6435, lng: -116.9610 }
+  { name: "Enagic Golf Club at Eastlake (formerly EastLake Country Club)", lat: 32.6435, lng: -116.9610 }
 ];
 
 document.addEventListener("DOMContentLoaded", function () {

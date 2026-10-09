@@ -1,14 +1,11 @@
-Drop your photos here with these exact names (JPG, about 1600px wide, under 400 KB each):
+Website photos (already resized for fast loading). Originals are kept in the
+"originals" folder, which is NOT uploaded to the website.
 
-  hero-eastlake.jpg        Big banner photo (the lake aerial works great)
-  betty-torano.jpg         Your headshot (portrait, 4:5)
-  og-image.jpg             1200x630 image shown when the site link is shared
-  eastlake-hills.jpg       One photo per neighborhood (4:3)
-  eastlake-shores.jpg
-  eastlake-greens.jpg
-  eastlake-trails.jpg
-  eastlake-trails-north.jpg
-  the-woods.jpg
-  eastlake-vistas.jpg
+  hero-eastlake.jpg        Home page banner (lake and Beach Club aerial)
+  betty-torano.jpg         Headshot on the home page
+  og-image.jpg             1200x630 image shown when the link is shared
+  eastlake-*.jpg / the-woods.jpg   One photo per neighborhood
+  eastlake-golf.jpg        Enagic Golf Club at Eastlake (spare)
 
-Until a photo is added, the site shows a soft color block instead.
+To add or replace a photo, drop the new one in this folder and ask Claude to
+resize it and put it on the page.
