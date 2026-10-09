@@ -395,3 +395,29 @@ html { scroll-padding-top: 170px; }
 }
 .portrait-photo::after { content: ""; position: absolute; inset: 0; background: radial-gradient(70% 55% at 50% 45%, rgba(255,255,255,.10), rgba(11,26,42,.45)); }
 .portrait-photo img { z-index: 1; filter: drop-shadow(0 14px 22px rgba(0,0,0,.35)); }
+
+/* Hero: cut-out portrait standing on the credentials band (no frame) */
+.hero-home { padding-bottom: 0; }
+.hero-home .hero-grid { align-items: end; }
+.hero-home .hero-copy { padding-bottom: 72px; }
+.hero-portrait { align-self: end; display: flex; justify-content: center; }
+.hero-portrait img {
+  display: block; width: auto; height: min(640px, 72vh); max-width: 100%; object-fit: contain;
+  filter: drop-shadow(0 18px 30px rgba(0,0,0,.45));
+}
+@media (max-width: 900px) {
+  .hero-home .hero-copy { padding-bottom: 0; }
+  .hero-portrait img { height: 440px; }
+}
+
+/* Credentials band across the screen */
+.cred-band { background: var(--ink-2); border-top: 1px solid rgba(201,168,76,.35); color: #fff; }
+.cred-grid { display: grid; grid-template-columns: repeat(4, 1fr); padding-block: 34px; text-align: center; }
+.cred-grid div { padding: 4px 22px; border-left: 1px solid rgba(255,255,255,.14); display: flex; flex-direction: column; justify-content: center; gap: 10px; }
+.cred-grid div:first-child { border-left: 0; }
+.cred-grid strong { font-family: var(--serif); font-weight: 500; font-size: clamp(1.15rem, 1.8vw, 1.55rem); color: var(--gold); line-height: 1.25; }
+.cred-grid span { font-size: .8rem; color: rgba(255,255,255,.82); letter-spacing: .02em; }
+@media (max-width: 800px) {
+  .cred-grid { grid-template-columns: 1fr 1fr; gap: 22px 0; }
+  .cred-grid div:nth-child(3) { border-left: 0; }
+}
