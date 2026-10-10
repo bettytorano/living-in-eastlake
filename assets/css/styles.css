@@ -575,3 +575,5 @@ h1, h2, h3 { color: var(--brand-dark); }
     var(--brand);
 }
 .hero-home .eyebrow { color: #e3c77a; }
+.cred-link { text-decoration: none; display: flex; flex-direction: column; gap: 10px; }
+.cred-link:hover strong { color: #fff; }
