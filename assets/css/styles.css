@@ -730,3 +730,4 @@ h1, h2, h3 { color: var(--brand-dark); }
 .cred-stars { display: block; font-size: .8em; letter-spacing: .18em; margin-bottom: 2px; }
 .cred-grid strong { white-space: nowrap; font-size: clamp(1.05rem, 1.6vw, 1.45rem); }
 @media (max-width: 800px) { .cred-grid strong { white-space: normal; } }
+.cred-stars { color: var(--gold); font-size: 1.05em; letter-spacing: .14em; font-family: Arial, sans-serif; margin-bottom: 4px; }
