@@ -780,3 +780,28 @@ h1, h2, h3 { color: var(--brand-dark); }
 .blog-topics a:hover { background: var(--brand); color: #fff; }
 .blog-group { margin-top: 56px; }
 .post-body h3 { font-size: 1.2rem; }
+
+/* History page: alternating center timeline */
+.ht-title { text-align: center; font-size: clamp(2.4rem, 5vw, 3.6rem); color: var(--gold); margin-bottom: 40px; }
+.ht { list-style: none; margin: 0 auto; padding: 0; max-width: 1040px; position: relative; }
+.ht::before { content: ""; position: absolute; left: 50%; top: 8px; bottom: 8px; width: 1px; background: rgba(201,168,76,.55); transform: translateX(-50%); }
+.ht-item { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 0 96px; align-items: center; padding: 34px 0; }
+.ht-dot { position: absolute; left: 50%; top: 50%; width: 15px; height: 15px; border-radius: 50%; background: #fff; border: 2px solid var(--gold); transform: translate(-50%, -50%); }
+.ht-text { text-align: right; }
+.ht-year { display: block; font-family: var(--serif); font-size: 2.2rem; color: var(--gold); line-height: 1; margin-bottom: 10px; }
+.ht-text h3 { font-size: clamp(1.4rem, 2.2vw, 1.85rem); margin: 0 0 12px; color: var(--brand-dark); }
+.ht-text p { color: #5b6670; font-size: .98rem; line-height: 1.7; margin: 0 0 10px; }
+.ht-link { font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--brand); text-decoration: none; }
+.ht-link:hover { color: var(--gold); }
+.ht-img { margin: 0; aspect-ratio: 3 / 2; overflow: hidden; box-shadow: 0 14px 34px rgba(21,66,125,.14); }
+.ht-img img { width: 100%; height: 100%; object-fit: cover; }
+.ht-right .ht-text { order: 2; text-align: left; }
+.ht-right .ht-img { order: 1; }
+.ht-callout { max-width: 640px; margin: 48px auto 0; text-align: center; }
+@media (max-width: 800px) {
+  .ht::before { left: 8px; }
+  .ht-item { grid-template-columns: 1fr; gap: 14px; padding: 22px 0 22px 34px; }
+  .ht-dot { left: 8px; top: 34px; }
+  .ht-text, .ht-right .ht-text { text-align: left; order: 1; }
+  .ht-img, .ht-right .ht-img { order: 2; }
+}
