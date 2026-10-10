@@ -805,3 +805,9 @@ h1, h2, h3 { color: var(--brand-dark); }
   .ht-text, .ht-right .ht-text { text-align: left; order: 1; }
   .ht-img, .ht-right .ht-img { order: 2; }
 }
+/* Text-only timeline: entries sit on alternating sides of the line */
+.ht-item { padding: 26px 0; }
+.ht-item .ht-text { grid-column: 1; }
+.ht-right .ht-text { grid-column: 2; }
+.ht-dot { top: 34px; transform: translate(-50%, 0); }
+@media (max-width: 800px) { .ht-item .ht-text, .ht-right .ht-text { grid-column: 1; } .ht-dot { top: 30px; } }
