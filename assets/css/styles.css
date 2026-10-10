@@ -843,3 +843,23 @@ h1, h2, h3 { color: var(--brand-dark); }
 .rv-quote blockquote { margin: 10px 0; font-family: var(--serif); font-size: 1.25rem; line-height: 1.55; color: var(--brand-dark); }
 .rv-quote figcaption { font-size: .85rem; color: var(--muted); }
 @media (max-width: 860px) { .rv-panel { grid-template-columns: 1fr; } .rv-panel > div { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); } .rv-panel > div:first-child { border-top: 0; } }
+
+/* About: Why work with me */
+.ww-section { background: linear-gradient(180deg, #fff 0%, #f7f3ea 100%); }
+.ww-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 64px; align-items: center; }
+.ww-photo { position: relative; margin: 0; }
+.ww-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 35%; border-radius: 200px 200px 8px 8px; box-shadow: 0 24px 50px rgba(21,66,125,.2); border: 6px solid #fff; }
+.ww-photo figcaption { position: absolute; right: -18px; bottom: 34px; background: var(--brand); color: #fff; padding: 14px 20px; border-left: 4px solid var(--gold); box-shadow: 0 14px 30px rgba(21,66,125,.25); }
+.ww-photo figcaption strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.4rem; color: var(--gold-soft); }
+.ww-photo figcaption span { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; opacity: .85; }
+.ww-list { display: grid; grid-template-columns: 1fr 1fr; gap: 26px 32px; margin-top: 30px; }
+.ww-item { display: grid; grid-template-columns: 52px 1fr; gap: 14px; align-items: start; }
+.ww-icon { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: #fff; border: 1px solid rgba(201,168,76,.6); color: var(--gold); box-shadow: 0 6px 16px rgba(21,66,125,.08); }
+.ww-icon svg { width: 24px; height: 24px; }
+.ww-num { font-family: var(--serif); color: var(--gold); font-size: .95rem; margin-right: 8px; }
+.ww-item .tag { font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--lake); }
+.ww-item h3 { font-size: 1.3rem; margin: 4px 0 6px; }
+.ww-item p { margin: 0; font-size: .95rem; color: #3d4852; }
+.ww-copy .btn-row { margin-top: 32px; }
+@media (max-width: 960px) { .ww-grid { grid-template-columns: 1fr; gap: 40px; } .ww-photo { max-width: 380px; margin: 0 auto; } .ww-photo figcaption { right: 8px; } }
+@media (max-width: 600px) { .ww-list { grid-template-columns: 1fr; } }
