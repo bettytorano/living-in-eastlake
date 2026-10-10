@@ -714,3 +714,4 @@ h1, h2, h3 { color: var(--brand-dark); }
 @media (max-width: 520px) { .why-mosaic { grid-auto-rows: 120px; gap: 8px; } }
 .why-visual .why-badge { bottom: auto; height: auto; }
 @media (max-width: 960px) { .why-visual .why-badge { top: auto; bottom: -18px; } }
+@media (min-width: 961px) { .why-visual .why-badge { top: auto; bottom: 28px; left: -14px; } }
