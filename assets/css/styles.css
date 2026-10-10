@@ -636,3 +636,4 @@ h1, h2, h3 { color: var(--brand-dark); }
 .eat-map { margin-top: 16px; font-size: .8rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--brand); text-decoration: none; border-bottom: 1px solid rgba(21,66,125,.3); padding-bottom: 2px; }
 .eat-map:hover { color: var(--gold); border-color: var(--gold); }
 @media (max-width: 860px) { .eat-head { grid-template-columns: 1fr; gap: 20px; } }
+.stories { background: var(--white); }
