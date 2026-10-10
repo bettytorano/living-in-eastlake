@@ -884,3 +884,8 @@ h1, h2, h3 { color: var(--brand-dark); }
 .cr-card li span { font-size: .9rem; color: var(--muted); }
 .cr-note { font-size: .8rem; color: var(--muted); margin: 14px 0 0; border-top: 1px dashed var(--line); padding-top: 10px; }
 @media (max-width: 760px) { .cr-grid { grid-template-columns: 1fr; } }
+.cr-grid { grid-template-columns: repeat(3, 1fr); max-width: 1180px; }
+@media (max-width: 960px) { .cr-grid { grid-template-columns: 1fr; max-width: 620px; } }
+/* Why-work cards: number + tag on one tidy line */
+.ww-solo .ww-item > div { display: flex; flex-direction: column; }
+.ww-solo .ww-num { margin: 0 0 2px; }
