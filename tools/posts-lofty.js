@@ -340,7 +340,7 @@ slug: "san-diego-country-club-chula-vista",
 title: "A Hidden Gem in the Heart of Chula Vista: The Historic San Diego Country Club",
 short: "A hidden gem in Chula Vista: the historic San Diego Country Club",
 desc: "One of San Diego County's oldest golf courses is in Chula Vista. The history of the San Diego Country Club, opened in 1921, and the neighborhoods nearby.",
-date: "2025-11-17", img: "hero-eastlake.jpg", tag: "Chula Vista",
+date: "2025-11-17", img: "sdcc-chula-vista.jpg", tag: "Chula Vista",
 body: `<p>Many people are surprised to learn that one of the oldest and most respected golf courses in San Diego County isn't in La Jolla or Coronado, but right here in <strong>Chula Vista</strong>.</p>
 <p>Located in the heart of the city, the <strong>San Diego Country Club</strong> has been a local treasure for more than a century. It blends history, beauty and a strong sense of community, highlighting the charm residents love about Chula Vista. As a local Realtor and Eastlake resident, I enjoy sharing the stories that make this city special.</p>
 <h2>A legacy that dates back to the 1920s</h2>
