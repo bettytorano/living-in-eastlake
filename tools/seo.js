@@ -115,7 +115,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "blog/eastlake-schools-history.html": { url: "/blog/eastlake-schools-history", type: "Article", crumbs: [["Blog", "/blog"], ["The homes came first, then the schools", "/blog/eastlake-schools-history"]], published: "2026-09-26" },
   "blog/first-eastlake-home-132000.html": { url: "/blog/first-eastlake-home-132000", type: "Article", crumbs: [["Blog", "/blog"], ["Our first Eastlake home: $132,000 at a 10.25% interest rate", "/blog/first-eastlake-home-132000"]], published: "2026-09-19" },
   "blog/camping-out-for-eastlake-homes.html": { url: "/blog/camping-out-for-eastlake-homes", type: "Article", crumbs: [["Blog", "/blog"], ["Would you camp out overnight to buy a home? Eastlake buyers did", "/blog/camping-out-for-eastlake-homes"]], published: "2026-09-12" },
