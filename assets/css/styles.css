@@ -918,3 +918,34 @@ h1, h2, h3 { color: var(--brand-dark); }
 .bg-timeline strong { color: var(--gold); font-size: 1.3rem; }
 .bg-district .ww-icon { margin-bottom: 10px; }
 @media (max-width: 860px) { .bg-hoas { grid-template-columns: 1fr; } }
+
+/* HOA guide post: sectioned layout */
+.hp-intro { font-size: 1.15rem; color: #3d4852; }
+.hp-toc { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 22px 0 10px; padding: 14px 16px; background: var(--sand); border-left: 3px solid var(--gold); }
+.hp-toc span { font-size: .7rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin-right: 6px; }
+.hp-toc a { font-size: .85rem; font-weight: 600; color: var(--brand); text-decoration: none; background: #fff; padding: 6px 12px; border: 1px solid var(--line); }
+.hp-toc a:hover { background: var(--brand); color: #fff; }
+.post-body > section { margin-top: 44px; padding-top: 8px; scroll-margin-top: 170px; }
+.hp-hoa { border: 1px solid var(--line); background: #fff; box-shadow: 0 12px 30px rgba(21,66,125,.08); padding: 0 0 22px; }
+.hp-hoa > p, .hp-hoa .hp-cols, .hp-hoa .hp-fit { margin-left: 26px; margin-right: 26px; }
+.hp-hoa-top { position: relative; aspect-ratio: 21 / 8; overflow: hidden; margin-bottom: 20px; }
+.hp-hoa-top img { width: 100%; height: 100%; object-fit: cover; }
+.hp-hoa-top::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,52,95,0) 30%, rgba(16,52,95,.9) 100%); }
+.hp-hoa-title { position: absolute; left: 24px; right: 24px; bottom: 18px; z-index: 1; display: flex; align-items: center; gap: 14px; color: #fff; }
+.hp-hoa-title h2 { color: #fff; margin: 0; font-size: 1.9rem; }
+.hp-hoa-title p { margin: 2px 0 0; font-size: .9rem; opacity: .9; color: #fff; }
+.hp-num { flex: 0 0 auto; width: 52px; height: 52px; border-radius: 50%; background: var(--gold); color: var(--brand-dark); font-family: var(--serif); font-size: 1.3rem; display: flex; align-items: center; justify-content: center; }
+.hp-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px; }
+.hp-box { background: #f7f9fb; border: 1px solid var(--line); padding: 16px 18px; }
+.hp-box h3 { font-family: var(--sans); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); margin: 0 0 10px; }
+.hp-box ul { margin: 0; padding-left: 18px; }
+.hp-box .checks { padding-left: 0; }
+.hp-box li { margin-bottom: 6px; font-size: .95rem; }
+.hp-box-alt { background: var(--sand); }
+.hp-fit { margin-top: 16px; font-size: .95rem; color: #3d4852; }
+.hp-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 18px 0; }
+.hp-compare > div { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); padding: 18px 20px; }
+.hp-compare h3 { margin: 0; }
+.hp-compare p { margin: 2px 0 10px; font-size: .85rem; color: var(--muted); }
+.hp-cta { background: var(--lake-light); padding: 28px 28px 20px !important; text-align: center; }
+@media (max-width: 700px) { .hp-cols, .hp-compare { grid-template-columns: 1fr; } .hp-hoa-top { aspect-ratio: 16 / 9; } .hp-hoa-title h2 { font-size: 1.5rem; } }
