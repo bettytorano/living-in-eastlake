@@ -554,3 +554,16 @@ h1 { line-height: 1.12; }
 .hero-light h1, .hero-light .lead { color: var(--brand-dark); }
 h1, h2, h3 { color: var(--brand-dark); }
 .hero-home h1, .hero h1, .hero h2, .site-footer h3 { color: #fff; }
+
+/* Lighter home banner: photo shows through; a darker band only behind the text */
+.hero-home {
+  background:
+    linear-gradient(90deg, rgba(16,52,95,.80) 0%, rgba(21,66,125,.50) 42%, rgba(21,66,125,.10) 72%, rgba(21,66,125,0) 100%),
+    linear-gradient(180deg, rgba(0,0,0,.0) 60%, rgba(16,52,95,.25) 100%),
+    url("../img/hero-eastlake.jpg") center/cover no-repeat,
+    var(--brand);
+}
+.hero-home .hero-copy { text-shadow: 0 1px 12px rgba(10,30,60,.45); }
+.hero-home .btn { text-shadow: none; }
+/* Thin gold line separates the header from the banner */
+.site-header { border-bottom: 2px solid rgba(201,168,76,.55); }
