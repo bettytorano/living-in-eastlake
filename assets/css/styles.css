@@ -726,3 +726,7 @@ h1, h2, h3 { color: var(--brand-dark); }
 @media (max-width: 520px) { .motto { white-space: normal; } }
 .hero-light h1.motto-hero { font-size: clamp(2rem, 4.2vw, 3.4rem); white-space: nowrap; max-width: none; }
 @media (max-width: 600px) { .hero-light h1.motto-hero { white-space: normal; } }
+/* Credentials band: stars on their own line; keep titles on one line */
+.cred-stars { display: block; font-size: .8em; letter-spacing: .18em; margin-bottom: 2px; }
+.cred-grid strong { white-space: nowrap; font-size: clamp(1.05rem, 1.6vw, 1.45rem); }
+@media (max-width: 800px) { .cred-grid strong { white-space: normal; } }
