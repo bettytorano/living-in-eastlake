@@ -527,3 +527,30 @@ h1 { line-height: 1.12; }
 /* Quote band (About page) */
 .quote-band { background: var(--ink); color: #fff; text-align: center; padding: 34px 0; }
 .quote-band p { margin: 0; font-family: var(--serif); font-style: italic; font-size: clamp(1.3rem, 2.6vw, 2rem); color: var(--gold); }
+
+/* ============================================================
+   Brand blue from Betty's Canva site (#15427D) instead of near-black navy
+   ============================================================ */
+:root { --brand: #15427d; --brand-dark: #10345f; --navy: #15427d; }
+.site-header { background: rgba(21,66,125,.98); border-bottom-color: rgba(255,255,255,.12); }
+@media (max-width: 900px) { .nav { background: var(--brand); } }
+.hero-home {
+  background:
+    linear-gradient(90deg, rgba(16,52,95,.93) 0%, rgba(21,66,125,.78) 55%, rgba(21,66,125,.45) 100%),
+    url("../img/hero-eastlake.jpg") center/cover no-repeat,
+    var(--brand);
+}
+.hero {
+  background:
+    linear-gradient(180deg, rgba(21,66,125,.70) 0%, rgba(16,52,95,.92) 100%),
+    url("../img/hero-eastlake.jpg") center/cover no-repeat,
+    var(--brand);
+}
+.cred-band, .stat-band { background: var(--brand-dark); }
+.site-footer { background: var(--brand-dark); }
+.quote-band { background: var(--brand); }
+.hoa-hoods a { background: var(--brand); }
+.mobile-cta { background: var(--brand); }
+.hero-light h1, .hero-light .lead { color: var(--brand-dark); }
+h1, h2, h3 { color: var(--brand-dark); }
+.hero-home h1, .hero h1, .hero h2, .site-footer h3 { color: #fff; }
