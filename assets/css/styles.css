@@ -577,3 +577,22 @@ h1, h2, h3 { color: var(--brand-dark); }
 .hero-home .eyebrow { color: #e3c77a; }
 .cred-link { text-decoration: none; display: flex; flex-direction: column; gap: 10px; }
 .cred-link:hover strong { color: #fff; }
+
+/* Home page neighborhood photo tiles */
+.nb-tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 32px; }
+.nb-tile { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--brand); box-shadow: var(--shadow); }
+.nb-tile-link { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; color: #fff; text-decoration: none; }
+.nb-tile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.nb-tile-link::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,52,95,0) 35%, rgba(16,52,95,.88) 100%); }
+.nb-tile-link > span { position: relative; z-index: 1; }
+.nb-tile:hover img { transform: scale(1.06); }
+.nb-tile-hoa { font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 4px; }
+.nb-tile-name { font-family: var(--serif); font-size: 1.55rem; line-height: 1.15; }
+.nb-tile-more { font-size: .85rem; margin-top: 8px; opacity: .85; padding-bottom: 30px; }
+.nb-tile-homes { position: absolute; left: 20px; bottom: 16px; z-index: 2; font-size: .78rem; font-weight: 600; color: var(--gold-soft); text-decoration: none; letter-spacing: .04em; }
+.nb-tile-homes:hover { color: #fff; text-decoration: underline; }
+.nb-tile-guide { display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; color: #fff; text-decoration: none; background: linear-gradient(160deg, var(--brand) 0%, var(--brand-dark) 100%); border: 1px solid rgba(201,168,76,.5); }
+.nb-tile-guide .nb-tile-more { padding-bottom: 0; color: var(--gold-soft); opacity: 1; }
+.nb-guide-text { font-size: .92rem; opacity: .85; margin-top: 8px; }
+@media (max-width: 960px) { .nb-tiles { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .nb-tiles { gap: 12px; } .nb-tile-name { font-size: 1.2rem; } .nb-tile-link, .nb-tile-guide { padding: 14px; } .nb-tile-homes { left: 14px; bottom: 12px; } }

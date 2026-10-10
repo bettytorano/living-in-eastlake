@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css?v=25">
+  <link rel="stylesheet" href="/assets/css/styles.css?v=26">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
   <!-- META PIXEL: paste your Meta Pixel code here (Events Manager > Data sources > your pixel > Install code) -->
   <!-- schema:start -->
@@ -286,15 +286,76 @@
       <div id="eastlake-map" role="region" aria-label="Map of Eastlake neighborhoods"></div>
       <p class="nbmap-hint">Tap a neighborhood to see homes for sale and local details.</p>
     </div>
-    <div class="grid grid-4" style="margin-top:28px">
-      <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Hills</h3><p><a href="/neighborhoods#eastlake-hills">Explore Eastlake Hills →</a><br><a href="https://bettytorano.com/neighborhood/159144632/eastlakehills" rel="noopener">Homes for sale →</a></p></div>
-      <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Shores</h3><p><a href="/neighborhoods#eastlake-shores">Explore Eastlake Shores →</a><br><a href="https://bettytorano.com/neighborhood/159144633/eastlakeshores" rel="noopener">Homes for sale →</a></p></div>
-      <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Greens</h3><p><a href="/neighborhoods#eastlake-greens">Explore Eastlake Greens →</a><br><a href="https://bettytorano.com/neighborhood/159144634/eastlakegreens" rel="noopener">Homes for sale →</a></p></div>
-      <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Trails</h3><p><a href="/neighborhoods#eastlake-trails">Explore Eastlake Trails →</a><br><a href="https://bettytorano.com/neighborhood/159144636/eastlaketrails" rel="noopener">Homes for sale →</a></p></div>
-      <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Trails North</h3><p><a href="/neighborhoods#eastlake-trails-north">Explore Eastlake Trails North →</a><br><a href="https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" rel="noopener">Homes for sale →</a></p></div>
-      <div class="card"><span class="tag">Eastlake</span><h3>The Woods</h3><p><a href="/neighborhoods#the-woods">Explore The Woods →</a><br><a href="https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" rel="noopener">Homes for sale →</a></p></div>
-      <div class="card"><span class="tag">Eastlake</span><h3>Eastlake Vistas</h3><p><a href="/neighborhoods#eastlake-vistas">Explore Eastlake Vistas →</a><br><a href="https://bettytorano.com/neighborhood/159144635/eastlakevistas" rel="noopener">Homes for sale →</a></p></div>
-      <a class="card" href="/buyers-guide" style="background:var(--navy);color:#fff"><span class="tag" style="color:#f1cf8f">Guide</span><h3 style="color:#fff">Mello-Roos &amp; HOAs</h3><p>What every buyer should check →</p></a>
+    <div class="nb-tiles">
+      <article class="nb-tile">
+        <a class="nb-tile-link" href="/neighborhoods#eastlake-hills" aria-label="Explore Eastlake Hills">
+          <img src="/assets/img/eastlake-hills.jpg" alt="Eastlake Hills, Eastlake, Chula Vista" width="1200" height="800" loading="lazy">
+          <span class="nb-tile-hoa">Eastlake I HOA</span>
+          <span class="nb-tile-name">Eastlake Hills</span>
+          <span class="nb-tile-more">Explore →</span>
+        </a>
+        <a class="nb-tile-homes" href="https://bettytorano.com/neighborhood/159144632/eastlakehills" rel="noopener">Homes for sale ↗</a>
+      </article>
+      <article class="nb-tile">
+        <a class="nb-tile-link" href="/neighborhoods#eastlake-shores" aria-label="Explore Eastlake Shores">
+          <img src="/assets/img/eastlake-shores.jpg" alt="Eastlake Shores, Eastlake, Chula Vista" width="1200" height="800" loading="lazy">
+          <span class="nb-tile-hoa">Eastlake I HOA</span>
+          <span class="nb-tile-name">Eastlake Shores</span>
+          <span class="nb-tile-more">Explore →</span>
+        </a>
+        <a class="nb-tile-homes" href="https://bettytorano.com/neighborhood/159144633/eastlakeshores" rel="noopener">Homes for sale ↗</a>
+      </article>
+      <article class="nb-tile">
+        <a class="nb-tile-link" href="/neighborhoods#eastlake-greens" aria-label="Explore Eastlake Greens">
+          <img src="/assets/img/eastlake-greens.jpg" alt="Eastlake Greens, Eastlake, Chula Vista" width="1200" height="800" loading="lazy">
+          <span class="nb-tile-hoa">Eastlake II HOA</span>
+          <span class="nb-tile-name">Eastlake Greens</span>
+          <span class="nb-tile-more">Explore →</span>
+        </a>
+        <a class="nb-tile-homes" href="https://bettytorano.com/neighborhood/159144634/eastlakegreens" rel="noopener">Homes for sale ↗</a>
+      </article>
+      <article class="nb-tile">
+        <a class="nb-tile-link" href="/neighborhoods#eastlake-trails" aria-label="Explore Eastlake Trails">
+          <img src="/assets/img/eastlake-trails.jpg" alt="Eastlake Trails, Eastlake, Chula Vista" width="1200" height="800" loading="lazy">
+          <span class="nb-tile-hoa">Eastlake III HOA</span>
+          <span class="nb-tile-name">Eastlake Trails</span>
+          <span class="nb-tile-more">Explore →</span>
+        </a>
+        <a class="nb-tile-homes" href="https://bettytorano.com/neighborhood/159144636/eastlaketrails" rel="noopener">Homes for sale ↗</a>
+      </article>
+      <article class="nb-tile">
+        <a class="nb-tile-link" href="/neighborhoods#eastlake-trails-north" aria-label="Explore Eastlake Trails North">
+          <img src="/assets/img/eastlake-trails-north.jpg" alt="Eastlake Trails North, Eastlake, Chula Vista" width="1200" height="800" loading="lazy">
+          <span class="nb-tile-hoa">Eastlake III HOA</span>
+          <span class="nb-tile-name">Eastlake Trails North</span>
+          <span class="nb-tile-more">Explore →</span>
+        </a>
+        <a class="nb-tile-homes" href="https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" rel="noopener">Homes for sale ↗</a>
+      </article>
+      <article class="nb-tile">
+        <a class="nb-tile-link" href="/neighborhoods#the-woods" aria-label="Explore The Woods">
+          <img src="/assets/img/the-woods.jpg" alt="The Woods, Eastlake, Chula Vista" width="1200" height="800" loading="lazy">
+          <span class="nb-tile-hoa">Eastlake III HOA</span>
+          <span class="nb-tile-name">The Woods</span>
+          <span class="nb-tile-more">Explore →</span>
+        </a>
+        <a class="nb-tile-homes" href="https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" rel="noopener">Homes for sale ↗</a>
+      </article>
+      <article class="nb-tile">
+        <a class="nb-tile-link" href="/neighborhoods#eastlake-vistas" aria-label="Explore Eastlake Vistas">
+          <img src="/assets/img/eastlake-vistas.jpg" alt="Eastlake Vistas, Eastlake, Chula Vista" width="1200" height="800" loading="lazy">
+          <span class="nb-tile-hoa">Eastlake III HOA</span>
+          <span class="nb-tile-name">Eastlake Vistas</span>
+          <span class="nb-tile-more">Explore →</span>
+        </a>
+        <a class="nb-tile-homes" href="https://bettytorano.com/neighborhood/159144635/eastlakevistas" rel="noopener">Homes for sale ↗</a>
+      </article>
+      <a class="nb-tile nb-tile-guide" href="/mello-roos-eastlake">
+        <span class="nb-tile-hoa">Guide</span>
+        <span class="nb-tile-name">Mello-Roos &amp; HOAs</span>
+        <span class="nb-guide-text">What every Eastlake buyer should check before writing an offer.</span>
+        <span class="nb-tile-more">Read the guide →</span>
+      </a>
     </div>
     <div class="btn-row" style="justify-content:center;margin-top:32px">
       <a class="btn btn-square" href="/neighborhoods">Explore all neighborhoods <span aria-hidden="true">→</span></a>
