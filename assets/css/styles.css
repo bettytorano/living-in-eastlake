@@ -724,3 +724,5 @@ h1, h2, h3 { color: var(--brand-dark); }
 .motto { font-style: normal; }
 .motto { font-size: clamp(1.9rem, 3.1vw, 2.55rem); white-space: nowrap; }
 @media (max-width: 520px) { .motto { white-space: normal; } }
+.hero-light h1.motto-hero { font-size: clamp(2rem, 4.2vw, 3.4rem); white-space: nowrap; max-width: none; }
+@media (max-width: 600px) { .hero-light h1.motto-hero { white-space: normal; } }
