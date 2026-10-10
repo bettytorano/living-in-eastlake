@@ -889,3 +889,32 @@ h1, h2, h3 { color: var(--brand-dark); }
 /* Why-work cards: number + tag on one tidy line */
 .ww-solo .ww-item > div { display: flex; flex-direction: column; }
 .ww-solo .ww-num { margin: 0 0 2px; }
+
+/* Buyer's Guide: livelier layout */
+.bg-jump { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 26px; }
+.bg-jump a { display: flex; align-items: center; gap: 12px; background: rgba(255,255,255,.88); border: 1px solid rgba(201,168,76,.5); padding: 10px 18px 10px 10px; text-decoration: none; color: var(--brand-dark); font-family: var(--serif); font-size: 1.15rem; box-shadow: 0 8px 20px rgba(21,66,125,.1); transition: transform .2s ease; }
+.bg-jump a:hover { transform: translateY(-3px); }
+.bg-jump small { display: block; font-family: var(--sans); font-size: .65rem; letter-spacing: .14em; color: var(--gold); text-transform: uppercase; }
+.bg-jump small::before { content: "Step "; }
+.bg-jump .ww-icon { width: 44px; height: 44px; box-shadow: none; }
+.bg-head { display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+.bg-head h2 { margin: 0; }
+.bg-step { flex: 0 0 auto; width: 56px; height: 56px; border-radius: 50%; background: var(--brand); color: var(--gold-soft); font-family: var(--serif); font-size: 1.7rem; display: flex; align-items: center; justify-content: center; box-shadow: 0 8px 20px rgba(21,66,125,.25); }
+.bg-hoas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+.bg-hoa { position: relative; aspect-ratio: 4 / 3; overflow: hidden; color: #fff; text-decoration: none; box-shadow: var(--shadow); }
+.bg-hoa img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+.bg-hoa:hover img { transform: scale(1.06); }
+.bg-hoa::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,52,95,0) 35%, rgba(16,52,95,.92) 100%); }
+.bg-hoa-body { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 18px 20px; display: flex; flex-direction: column; gap: 4px; }
+.bg-hoa-body strong { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; }
+.bg-hoa-body span { font-size: .88rem; opacity: .9; }
+.bg-hoa-body em { font-style: normal; font-size: .8rem; font-weight: 600; color: var(--gold-soft); margin-top: 4px; }
+.bg-tip { margin-top: 24px; }
+.bg-stat { display: inline-flex; flex-direction: column; margin-top: 10px; padding: 16px 22px; background: var(--brand); color: #fff; border-left: 4px solid var(--gold); }
+.bg-stat strong { font-family: var(--serif); font-weight: 400; font-size: 2rem; color: var(--gold-soft); line-height: 1.1; }
+.bg-stat span { font-size: .85rem; opacity: .9; }
+.bg-timeline li { background: #fff; border: 1px solid var(--line); padding: 12px 16px 12px 20px; margin: 0 0 12px 22px; box-shadow: 0 6px 16px rgba(21,66,125,.06); }
+.bg-timeline li::before { left: -32px; top: 16px; }
+.bg-timeline strong { color: var(--gold); font-size: 1.3rem; }
+.bg-district .ww-icon { margin-bottom: 10px; }
+@media (max-width: 860px) { .bg-hoas { grid-template-columns: 1fr; } }
