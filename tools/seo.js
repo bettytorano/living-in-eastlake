@@ -26,7 +26,7 @@ const agent = {
   ],
   parentOrganization: { "@type": "Organization", name: "eXp Realty of California, Inc." },
   employee: { "@id": `${SITE}/#betty` },
-  sameAs: ["https://www.instagram.com/bettytorano/", "https://www.facebook.com/betty.torano/", "https://www.tiktok.com/@bettytoranorealtor", "https://www.youtube.com/@bettytoranorealtor", "https://bettytorano.com/"]
+  sameAs: ["https://www.instagram.com/bettytorano/", "https://www.facebook.com/BettyToranoRealtor/", "https://www.tiktok.com/@bettytoranorealtor", "https://www.youtube.com/@bettytoranorealtor", "https://bettytorano.com/"]
 };
 
 const person = {
@@ -49,7 +49,7 @@ const person = {
     { "@type": "EducationalOccupationalCredential", credentialCategory: "designation", name: "Master Certified Negotiation Expert (MCNE®)", recognizedBy: { "@type": "Organization", name: "Real Estate Negotiation Institute" } },
     { "@type": "EducationalOccupationalCredential", credentialCategory: "certificate", name: "Probate & Trust Certification", recognizedBy: { "@type": "Organization", name: "California Association of REALTORS®" } }
   ],
-  sameAs: ["https://www.instagram.com/bettytorano/", "https://www.facebook.com/betty.torano/", "https://www.tiktok.com/@bettytoranorealtor", "https://www.youtube.com/@bettytoranorealtor"]
+  sameAs: ["https://www.instagram.com/bettytorano/", "https://www.facebook.com/BettyToranoRealtor/", "https://www.tiktok.com/@bettytoranorealtor", "https://www.youtube.com/@bettytoranorealtor"]
 };
 
 const website = { "@type": "WebSite", "@id": `${SITE}/#website`, name: "Living in Eastlake", url: `${SITE}/`, publisher: { "@id": `${SITE}/#agent` }, inLanguage: "en-US" };
@@ -115,7 +115,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
   "blog/eastlake-schools-history.html": { url: "/blog/eastlake-schools-history", type: "Article", crumbs: [["Blog", "/blog"], ["The homes came first, then the schools", "/blog/eastlake-schools-history"]], published: "2026-09-26" },
   "blog/first-eastlake-home-132000.html": { url: "/blog/first-eastlake-home-132000", type: "Article", crumbs: [["Blog", "/blog"], ["Our first Eastlake home: $132,000 at a 10.25% interest rate", "/blog/first-eastlake-home-132000"]], published: "2026-09-19" },
