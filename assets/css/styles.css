@@ -617,3 +617,5 @@ h1, h2, h3 { color: var(--brand-dark); }
 .todo-map { position: absolute; right: 0; top: 10px; font-size: .72rem; font-weight: 600; color: var(--lake); text-decoration: none; letter-spacing: .04em; opacity: .75; }
 .todo-map:hover { opacity: 1; text-decoration: underline; }
 @media (max-width: 640px) { .todo-grid { margin-top: 20px; padding: 0; } .todo-banner { padding: 52px 18px; } }
+.todo-icon { display: flex; }
+.card.todo .tag { display: block; }
