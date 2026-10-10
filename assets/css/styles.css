@@ -765,3 +765,11 @@ h1, h2, h3 { color: var(--brand-dark); }
 @media (max-width: 960px) { .post-layout { grid-template-columns: 1fr; } .post-aside { position: static; max-width: 420px; } }
 /* Nav fits 6 links on laptops */
 @media (max-width: 1180px) { .nav { gap: 16px; } .nav a { font-size: .7rem; letter-spacing: .1em; } }
+/* Gold star icons (SVG, consistent on every device) */
+.cred-stars, .stars { background: none; -webkit-background-clip: border-box; background-clip: border-box; color: inherit; filter: none; display: flex; gap: 3px; }
+.cred-stars { justify-content: center; margin-bottom: 6px; }
+.cred-stars svg, .stars svg { width: 20px; height: 20px; fill: url(#goldGrad); fill: #f2b934; filter: drop-shadow(0 1px 1px rgba(120,80,0,.4)); }
+.cred-stars svg path, .stars svg path { stroke: #c98b10; stroke-width: .8; }
+.stars svg { width: 19px; height: 19px; }
+/* Blog post titles */
+.post-title, .hero-light h1.post-title { font-size: clamp(2rem, 3.6vw, 2.9rem); max-width: 860px; }
