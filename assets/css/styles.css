@@ -722,3 +722,5 @@ h1, h2, h3 { color: var(--brand-dark); }
 .todo-page { margin-top: 0; padding: 0; }
 /* Upright motto: Playfair's italic capital Q looks like a "2" */
 .motto { font-style: normal; }
+.motto { font-size: clamp(1.9rem, 3.1vw, 2.55rem); white-space: nowrap; }
+@media (max-width: 520px) { .motto { white-space: normal; } }
