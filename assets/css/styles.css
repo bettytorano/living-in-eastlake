@@ -863,3 +863,24 @@ h1, h2, h3 { color: var(--brand-dark); }
 .ww-copy .btn-row { margin-top: 32px; }
 @media (max-width: 960px) { .ww-grid { grid-template-columns: 1fr; gap: 40px; } .ww-photo { max-width: 380px; margin: 0 auto; } .ww-photo figcaption { right: 8px; } }
 @media (max-width: 600px) { .ww-list { grid-template-columns: 1fr; } }
+
+/* Why work with me without photo: centered, four across */
+.ww-solo { grid-template-columns: 1fr; max-width: 1080px; text-align: center; }
+.ww-solo .lead { margin-left: auto; margin-right: auto; max-width: 760px; }
+.ww-solo .ww-list { grid-template-columns: repeat(4, 1fr); gap: 28px; text-align: left; margin-top: 40px; }
+.ww-solo .ww-item { grid-template-columns: 1fr; gap: 12px; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); padding: 26px 22px; box-shadow: 0 10px 26px rgba(21,66,125,.07); }
+.ww-solo .btn-row { justify-content: center; }
+@media (max-width: 960px) { .ww-solo .ww-list { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .ww-solo .ww-list { grid-template-columns: 1fr; } }
+
+/* Credentials: four organized cards */
+.cr-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 1040px; margin: 40px auto 0; }
+.cr-card { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); padding: 28px 30px; box-shadow: 0 10px 26px rgba(21,66,125,.07); }
+.cr-card h3 { font-size: 1.4rem; margin: 14px 0 14px; }
+.cr-card ul { list-style: none; margin: 0; padding: 0; }
+.cr-card li { padding: 11px 0; border-top: 1px solid var(--line); display: flex; flex-direction: column; gap: 2px; }
+.cr-card li:first-child { border-top: 0; padding-top: 0; }
+.cr-card li strong { font-weight: 600; color: var(--brand-dark); }
+.cr-card li span { font-size: .9rem; color: var(--muted); }
+.cr-note { font-size: .8rem; color: var(--muted); margin: 14px 0 0; border-top: 1px dashed var(--line); padding-top: 10px; }
+@media (max-width: 760px) { .cr-grid { grid-template-columns: 1fr; } }
