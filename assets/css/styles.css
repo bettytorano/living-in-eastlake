@@ -949,3 +949,6 @@ h1, h2, h3 { color: var(--brand-dark); }
 .hp-compare p { margin: 2px 0 10px; font-size: .85rem; color: var(--muted); }
 .hp-cta { background: var(--lake-light); padding: 28px 28px 20px !important; text-align: center; }
 @media (max-width: 700px) { .hp-cols, .hp-compare { grid-template-columns: 1fr; } .hp-hoa-top { aspect-ratio: 16 / 9; } .hp-hoa-title h2 { font-size: 1.5rem; } }
+.hp-cols .hp-box:only-child { grid-column: 1 / -1; }
+.hp-cols .hp-box:only-child .checks { columns: 2; column-gap: 28px; }
+@media (max-width: 700px) { .hp-cols .hp-box:only-child .checks { columns: 1; } }
