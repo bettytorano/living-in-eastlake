@@ -819,3 +819,27 @@ h1, h2, h3 { color: var(--brand-dark); }
 .social-icon svg { width: 18px; height: 18px; }
 .social-icon:hover { background: var(--gold); color: var(--brand-dark); }
 .legal strong { color: #fff; }
+
+/* About page: review summary (Google + Zillow) */
+.reviews-summary { background: #eef3f6; }
+.rv-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap; }
+.rv-head h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 0; }
+.rv-all { font-weight: 600; color: var(--brand); text-decoration: none; border-bottom: 1px solid currentColor; padding-bottom: 4px; }
+.rv-all:hover { color: var(--gold); }
+.rv-panel { display: grid; grid-template-columns: 1.15fr 1fr 1fr; margin-top: 32px; background: var(--brand-dark); color: #fff; border-top: 3px solid var(--gold); }
+.rv-panel > div { padding: 30px 32px; border-left: 1px solid rgba(255,255,255,.12); }
+.rv-panel > div:first-child { border-left: 0; }
+.rv-total strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 4rem; line-height: 1; color: var(--gold-soft); }
+.rv-label { display: block; font-family: var(--serif); font-size: 1.5rem; margin-top: 8px; }
+.rv-sub { font-size: .85rem; opacity: .8; }
+.rv-name { font-family: var(--sans); font-weight: 600; font-size: 1.2rem; }
+.rv-score { display: flex; align-items: center; gap: 14px; margin: 12px 0 10px; }
+.rv-score strong { font-family: var(--serif); font-weight: 400; font-size: 2.8rem; line-height: 1; }
+.rv-score .cred-stars { margin: 0; justify-content: flex-start; }
+.rv-src a { color: var(--gold-soft); font-weight: 600; font-size: .9rem; text-decoration: none; border-bottom: 1px solid rgba(220,192,120,.6); }
+.rv-note { font-size: .8rem; color: var(--muted); margin-top: 12px; }
+.rv-quotes { margin-top: 34px; }
+.rv-quote { margin: 0; padding-left: 22px; border-left: 1px solid rgba(21,66,125,.25); }
+.rv-quote blockquote { margin: 10px 0; font-family: var(--serif); font-size: 1.25rem; line-height: 1.55; color: var(--brand-dark); }
+.rv-quote figcaption { font-size: .85rem; color: var(--muted); }
+@media (max-width: 860px) { .rv-panel { grid-template-columns: 1fr; } .rv-panel > div { border-left: 0; border-top: 1px solid rgba(255,255,255,.12); } .rv-panel > div:first-child { border-top: 0; } }
