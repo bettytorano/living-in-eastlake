@@ -715,3 +715,8 @@ h1, h2, h3 { color: var(--brand-dark); }
 .why-visual .why-badge { bottom: auto; height: auto; }
 @media (max-width: 960px) { .why-visual .why-badge { top: auto; bottom: -18px; } }
 @media (min-width: 961px) { .why-visual .why-badge { top: auto; bottom: 28px; left: -14px; } }
+
+/* Motto heading in Why Eastlake; Life in Eastlake page grid */
+.motto { font-style: italic; font-size: clamp(2.1rem, 4vw, 3rem); }
+.why-copy .btn-row { margin-top: 26px; }
+.todo-page { margin-top: 0; padding: 0; }

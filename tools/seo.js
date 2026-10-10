@@ -111,6 +111,7 @@ const PAGES = {
   "buyers-guide.html":     { url: "/buyers-guide",      type: "WebPage",        crumbs: [["Buyer's Guide", "/buyers-guide"]] },
   "sellers-guide.html":    { url: "/sellers-guide",     type: "WebPage",        crumbs: [["Seller's Guide", "/sellers-guide"]] },
   "home-value.html":       { url: "/home-value",        type: "WebPage",        crumbs: [["Home Value", "/home-value"]] },
+  "life-in-eastlake.html": { url: "/life-in-eastlake",  type: "WebPage",        crumbs: [["Life in Eastlake", "/life-in-eastlake"]] },
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
