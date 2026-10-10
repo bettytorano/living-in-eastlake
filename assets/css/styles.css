@@ -596,3 +596,5 @@ h1, h2, h3 { color: var(--brand-dark); }
 .nb-guide-text { font-size: .92rem; opacity: .85; margin-top: 8px; }
 @media (max-width: 960px) { .nb-tiles { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .nb-tiles { gap: 12px; } .nb-tile-name { font-size: 1.2rem; } .nb-tile-link, .nb-tile-guide { padding: 14px; } .nb-tile-homes { left: 14px; bottom: 12px; } }
+.nb-tile-link::after { background: linear-gradient(180deg, rgba(16,52,95,0) 30%, rgba(16,52,95,.55) 55%, rgba(16,52,95,.94) 100%); }
+.nb-tile-hoa, .nb-tile-name, .nb-tile-more { text-shadow: 0 1px 8px rgba(0,0,0,.45); }
