@@ -76,7 +76,7 @@ const FAQ = {
   "buyers-guide.html": [
     ["Does every Eastlake home have Mello-Roos?", "No. Whether a home pays Mello-Roos, and how much, depends on the parcel and when it was built. Check the property tax bill for special tax lines. My <a href=\"/mello-roos-eastlake\">Mello-Roos in Eastlake guide</a> walks through it step by step."],
     ["Are HOA dues and Mello-Roos the same thing?", "No. HOA dues are billed by your association and pay for common areas and amenities. Mello-Roos is a special tax collected on your county property tax bill that pays for schools, infrastructure or ongoing public maintenance."],
-    ["How do I find the HOA dues for an Eastlake home?", "Ask for the HOA disclosure documents. In California, sellers in an association must provide them to buyers (Civil Code §4525). Make sure you add the master association and any sub-association together."],
+    ["How do I find the HOA dues for an Eastlake home?", "Before you make an offer, ask your agent to confirm the monthly dues for the master association and any sub-association, added together. Once you're in escrow, the seller provides the full HOA documents (Civil Code §4525), which you can review during your contingency period."],
     ["When did the Eastlake schools open?", "EastLake Elementary opened in 1989, Eastlake High School in 1992, and EastLake Middle School in 2003, about 16 years after the first residents moved in."],
     ["Can you help me compare the total monthly cost of two Eastlake homes?", "Yes. I'll line up price, HOA dues, Mello-Roos and other special taxes, and estimated property tax side by side so you can compare the real monthly cost. <a href=\"#ask\">Send me your question</a>."]
   ],
