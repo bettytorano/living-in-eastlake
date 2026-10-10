@@ -646,3 +646,24 @@ h1, h2, h3 { color: var(--brand-dark); }
 .eat.eat-photo:hover .eat-img img { transform: scale(1.06); }
 .eat-body { padding: 20px 22px 22px; display: flex; flex-direction: column; flex: 1; text-align: center; align-items: center; }
 .eat-body p { flex: 1; }
+
+/* Scrolling reviews band */
+.reviews-band { background: var(--white); overflow: hidden; }
+.reviews-viewport { margin-top: 36px; overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent); }
+.reviews-track { display: flex; gap: 24px; width: max-content; padding: 10px 0 24px; animation: reviews-scroll var(--reviews-duration, 60s) linear infinite; }
+.reviews-viewport:hover .reviews-track, .reviews-viewport.paused .reviews-track { animation-play-state: paused; }
+@keyframes reviews-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.review { margin: 0; width: 380px; flex: 0 0 auto; background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); padding: 26px 26px 22px; box-shadow: 0 10px 28px rgba(21,66,125,.08); display: flex; flex-direction: column; }
+.review blockquote { margin: 0; font-family: var(--serif); font-size: 1.02rem; line-height: 1.6; color: var(--brand-dark); display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical; overflow: hidden; }
+.review.open blockquote { -webkit-line-clamp: unset; display: block; }
+.review-more { align-self: flex-start; background: none; border: 0; padding: 6px 0 0; color: var(--brand); font: 600 .8rem var(--sans); letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.review-more:hover { color: var(--gold); }
+.review figcaption { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
+.review figcaption strong { color: var(--brand-dark); }
+.review .stars { margin-bottom: 10px; }
+@media (max-width: 520px) { .review { width: 300px; } }
+@media (prefers-reduced-motion: reduce) {
+  .reviews-track { animation: none; }
+  .reviews-viewport { overflow-x: auto; -webkit-mask-image: none; mask-image: none; scroll-snap-type: x mandatory; }
+  .review { scroll-snap-align: center; }
+}
