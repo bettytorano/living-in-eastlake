@@ -773,3 +773,10 @@ h1, h2, h3 { color: var(--brand-dark); }
 .stars svg { width: 19px; height: 19px; }
 /* Blog post titles */
 .post-title, .hero-light h1.post-title { font-size: clamp(2rem, 3.6vw, 2.9rem); max-width: 860px; }
+
+/* Blog index topic links and group headings */
+.blog-topics { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.blog-topics a { text-decoration: none; font-size: .78rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); border: 1px solid rgba(21,66,125,.35); padding: 7px 14px; background: rgba(255,255,255,.7); }
+.blog-topics a:hover { background: var(--brand); color: #fff; }
+.blog-group { margin-top: 56px; }
+.post-body h3 { font-size: 1.2rem; }
