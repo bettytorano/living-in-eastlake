@@ -598,3 +598,22 @@ h1, h2, h3 { color: var(--brand-dark); }
 @media (max-width: 520px) { .nb-tiles { gap: 12px; } .nb-tile-name { font-size: 1.2rem; } .nb-tile-link, .nb-tile-guide { padding: 14px; } .nb-tile-homes { left: 14px; bottom: 12px; } }
 .nb-tile-link::after { background: linear-gradient(180deg, rgba(16,52,95,0) 30%, rgba(16,52,95,.55) 55%, rgba(16,52,95,.94) 100%); }
 .nb-tile-hoa, .nb-tile-name, .nb-tile-more { text-shadow: 0 1px 8px rgba(0,0,0,.45); }
+
+/* Things to do: photo banner, icons, map links */
+.todo-banner {
+  position: relative; text-align: center; color: #fff; padding: 72px 24px; overflow: hidden;
+  background: linear-gradient(180deg, rgba(16,52,95,.35), rgba(16,52,95,.65)), var(--banner-img) center 60%/cover no-repeat, var(--brand);
+  box-shadow: var(--shadow);
+}
+.todo-banner h2 { color: #fff; font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 10px; text-shadow: 0 2px 14px rgba(0,0,0,.35); }
+.todo-banner p { max-width: 640px; margin: 0 auto; font-size: 1.1rem; color: rgba(255,255,255,.95); text-shadow: 0 1px 8px rgba(0,0,0,.4); }
+.todo-banner .eyebrow { color: #f1d995; }
+.todo-grid { margin-top: -36px; position: relative; padding: 0 18px; }
+.card.todo { transition: transform .2s ease, box-shadow .2s ease; }
+.card.todo:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(21,66,125,.16); }
+.todo-icon { display: inline-flex; width: 46px; height: 46px; border-radius: 50%; align-items: center; justify-content: center; background: rgba(201,168,76,.14); color: var(--gold); margin-bottom: 12px; }
+.todo-icon svg { width: 24px; height: 24px; }
+.todo li { position: relative; padding-right: 54px; }
+.todo-map { position: absolute; right: 0; top: 10px; font-size: .72rem; font-weight: 600; color: var(--lake); text-decoration: none; letter-spacing: .04em; opacity: .75; }
+.todo-map:hover { opacity: 1; text-decoration: underline; }
+@media (max-width: 640px) { .todo-grid { margin-top: 20px; padding: 0; } .todo-banner { padding: 52px 18px; } }
