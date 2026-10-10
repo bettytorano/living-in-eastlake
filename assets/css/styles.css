@@ -667,3 +667,31 @@ h1, h2, h3 { color: var(--brand-dark); }
   .reviews-viewport { overflow-x: auto; -webkit-mask-image: none; mask-image: none; scroll-snap-type: x mandatory; }
   .review { scroll-snap-align: center; }
 }
+
+/* Why Eastlake: photo collage + elevated reasons */
+.why-section { background: linear-gradient(180deg, #fff 0%, #f7f3ea 100%); }
+.why-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 64px; align-items: start; }
+.why-sticky { position: sticky; top: 190px; height: 560px; }
+.why-arch { position: absolute; left: 0; top: 0; width: 78%; height: 500px; border-radius: 240px 240px 18px 18px; overflow: hidden; box-shadow: 0 24px 50px rgba(21,66,125,.18); border: 6px solid #fff; }
+.why-arch img, .why-circle img { width: 100%; height: 100%; object-fit: cover; }
+.why-circle { position: absolute; border-radius: 50%; overflow: hidden; border: 6px solid #fff; box-shadow: 0 16px 36px rgba(21,66,125,.2); }
+.why-c1 { width: 190px; height: 190px; right: 0; top: 40px; }
+.why-c2 { width: 160px; height: 160px; right: 24px; top: 300px; }
+.why-badge { position: absolute; left: 24px; bottom: 0; background: var(--brand); color: #fff; padding: 16px 22px; border-left: 4px solid var(--gold); box-shadow: 0 14px 30px rgba(21,66,125,.25); }
+.why-badge strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.5rem; color: var(--gold-soft); }
+.why-badge span { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; opacity: .85; }
+.why-copy h2 { margin-bottom: 10px; }
+.reasons-elevated { grid-template-columns: 1fr; max-width: none; margin-top: 26px; gap: 0; }
+.reasons-elevated li { grid-template-columns: 64px 1fr; padding: 18px 0; transition: background .2s ease; }
+.reasons-elevated li:hover { background: rgba(201,168,76,.06); }
+.reasons-elevated .reason-num { font-size: 2.1rem; font-weight: 400; color: var(--gold); }
+.reasons-elevated li:nth-child(-n+3) h3 { color: var(--brand); }
+.reasons-elevated h3 { font-size: 1.22rem; }
+@media (max-width: 960px) {
+  .why-grid { grid-template-columns: 1fr; gap: 36px; }
+  .why-sticky { position: relative; top: 0; height: 420px; max-width: 520px; margin: 0 auto; }
+  .why-arch { height: 380px; }
+  .why-c1 { width: 140px; height: 140px; }
+  .why-c2 { width: 120px; height: 120px; top: 220px; }
+}
+@media (max-width: 520px) { .why-sticky { height: 360px; } .why-arch { height: 320px; width: 80%; } .why-c1 { width: 110px; height: 110px; } .why-c2 { width: 96px; height: 96px; top: 190px; right: 6px; } }
