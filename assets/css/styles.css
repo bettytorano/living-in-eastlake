@@ -567,3 +567,11 @@ h1, h2, h3 { color: var(--brand-dark); }
 .hero-home .btn { text-shadow: none; }
 /* Thin gold line separates the header from the banner */
 .site-header { border-bottom: 2px solid rgba(201,168,76,.55); }
+.hero-home {
+  background:
+    linear-gradient(90deg, rgba(16,52,95,.86) 0%, rgba(21,66,125,.62) 38%, rgba(21,66,125,.14) 66%, rgba(21,66,125,0) 100%),
+    linear-gradient(180deg, rgba(0,0,0,.0) 60%, rgba(16,52,95,.25) 100%),
+    url("../img/hero-eastlake.jpg") center/cover no-repeat,
+    var(--brand);
+}
+.hero-home .eyebrow { color: #e3c77a; }
