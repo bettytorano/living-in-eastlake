@@ -40,7 +40,7 @@ const person = {
     { "@type": "Organization", name: "Chula Vista Woman's Club" },
     { "@type": "Organization", name: "The Institute for Luxury Home Marketing" }
   ],
-  award: ["Top 5% of REALTORS® in San Diego County, PSAR", "Circle of Excellence Award, SDAR"],
+  award: ["PSAR R.E.A.L. Award, Top 10% of San Diego County REALTORS® (2024)", "PSAR R.E.A.L. Award, Top 10% of San Diego County REALTORS® (2020)", "PSAR R.E.A.L. Award, Top 5% of San Diego County REALTORS® (2019)", "Circle of Excellence Award, SDAR (2019)"],
   alumniOf: { "@type": "CollegeOrUniversity", name: "San Diego State University" },
   knowsAbout: ["Eastlake, Chula Vista real estate", "Mello-Roos and HOAs", "Interior decor and home staging", "Seniors real estate", "Probate and trust sales", "Real estate digital marketing"],
   hasCredential: [
