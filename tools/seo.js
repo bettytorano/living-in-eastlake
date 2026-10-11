@@ -85,7 +85,7 @@ const FAQ = {
     ["How do I find out what my Eastlake home is worth?", "Request a free home value. I prepare it personally using recent Eastlake sales near you, and I account for things online estimates miss, like views, upgrades, HOA and Mello-Roos status."],
     ["What documents do Eastlake sellers need?", "Every seller completes the standard California disclosures, including the Transfer Disclosure Statement (TDS) and Seller Property Questionnaire (SPQ), which I give you when we list so your answers are ready before escrow. Eastlake sellers also usually need HOA documents for the Eastlake I, II or III association (Civil Code §4525) and the Notice of Special Tax for any Mello-Roos district on the home (Civil Code §1102.6b)."],
     ["Should I stage my Eastlake home before selling?", "In most cases, yes. Staged homes photograph better and help buyers picture themselves living there. With my background in interior decor and staging homes for agents, I'll tell you exactly what's worth doing and what isn't."],
-    ["Do you help with senior moves and probate or trust sales?", "Yes. I'm a Seniors Real Estate Specialist® (SRES®) and hold the C.A.R. Probate & Trust Certification, so I can help with downsizing, estate and trust sales alongside your attorney or trustee."],
+    ["Do you help with senior moves and probate or trust sales?", "Yes. I'm a Seniors Real Estate Specialist® (SRES®) and hold the Probate & Trust Certification, so I can help with downsizing, estate and trust sales alongside your attorney or trustee."],
     ["How long does it take to sell a home in Eastlake?", "It depends on price, condition and the market at the time. I'll share current Eastlake days-on-market data for homes like yours when we talk about your plan."]
   ],
   "home-value.html": [
@@ -117,7 +117,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
   "blog/eastlake-schools-history.html": { url: "/blog/eastlake-schools-history", type: "Article", crumbs: [["Blog", "/blog"], ["The homes came first, then the schools", "/blog/eastlake-schools-history"]], published: "2026-09-26" },
   "blog/first-eastlake-home-132000.html": { url: "/blog/first-eastlake-home-132000", type: "Article", crumbs: [["Blog", "/blog"], ["Our first Eastlake home: $132,000 at a 10.25% interest rate", "/blog/first-eastlake-home-132000"]], published: "2026-09-19" },
