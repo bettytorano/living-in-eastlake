@@ -181,8 +181,7 @@ body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, C
 <p>Eastlake Hills consistently attracts buyers who want the depth and stability of an established neighborhood without giving up the amenities that make Eastlake one of the most sought-after addresses in Chula Vista. It's an excellent fit for buyers who want to be near EastLake Elementary and the Swim and Tennis Club, move-up buyers looking for more space and long-term value, and anyone who appreciates the character that only time can build into a community.</p>
 <p>For sellers, Eastlake Hills properties benefit from strong, consistent demand. Buyers who know Eastlake often seek out the original neighborhoods specifically, and that focused attention works in your favor when it comes time to list.</p>
 <h2>Ready to buy or sell in Eastlake Hills?</h2>
-<p>Whether you are buying your first home here or selling a property you have loved for years, I bring local knowledge and nearly 40 years as an Eastlake resident to guide you to the best possible outcome. <a href="https://bettytorano.com/neighborhood/159144632/eastlakehills">See homes for sale in Eastlake Hills</a>, or <a href="/home-value">request your free home value</a>.</p>
-<p><a href="https://youtu.be/Jm-a4kboaT4?si=yFeYWXVy4oPooUrl" rel="noopener">Watch my tour of the Eastlake Hills community ↗</a></p>`
+<p>Whether you are buying your first home here or selling a property you have loved for years, I bring local knowledge and nearly 40 years as an Eastlake resident to guide you to the best possible outcome. <a href="https://bettytorano.com/neighborhood/159144632/eastlakehills">See homes for sale in Eastlake Hills</a>, or <a href="/home-value">request your free home value</a>.</p>`
 },
 {
 slug: "living-in-eastlake-shores",
