@@ -77,7 +77,7 @@ const FAQ = {
     ["Does every Eastlake home have Mello-Roos?", "No. Whether a home pays Mello-Roos, and how much, depends on the parcel and when it was built. Check the property tax bill for special tax lines. My <a href=\"/mello-roos-eastlake\">Mello-Roos in Eastlake guide</a> walks through it step by step."],
     ["Are HOA dues and Mello-Roos the same thing?", "No. HOA dues are billed by your association and pay for common areas and amenities. Mello-Roos is a special tax collected on your county property tax bill that pays for schools, infrastructure or ongoing public maintenance."],
     ["How do I find the HOA dues for an Eastlake home?", "Before you make an offer, ask your agent to confirm the monthly dues for the master association and any sub-association, added together. Once you're in escrow, the seller provides the full HOA documents (Civil Code §4525), which you can review during your contingency period."],
-    ["When did the Eastlake schools open?", "EastLake Elementary opened in 1989, Eastlake High School in 1992, and EastLake Middle School in 2003, about 16 years after the first residents moved in."],
+    ["When did the Eastlake schools open?", "EastLake Elementary opened in 1989, Eastlake High School in 1992, Olympic View Elementary in 1995, Arroyo Vista Charter School in 1999, EastLake Middle School in 2003 (about 16 years after the first residents moved in) and Salt Creek Elementary in 2004."],
     ["Can you help me compare the total monthly cost of two Eastlake homes?", "Yes. I'll line up price, HOA dues, Mello-Roos and other special taxes, and estimated property tax side by side so you can compare the real monthly cost. <a href=\"#ask\">Send me your question</a>."]
   ],
   "sellers-guide.html": [
@@ -115,7 +115,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
   "blog/eastlake-schools-history.html": { url: "/blog/eastlake-schools-history", type: "Article", crumbs: [["Blog", "/blog"], ["The homes came first, then the schools", "/blog/eastlake-schools-history"]], published: "2026-09-26" },
   "blog/first-eastlake-home-132000.html": { url: "/blog/first-eastlake-home-132000", type: "Article", crumbs: [["Blog", "/blog"], ["Our first Eastlake home: $132,000 at a 10.25% interest rate", "/blog/first-eastlake-home-132000"]], published: "2026-09-19" },
