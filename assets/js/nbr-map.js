@@ -85,7 +85,7 @@ var NBR_BOUNDARIES = {
       var all = L.featureGroup().addTo(map);
       list.forEach(function (b) {
         L.polygon(b.shape, { color: "#15427d", weight: 3, fillColor: "#15427d", fillOpacity: 0.18 })
-          .bindTooltip(b.name, { sticky: true })
+          .bindTooltip(b.name, list.length > 1 ? { permanent: true, direction: "center", className: "nbr-label" } : { sticky: true })
           .addTo(all);
         (b.spots || []).forEach(function (p) {
           L.circleMarker([p.lat, p.lng], { radius: 6, color: "#ffffff", weight: 2, fillColor: "#c9a84c", fillOpacity: 1 })

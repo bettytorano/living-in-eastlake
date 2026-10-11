@@ -1044,3 +1044,5 @@ h1, h2, h3 { color: var(--brand-dark); }
 #things-to-do .bg-head, #parks .bg-head, #stories .bg-head { margin-bottom: 12px; }
 @media (max-width: 760px) { .lf-why, .lf-parks { grid-template-columns: 1fr; } }
 .lf-jump small::before { content: ""; }
+.leaflet-tooltip.nbr-label { background: rgba(255,255,255,.92); border: 1px solid var(--brand); color: var(--brand); font-weight: 700; font-size: .78rem; padding: 3px 8px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
+.leaflet-tooltip.nbr-label::before { display: none; }
