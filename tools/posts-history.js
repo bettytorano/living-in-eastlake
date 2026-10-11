@@ -7,7 +7,7 @@ module.exports = [
   "desc": "In Eastlake's early days, buyers camped out overnight for the chance to buy in the next phase. Here's why, from a resident who moved in during 1987.",
   "date": "2026-09-12",
   "dateLabel": "September 12, 2026",
-  "img": "eastlake-greens-view.jpg",
+  "img": "eastlake-shores-twlight.jpg",
   "reel": "DdNjQnQyDbb",
   "tag": "Eastlake History",
   "body": "\n<p>It sounds hard to believe today, but during Eastlake's early development, some buyers camped out overnight for the chance to buy a new home.</p>\n<h2>Something South County had rarely seen</h2>\n<p>Eastlake brought something to South County that most people had never experienced: a large master-planned community with a man-made lake, a Beach Club, a lagoon, a Swim &amp; Tennis Club and a brand-new elementary school planned right inside the community. It was the biggest hype in town.</p>\n<h2>Why people lined up</h2>\n<p>Builders released homes in phases, and prices went up with each new release. Buyers knew that if they missed one phase, they could pay more in the next, so lining up early made sense.</p>\n<p>When I shared this story, neighbors filled the comments with their own memories. Several told me their families camped out too, and some are still living in those same homes today.</p>\n<h2>Our own Eastlake start</h2>\n<p>We were fortunate to get into the final phase of our neighborhood, and we moved to Eastlake in 1987. Nearly 40 years later, I'm still here, still sharing the history of the community I've watched grow.</p>\n<p><strong>Did your family camp out for an early Eastlake home?</strong> I'd love to hear your story. Send me a message on Instagram or <a href=\"/about\">get in touch</a>.</p>"
