@@ -77,13 +77,13 @@ ${p.reel ? IG : ""}`;
 const groups = [["Eastlake Guide", "Eastlake Guides"], ["Neighborhoods", "Neighborhoods"], ["Selling", "Selling in Eastlake"], ["Eastlake History", "Eastlake History"], ["Chula Vista", "Around Chula Vista"]];
 const featured = `      <a class="blog-card blog-featured" href="/mello-roos-eastlake">
         <div class="blog-card-img"><img src="/assets/img/eastlake-greens-golf-view-2.jpg" alt="" width="1200" height="800" loading="lazy"></div>
-        <div class="blog-card-body"><span class="tag">Featured guide</span><h3>Mello-Roos in Eastlake: who still pays, what it pays for, and how to check any home</h3><p>The difference between school Mello-Roos and city open space assessments, plus a 10-minute way to check any Eastlake address.</p><span class="blog-card-more">Read the guide →</span></div>
+        <div class="blog-card-body"><span class="tag">Featured guide</span><h3>Mello-Roos in Eastlake: Who Pays and How to Check Any Home</h3><p>The difference between school Mello-Roos and city open space assessments, plus a 10-minute way to check any Eastlake address.</p><span class="blog-card-more">Read the guide →</span></div>
       </a>`;
 const index = `
 <section class="hero-light" style="--hero-img: url('/assets/img/eastlake-paddleboat.jpg')">
   <div class="wrap">
     <span class="eyebrow">The Living in Eastlake Blog</span>
-    <h1>Eastlake stories, guides &amp; insights</h1>
+    <h1>Eastlake Stories, Guides &amp; Insights</h1>
     <p class="lead">Nearly 40 years of Eastlake history, plus practical guides for buying, selling and living here.</p>
     <div class="blog-topics">${groups.filter(([t]) => posts.some(p => p.tag === t)).map(([t, l]) => `<a href="#${t.toLowerCase().replace(/\s+/g, "-")}">${l}</a>`).join("")}</div>
   </div>
