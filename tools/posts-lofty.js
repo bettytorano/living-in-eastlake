@@ -160,7 +160,7 @@ slug: "living-in-eastlake-hills",
 title: "Living in Eastlake Hills, Chula Vista: Where Eastlake's Story Began",
 short: "Living in Eastlake Hills: where Eastlake's story began",
 desc: "A local's guide to Eastlake Hills, one of Eastlake's two original neighborhoods: homes, HOA, Mello-Roos, amenities, schools and commute.",
-date: "2026-03-17", img: "eastlake-shores-beach.jpg", tag: "Neighborhoods",
+date: "2026-03-17", img: "eastlake-hills.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, Chula Vista's first master-planned community. Built in the mid-1980s alongside Eastlake Shores, it is where the Eastlake story started, and that history is something you can feel the moment you drive through the neighborhood. Mature trees, well-established streets and a genuine sense of community give Eastlake Hills a character that newer developments are still working to build.</p>
 <p>It's also my home. I moved to Eastlake Hills in 1987, and as a Realtor® who works in every Eastlake neighborhood, I'm in Eastlake Hills regularly. Here's an honest guide to what makes it worth your attention, whether you are buying or selling.</p>
 <h2>The original Eastlake: a neighborhood with real history</h2>
@@ -189,7 +189,7 @@ slug: "living-in-eastlake-shores",
 title: "Living in Eastlake Shores, Chula Vista: Lake Living in One of Eastlake's Original Neighborhoods",
 short: "Living in Eastlake Shores: lake living in an original Eastlake neighborhood",
 desc: "A local's guide to Eastlake Shores: the lake, Beach Club and lagoon, home types, Mello-Roos, schools, commute and what locals love most.",
-date: "2026-03-27", img: "eastlake-shores.jpg", tag: "Neighborhoods",
+date: "2026-03-27", img: "eastlake-shores-beach.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, Chula Vista's first master-planned community. Built in the mid-1980s alongside Eastlake Hills, Shores helped establish the Eastlake identity before the golf course, the later village phases and the gated enclaves that followed. Four decades later, it remains one of the most beloved and in-demand communities in Eastlake.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I work with buyers and sellers in Eastlake Shores regularly. Here's what you need to know about this established, lakefront neighborhood.</p>
 <h2>A founding neighborhood with four decades of community</h2>
