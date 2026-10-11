@@ -202,7 +202,7 @@ for (const [file, cfg] of Object.entries(PAGES)) {
     const section = `<section class="section alt" id="faq">
   <div class="wrap faq">
     <span class="eyebrow">Questions, answered</span>
-    <h2>Frequently asked questions</h2>
+    <h2>Frequently Asked Questions</h2>
 ${faqs.map(([q, a]) => `    <details>\n      <summary>${q}</summary>\n      <p>${a}</p>\n    </details>`).join("\n")}
   </div>
 </section>`;
