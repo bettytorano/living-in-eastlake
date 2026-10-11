@@ -94,8 +94,15 @@ var NBR_BOUNDARIES = {
           var lats = b.shape.map(function (p) { return p[0]; });
           var lngs = b.shape.map(function (p) { return p[1]; });
           var right = b.label === "right";
-          var lng = right ? Math.max.apply(null, lngs) : Math.min.apply(null, lngs);
           var lat = (Math.max.apply(null, lats) + Math.min.apply(null, lats)) / 2;
+          // where the boundary actually crosses that latitude, so the pointer touches the line
+          var hits = [];
+          b.shape.forEach(function (p, i) {
+            var q = b.shape[(i + 1) % b.shape.length];
+            if ((p[0] - lat) * (q[0] - lat) <= 0 && p[0] !== q[0]) hits.push(p[1] + (lat - p[0]) * (q[1] - p[1]) / (q[0] - p[0]));
+          });
+          if (!hits.length) hits = lngs;
+          var lng = right ? Math.max.apply(null, hits) : Math.min.apply(null, hits);
           L.tooltip({ permanent: true, direction: right ? "right" : "left", offset: [right ? 6 : -6, 0], className: "nbr-label" })
             .setLatLng([lat, lng]).setContent(b.name).addTo(map);
         }
