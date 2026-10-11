@@ -39,7 +39,7 @@ body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on
 <p>Arroyo Vista Charter School opened in Eastlake Trails in 1999. It started as a K–6 charter school and is now K–8. Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
 
 <h2>Parks and the Outdoors</h2>
-<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
+<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park &amp; Recreation Center and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
 
 <h2>Who Are the Trails and Trails North Right For?</h2>
 <p>The Trails and Trails North are a great fit for baseball fans, anyone who loves parks and trails, and buyers who want Eastlake III clubhouse amenities close to home.</p>
@@ -87,7 +87,7 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 <p>EastLake Middle School, which opened in 2003, is within walking distance of many homes in The Woods, and Salt Creek Elementary, opened in 2004, is close by. Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
 
 <h2>Parks and the Outdoors</h2>
-<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
+<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Montevalle Park &amp; Recreation Center, Mountain Hawk Park, Salt Creek Park &amp; Recreation Center and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
 
 <h2>Who Is The Woods Right For?</h2>
 <p>The Woods is a great fit for move-up buyers looking for a larger home and lot, anyone who wants a gated or custom home with views of the Otay Lakes, and buyers who want clubhouse amenities with schools and shopping close by.</p>
