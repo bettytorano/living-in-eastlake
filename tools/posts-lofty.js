@@ -14,7 +14,7 @@ body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on
 <p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north, Old Janal Ranch Road to the east and Olympic Parkway to the south.</p>
 <div class="nbr-map" data-nbr="eastlake-trails" role="region" aria-label="Map of the Eastlake Trails boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=8" defer></script>
+<script src="/assets/js/nbr-map.js?v=9" defer></script>
 
 <h2>The Eastlake III association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
@@ -63,7 +63,7 @@ body: `<p>Eastlake Trails North is part of the Eastlake III association, alongsi
 <p>Trails North sits just north of Otay Lakes Road along the west side of Hunte Parkway, across Otay Lakes Road from Eastlake Trails and Eastlake Greens.</p>
 <div class="nbr-map" data-nbr="eastlake-trails-north" role="region" aria-label="Map of the Eastlake Trails North boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=8" defer></script>
+<script src="/assets/js/nbr-map.js?v=9" defer></script>
 
 <h2>The Eastlake III association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
@@ -105,8 +105,10 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 <p><mark class="draft-note">[Betty: when The Woods was built, and what you remember about it being developed]</mark></p>
 
 <h2>Where is The Woods?</h2>
-<p>The Woods sits on Eastlake's eastern hills, near EastLake Middle School and the District at Eastlake shops.</p>
-<p><mark class="draft-note">[Betty: send The Woods boundary drawn in red, and I'll add the map here]</mark></p>
+<p>The Woods sits on Eastlake's eastern hills, east of Hunte Parkway and north of Otay Lakes Road, stretching up toward Proctor Valley Road. EastLake Middle School and the District at Eastlake shops are close by.</p>
+<div class="nbr-map" data-nbr="the-woods" role="region" aria-label="Map of The Woods boundary"></div>
+<p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
+<script src="/assets/js/nbr-map.js?v=9" defer></script>
 
 <h2>The Eastlake III association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
@@ -155,7 +157,7 @@ body: `<p>Eastlake Vistas sits along Eastlake's eastern hills near Mountain Hawk
 <p>Eastlake Vistas is on the eastern edge of Eastlake, bounded by Otay Lakes Road to the north, Old Janal Ranch Road to the west and Wueste Road to the east, with a small section just south of Olympic Parkway. Mountain Hawk Park and the Lower Otay Reservoir are close by.</p>
 <div class="nbr-map" data-nbr="eastlake-vistas" role="region" aria-label="Map of the Eastlake Vistas boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=8" defer></script>
+<script src="/assets/js/nbr-map.js?v=9" defer></script>
 
 <h2>The Eastlake III association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
@@ -201,7 +203,7 @@ body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green 
 <p>Eastlake Greens sits in the middle of Eastlake, bounded by Otay Lakes Road to the north, Eastlake Parkway to the west, Hunte Parkway to the east and Olympic Parkway to the south.</p>
 <div class="nbr-map" data-nbr="eastlake-greens" role="region" aria-label="Map of the Eastlake Greens boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=8" defer></script>
+<script src="/assets/js/nbr-map.js?v=9" defer></script>
 
 <h2>The Eastlake II association</h2>
 <p>Every home in the Greens belongs to the Eastlake II master association. Its amenities are just for Greens residents:</p>
@@ -404,7 +406,7 @@ body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, C
 <p>Eastlake Hills sits on the west side of Eastlake, between Corral Canyon Road and East H Street, just west of State Route 125.</p>
 <div class="nbr-map" data-nbr="eastlake-hills" role="region" aria-label="Map of the Eastlake Hills boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=8" defer></script>
+<script src="/assets/js/nbr-map.js?v=9" defer></script>
 <h2>The original Eastlake: a neighborhood with real history</h2>
 <p>When Eastlake launched in the mid-1980s, it was a defining moment for Chula Vista. As the city's first master-planned community, Eastlake set the standard for how large-scale residential development would work in Southern California. Eastlake Hills and Eastlake Shores were the pioneering first phases, the neighborhoods that established the Eastlake identity before the golf course, the later villages and the gated enclaves followed.</p>
 <p>That founding status gives Eastlake Hills real depth: decades of history, an engaged resident base and a reputation that has only strengthened over time.</p>
@@ -437,7 +439,7 @@ body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, 
 <p>Eastlake Shores sits around the Eastlake lake, between East H Street and State Route 125, just across East H Street from Eastlake Hills.</p>
 <div class="nbr-map" data-nbr="eastlake-shores" role="region" aria-label="Map of the Eastlake Shores boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=8" defer></script>
+<script src="/assets/js/nbr-map.js?v=9" defer></script>
 <h2>A founding neighborhood with four decades of community</h2>
 <p>Eastlake Shores was one of the first addresses to take shape when Eastlake launched. The neighborhood was designed around a community lake, giving it a resort-inspired character that was distinctive from day one. Mature landscaping, established common areas and a resident base that has grown together over decades give Shores the kind of genuine community feel newer developments rarely achieve.</p>
 <h2>Homes and architecture</h2>
