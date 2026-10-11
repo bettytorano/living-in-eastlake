@@ -82,7 +82,7 @@ const FAQ = {
     ["Can you help me compare the total monthly cost of two Eastlake homes?", "Yes. I'll line up price, HOA dues, Mello-Roos and other special taxes, and estimated property tax side by side so you can compare the real monthly cost. <a href=\"#ask\">Send me your question</a>."]
   ],
   "about.html": [
-    ["How long has Betty Torano lived in Eastlake?", "Since 1987. Betty moved to Eastlake Hills with her family when Eastlake was brand new, before EastLake Elementary opened, and has lived there ever since."],
+    ["How long has Betty Torano lived in Eastlake?", "Since 1987. Betty and her husband moved to Eastlake Hills when Eastlake was brand new, raised their family there, and have lived there ever since. She has called Chula Vista home since she was ten."],
     ["What areas does Betty Torano serve?", "Betty specializes in Eastlake, Chula Vista, including Eastlake Hills, Shores, Greens, Trails, Trails North, The Woods and Vistas, and also helps buyers and sellers throughout Chula Vista and San Diego's South County."],
     ["Does Betty help with downsizing, probate or trust sales?", "Yes. Betty is a Seniors Real Estate Specialist® (SRES®) and holds the C.A.R. Probate & Trust Certification, so she can help longtime owners plan a move and work alongside attorneys and trustees on estate and trust sales."],
     ["How can I contact Betty Torano?", "Call 619-851-6028, email betty.torano@exprealty.com, or request a free home value on this site. Betty is a REALTOR® with eXp Realty of California, CA DRE #01922296."]
