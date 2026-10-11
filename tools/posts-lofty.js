@@ -93,7 +93,7 @@ slug: "hoa-fees-mello-roos-selling-eastlake",
 title: "How Do HOA Fees and Mello-Roos Affect Selling a Home in Eastlake, Chula Vista?",
 short: "How HOA fees and Mello-Roos affect selling a home in Eastlake",
 desc: "Selling in Eastlake? How HOA dues and Mello-Roos (CFD) special taxes affect buyers, pricing and disclosures, and how to verify when your Mello-Roos ends.",
-date: "2026-08-21", img: "eastlake-woods-aerial-3.jpg", tag: "Selling",
+date: "2026-08-21", img: "eastlake-paddleboat.jpg", tag: "Selling",
 body: `<p>If you're thinking about selling a home in <strong>Eastlake or Chula Vista, California</strong>, there's a good chance you've wondered how your <strong>HOA fees and Mello-Roos</strong> could affect the sale.</p>
 <p>One of the questions I hear from homeowners is:</p>
 <p><strong>"How long does my Mello-Roos last, and how can I find out when it's over?"</strong></p>
@@ -250,7 +250,7 @@ slug: "ultimate-guide-living-in-eastlake",
 title: "The Ultimate Guide to Living in Eastlake, CA",
 short: "The ultimate guide to living in Eastlake",
 desc: "Everything to know about living in Eastlake, Chula Vista: the neighborhoods in the order they were built, the three HOAs, schools, recreation, shopping and commute.",
-date: "2025-12-09", img: "eastlake-woods-aerial-4.jpg", tag: "Eastlake Guide",
+date: "2025-12-09", img: "eastlake-greens-view.jpg", tag: "Eastlake Guide",
 body: `<p>If you are thinking about living in <strong>Eastlake, California</strong>, you are considering one of the most desirable master-planned communities in San Diego County, in the city of Chula Vista. Eastlake offers beautiful neighborhoods, schools within the community, scenic walking trails, resort-style amenities and a welcoming community where neighbors connect and lifestyle and convenience come together.</p>
 <p>As a local Realtor, longtime Eastlake resident and active community volunteer, I have helped many buyers and sellers here. This guide gives you a full overview of what life in Eastlake is like and why so many people choose to call it home.</p>
 <h2>What makes Eastlake special</h2>
