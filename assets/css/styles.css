@@ -1046,3 +1046,4 @@ h1, h2, h3 { color: var(--brand-dark); }
 .lf-jump small::before { content: ""; }
 .leaflet-tooltip.nbr-label { background: rgba(255,255,255,.92); border: 1px solid var(--brand); color: var(--brand); font-weight: 700; font-size: .78rem; padding: 3px 8px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
 .leaflet-tooltip-left.nbr-label::before { border-left-color: var(--brand); }
+.leaflet-tooltip-right.nbr-label::before { border-right-color: var(--brand); }

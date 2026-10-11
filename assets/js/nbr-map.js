@@ -26,6 +26,7 @@ var NBR_BOUNDARIES = {
   },
   "eastlake-trails": {
     name: "Eastlake Trails",
+    label: "right",
     // West: Hunte Pkwy (shared edge with Eastlake Greens) · North: Otay Lakes Rd · South: Olympic Pkwy
     shape: [[32.647329, -116.950849], [32.645805, -116.948909], [32.645152, -116.946582], [32.644825, -116.944901],
             [32.633610, -116.944901], [32.631759, -116.948780], [32.634111, -116.950125], [32.638510, -116.954469],
@@ -42,7 +43,7 @@ var NBR_BOUNDARIES = {
   },
   "eastlake-trails-north": {
     name: "Eastlake Trails North",
-    label: "left",
+    label: "right",
     // South tip: Otay Lakes Rd & Hunte Pkwy (shared corner with Greens and Trails) · East: Hunte Pkwy
     shape: [[32.657051, -116.953114], [32.654783, -116.954264], [32.652884, -116.952791], [32.649687, -116.953873],
             [32.647329, -116.950849], [32.648331, -116.949569], [32.649590, -116.949270], [32.650889, -116.949270]]
@@ -88,12 +89,15 @@ var NBR_BOUNDARIES = {
         L.polygon(b.shape, { color: "#15427d", weight: 3, fillColor: "#15427d", fillOpacity: 0.18 })
           .bindTooltip(b.name, { sticky: true })
           .addTo(all);
-        if (b.label === "left") {
-          // Label set off to the side, pointing at the area, so it never covers the streets
-          var west = b.shape.reduce(function (w, p) { return p[1] < w[1] ? p : w; });
-          var mid = b.shape.reduce(function (s, p) { return s + p[0]; }, 0) / b.shape.length;
-          L.tooltip({ permanent: true, direction: "left", offset: [-14, 0], className: "nbr-label" })
-            .setLatLng([mid, west[1]]).setContent(b.name).addTo(map);
+        if (b.label) {
+          // Label set just outside the boundary (left or right), pointing at the area, so it never covers the streets
+          var lats = b.shape.map(function (p) { return p[0]; });
+          var lngs = b.shape.map(function (p) { return p[1]; });
+          var right = b.label === "right";
+          var lng = right ? Math.max.apply(null, lngs) : Math.min.apply(null, lngs);
+          var lat = (Math.max.apply(null, lats) + Math.min.apply(null, lats)) / 2;
+          L.tooltip({ permanent: true, direction: right ? "right" : "left", offset: [right ? 6 : -6, 0], className: "nbr-label" })
+            .setLatLng([lat, lng]).setContent(b.name).addTo(map);
         }
         (b.spots || []).forEach(function (p) {
           L.circleMarker([p.lat, p.lng], { radius: 6, color: "#ffffff", weight: 2, fillColor: "#c9a84c", fillOpacity: 1 })
