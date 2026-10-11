@@ -31,7 +31,7 @@ module.exports = [
   "desc": "Eastlake's first families arrived before the schools opened. EastLake Elementary opened in 1989, Eastlake High in 1992 and EastLake Middle in 2003.",
   "date": "2026-09-26",
   "dateLabel": "September 26, 2026",
-  "img": "eastlake-trails.jpg",
+  "img": "eastlake-woods-aerial-middle-school.jpg",
   "reel": "Dd9rii7SDhW",
   "tag": "Eastlake History",
   "body": "\n<p>Eastlake promised brand-new neighborhood schools, but the homes and the families arrived faster than the schools could keep up.</p>\n<h2>The timeline</h2>\n<ul class=\"timeline\">\n  <li><strong>1987</strong>My family moves to Eastlake. EastLake Elementary hasn't opened yet.</li>\n  <li><strong>1989</strong>EastLake Elementary School opens.</li>\n  <li><strong>1992</strong>Eastlake High School opens.</li>\n  <li><strong>1995</strong>Olympic View Elementary School opens.</li>\n  <li><strong>1999</strong>Arroyo Vista Charter School opens.</li>\n  <li><strong>2003</strong>EastLake Middle School opens, nearly 16 years after the first residents moved in.</li>\n  <li><strong>2004</strong>Salt Creek Elementary School opens.</li>\n</ul>\n<h2>Eastlake schools today</h2>\n<p>Today Eastlake is served by the Chula Vista Elementary School District for grades K–6 and the Sweetwater Union High School District for grades 7–12. You'll find the current list in my <a href=\"/buyers-guide#schools\">Buyer's Guide</a>.</p>\n<p>Attendance boundaries can change over time, so always confirm the assigned schools for a specific address with each district.</p>\n<p><strong>Were your children able to attend EastLake Elementary, or were they assigned to another school?</strong> Tell me your story.</p>"
