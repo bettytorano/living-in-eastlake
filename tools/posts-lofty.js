@@ -8,7 +8,6 @@ desc: "A local's guide to Eastlake Trails and Trails North: the Eastlake Little 
 date: "2026-10-11", img: "eastlake-trails.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on land donated by the EastLake Development Company, and it's part of the Eastlake III association with its clubhouses, pools and trails. Just across Otay Lakes Road, the smaller Trails North neighborhood shares the same association and amenities, so I cover both here.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched the Trails and Trails North take shape. Here's what to know if you're thinking about buying or selling here.</p>
-<p><mark class="draft-note">[Betty: when Eastlake Trails was built, and what you remember about it being developed]</mark></p>
 
 <h2>Where Are Eastlake Trails and Trails North?</h2>
 <p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north, Old Janal Ranch Road to the east and Olympic Parkway to the south. Trails North is the narrow strip just north of Otay Lakes Road, along the west side of Hunte Parkway.</p>
@@ -28,14 +27,9 @@ body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on
 
 <h2>Home of Eastlake Little League</h2>
 <p>After years of playing on temporary lots, Eastlake Little League got its permanent fields here in Eastlake Trails. Today the complex hosts Opening Day, spring and fall seasons and All-Star games, and it's the home league of the 2013 U.S. Little League Champions. Read <a href="/blog/eastlake-little-league-history">the history of Eastlake Little League</a>.</p>
-<p><mark class="draft-note">[Betty: a favorite spot or two in Eastlake Trails, and what residents love most about living here]</mark></p>
 
 <h2 id="trails-north">Trails North</h2>
 <p>Trails North is a small neighborhood that Eastlake recognizes on its own, tucked just north of Otay Lakes Road along the west side of Hunte Parkway, across the road from Eastlake Trails and Eastlake Greens. It shares the Eastlake III association, clubhouses, pools and trails with the Trails.</p>
-<p><mark class="draft-note">[Betty: when Trails North was built, what makes it special, and what the homes are like]</mark></p>
-
-<h2>Homes and Architecture</h2>
-<p><mark class="draft-note">[Betty: typical home styles and sizes in Eastlake Trails, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
 
 <h2>A Note on Property Taxes</h2>
 <p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. Amounts and end dates depend on the specific home.</p>
@@ -61,7 +55,6 @@ desc: "A local's guide to The Woods at Eastlake: the Woods Clubhouse, the Eastla
 date: "2026-10-11", img: "eastlake-woods-aerial-1.jpg", tag: "Neighborhoods",
 body: `<p>The Woods is part of the Eastlake III association, with hillside streets, views toward the mountains and its own Eastlake Woods Clubhouse.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched The Woods take shape. Here's what to know if you're thinking about buying or selling here.</p>
-<p><mark class="draft-note">[Betty: when The Woods was built, and what you remember about it being developed]</mark></p>
 
 <h2>Where Is The Woods?</h2>
 <p>The Woods sits on Eastlake's eastern hills, east of Hunte Parkway and north of Otay Lakes Road, stretching up toward Proctor Valley Road. EastLake Middle School and the District at Eastlake shops are close by.</p>
@@ -81,10 +74,6 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 
 <h2>Hillside Living</h2>
 <p>Streets in The Woods climb into Eastlake's eastern hills, so many homes look out toward the mountains and the Otay Lakes.</p>
-<p><mark class="draft-note">[Betty: a favorite spot or two in The Woods, and what residents love most about living here]</mark></p>
-
-<h2>Homes and Architecture</h2>
-<p><mark class="draft-note">[Betty: typical home styles and sizes in The Woods, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
 
 <h2>A Note on Property Taxes</h2>
 <p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. The Woods is also in the City of Chula Vista's CFD 07M, a maintenance district that funds upkeep of public landscaping and open space in the Woods and Vistas area. Amounts and end dates depend on the specific home.</p>
@@ -110,7 +99,6 @@ desc: "A local's guide to Eastlake Vistas: Mountain Hawk Park, the Otay Lakes, t
 date: "2026-10-11", img: "eastlake-hawk-park-1.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Vistas sits along Eastlake's eastern hills near Mountain Hawk Park and the Otay Lakes, with scenic views, outdoor recreation and newer construction.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched Eastlake Vistas take shape. Here's what to know if you're thinking about buying or selling here.</p>
-<p><mark class="draft-note">[Betty: when Eastlake Vistas was built, and what you remember about it being developed]</mark></p>
 
 <h2>Where Is Eastlake Vistas?</h2>
 <p>Eastlake Vistas is on the eastern edge of Eastlake, bounded by Otay Lakes Road to the north, Old Janal Ranch Road to the west and Wueste Road to the east, with a small section just south of Olympic Parkway. Mountain Hawk Park and the Lower Otay Reservoir are close by.</p>
@@ -130,10 +118,6 @@ body: `<p>Eastlake Vistas sits along Eastlake's eastern hills near Mountain Hawk
 
 <h2>Views and the Outdoors</h2>
 <p>Mountain Hawk Park and the Otay Lakes are right nearby, and the hills around the neighborhood give many homes wide views. The Eastlake Little League Juniors Field on Olympic Vista Road is also in the Vistas, home to the league's Juniors and Challenger divisions.</p>
-<p><mark class="draft-note">[Betty: a favorite spot or two in Eastlake Vistas, and what residents love most about living here]</mark></p>
-
-<h2>Homes and Architecture</h2>
-<p><mark class="draft-note">[Betty: typical home styles and sizes in Eastlake Vistas, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
 
 <h2>A Note on Property Taxes</h2>
 <p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. Eastlake Vistas is also in the City of Chula Vista's CFD 07M, a maintenance district that funds upkeep of public landscaping and open space in the Woods and Vistas area. Amounts and end dates depend on the specific home.</p>
@@ -156,7 +140,6 @@ desc: "A local's guide to Eastlake Greens: the golf course, the Eastlake II HOA 
 date: "2026-10-11", img: "eastlake-greens-golf.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green open space sets the tone for the whole neighborhood. It has its own homeowners association, Eastlake II, with its own clubs, pools and parks, separate from the original Hills and Shores and from the newer Eastlake III neighborhoods.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched the Greens grow from open land into one of Eastlake's most popular addresses. Here's what to know if you're thinking about buying or selling here.</p>
-<p><mark class="draft-note">[Betty: when the first Greens homes were built, and what you remember about the Greens being developed]</mark></p>
 
 <h2>Where Is Eastlake Greens?</h2>
 <p>Eastlake Greens sits in the middle of Eastlake, bounded by Otay Lakes Road to the north, Eastlake Parkway to the west, Hunte Parkway to the east and Olympic Parkway to the south.</p>
@@ -178,10 +161,9 @@ body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green 
 <h2>Life Around the Golf Course</h2>
 <p>The Enagic Golf Club at Eastlake sits right in the Greens, so many streets look out over fairways and greenbelts. Even if you don't golf, the open space makes the neighborhood feel green and spacious.</p>
 <div class="callout bg-tip"><strong>Insider tip:</strong> Many homes in the Greens have beautiful golf course views, but location matters. Depending on where the home sits in relation to a tee box or fairway, a backyard can catch stray golf balls. Before you write an offer on a golf course home, walk the yard, look for netting or past damage, and ask the sellers how often balls land there. I'm happy to walk the property with you.</div>
-<p><mark class="draft-note">[Betty: a favorite spot or two in the Greens, and what residents love most about living here]</mark></p>
 
 <h2>Homes and Architecture</h2>
-<p><mark class="draft-note">[Betty: typical home styles and sizes, single-story vs. two-story, condos and townhomes, golf course and view lots, and any gated enclaves]</mark></p>
+<p>The Greens has one of the widest variety of homes in Eastlake. You'll find townhomes, single-family homes of every size, and gated custom homes on golf course view lots, so there's room to start out, move up or settle in without leaving the neighborhood.</p>
 
 <h2>A Note on Property Taxes</h2>
 <p>Mello-Roos in the Greens depends on the specific home. Some properties in Eastlake's older communities, including the Greens, no longer pay Mello-Roos, while others still do. The northern portion of the Greens is also in the city's Eastlake Maintenance District #1, an open space maintenance assessment that is not Mello-Roos.</p>
