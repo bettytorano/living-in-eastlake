@@ -1047,3 +1047,14 @@ h1, h2, h3 { color: var(--brand-dark); }
 .leaflet-tooltip.nbr-label { background: rgba(255,255,255,.92); border: 1px solid var(--brand); color: var(--brand); font-weight: 700; font-size: .78rem; padding: 3px 8px; box-shadow: 0 2px 6px rgba(0,0,0,.15); }
 .leaflet-tooltip-left.nbr-label::before { border-left-color: var(--brand); }
 .leaflet-tooltip-right.nbr-label::before { border-right-color: var(--brand); }
+
+/* About page timeline */
+.ab-tl { list-style: none; margin: 28px 0 0; padding: 0 0 0 28px; border-left: 2px solid rgba(201,168,76,.6); max-width: 820px; }
+.ab-tl li { position: relative; display: grid; grid-template-columns: 170px 1fr; gap: 18px; padding: 0 0 26px; }
+.ab-tl li::before { content: ""; position: absolute; left: -36px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 2px solid var(--gold); }
+.ab-when { font-family: var(--serif); font-size: 1.3rem; color: var(--gold); line-height: 1.2; }
+.ab-tl h3 { margin: 0 0 4px; font-size: 1.2rem; }
+.ab-tl p { margin: 0; color: #3d4852; }
+#story .bg-head { margin-bottom: 14px; }
+.ww-solo .bg-head { justify-content: center; margin-bottom: 14px; }
+@media (max-width: 640px) { .ab-tl li { grid-template-columns: 1fr; gap: 4px; } }
