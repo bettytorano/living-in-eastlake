@@ -60,7 +60,7 @@ body: `<p>Eastlake Trails North is part of the Eastlake III association, alongsi
 <p><mark class="draft-note">[Betty: when Trails North was built, and what you remember about it being developed]</mark></p>
 
 <h2>Where is Eastlake Trails North?</h2>
-<p>Trails North sits just north of Otay Lakes Road near Hunte Parkway, across Otay Lakes Road from Eastlake Trails.</p>
+<p>Trails North sits just north of Otay Lakes Road along the west side of Hunte Parkway, across Otay Lakes Road from Eastlake Trails and Eastlake Greens.</p>
 <div class="nbr-map" data-nbr="eastlake-trails-north" role="region" aria-label="Map of the Eastlake Trails North boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
 <script src="/assets/js/nbr-map.js?v=8" defer></script>
