@@ -1027,3 +1027,4 @@ h1, h2, h3 { color: var(--brand-dark); }
 #map .bg-head { margin-bottom: 18px; }
 @media (max-width: 900px) { .nb-jump { grid-template-columns: repeat(4, 1fr); } .nb-fits { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 700px) { .nb-grid, .nb-fits { grid-template-columns: 1fr; } .nb-jump { grid-template-columns: repeat(3, 1fr); } }
+.draft-note { background: #fff3b0; color: #6b5200; padding: 2px 6px; font-style: italic; }

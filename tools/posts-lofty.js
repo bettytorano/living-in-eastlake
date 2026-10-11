@@ -1,6 +1,50 @@
 // Posts moved from bettytorano.com (Lofty) on 2026-10-10, lightly edited for fair-housing wording.
 module.exports = [
 {
+slug: "living-in-eastlake-greens",
+title: "Living in Eastlake Greens, Chula Vista: Golf Course Views and Club Life",
+short: "Living in Eastlake Greens: golf course views and club life",
+desc: "A local's guide to Eastlake Greens: the golf course, the Eastlake II HOA and its clubs, Mello-Roos, schools and parks, from an Eastlake resident since 1987.",
+date: "2026-10-11", img: "eastlake-greens-golf.jpg", tag: "Neighborhoods",
+body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green open space sets the tone for the whole neighborhood. It has its own homeowners association, Eastlake II, with its own clubs, pools and parks, separate from the original Hills and Shores and from the newer Eastlake III neighborhoods.</p>
+<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched the Greens grow from open land into one of Eastlake's most popular addresses. Here's what to know if you're thinking about buying or selling here.</p>
+<p><mark class="draft-note">[Betty: when the first Greens homes were built, and what you remember about the Greens being developed]</mark></p>
+
+<h2>The Eastlake II association</h2>
+<p>Every home in the Greens belongs to the Eastlake II master association. Its amenities are just for Greens residents:</p>
+<ul>
+<li><strong>Eastlake Tennis &amp; Swim Club</strong>, with pickleball courts</li>
+<li><strong>Eastlake Dolphin Beach</strong></li>
+<li><strong>Augusta Park and Pool</strong></li>
+<li>Parks and playgrounds throughout the neighborhood</li>
+</ul>
+<p>Some homes, especially condos, townhomes and gated communities, also belong to a smaller sub-association with its own dues. Always add the two together when you compare homes. <mark class="draft-note">[Betty: current Eastlake II master HOA dues, if you'd like to include them]</mark></p>
+<p>See my <a href="/blog/eastlake-hoas-and-amenities">complete guide to the Eastlake HOAs and amenities</a> to compare all three associations.</p>
+
+<h2>Life around the golf course</h2>
+<p>The Enagic Golf Club at Eastlake sits right in the Greens, so many streets look out over fairways and greenbelts. Even if you don't golf, the open space makes the neighborhood feel green and spacious.</p>
+<p><mark class="draft-note">[Betty: a favorite spot or two in the Greens, and what residents love most about living here]</mark></p>
+
+<h2>Homes and architecture</h2>
+<p><mark class="draft-note">[Betty: typical home styles and sizes, single-story vs. two-story, condos and townhomes, golf course and view lots, and any gated enclaves]</mark></p>
+
+<h2>A note on property taxes</h2>
+<p>Mello-Roos in the Greens depends on the specific home. Some properties in Eastlake's older communities, including the Greens, no longer pay Mello-Roos, while others still do. The northern portion of the Greens is also in the city's Eastlake Maintenance District #1, an open space maintenance assessment that is not Mello-Roos.</p>
+<p>The only way to know is to check the property tax bill for the specific address. My <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a> shows you how in about ten minutes, or send me the address and I'll look it up with you.</p>
+
+<h2>Schools</h2>
+<p>Olympic View Elementary opened in Eastlake Greens in 1995, Eastlake's second elementary school. Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
+
+<h2>Parks nearby</h2>
+<p>Beyond the Eastlake II parks, Chula Vista Community Park and Sunset View Park are close by.</p>
+
+<h2>Who is Eastlake Greens right for?</h2>
+<p>The Greens is a great fit for golfers, tennis and pickleball players, and anyone who loves green open space and club-style amenities close to home.</p>
+
+<h2>Ready to buy or sell in Eastlake Greens?</h2>
+<p>Whether you're looking for a home on the golf course or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144634/eastlakegreens" rel="noopener">See homes for sale in Eastlake Greens</a>, or <a href="/home-value">request your free home value</a>.</p>`
+},
+{
 slug: "eastlake-hoas-and-amenities",
 title: "A Complete Guide to the Eastlake HOAs and Amenities in Eastlake, Chula Vista, CA",
 short: "A complete guide to the Eastlake HOAs and amenities",

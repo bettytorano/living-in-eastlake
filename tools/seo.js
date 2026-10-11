@@ -119,6 +119,7 @@ const PAGES = {
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
   "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
+  "blog/living-in-eastlake-greens.html": { url: "/blog/living-in-eastlake-greens", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Greens: golf course views and club life", "/blog/living-in-eastlake-greens"]], published: "2026-10-11" },
   "blog/eastlake-schools-history.html": { url: "/blog/eastlake-schools-history", type: "Article", crumbs: [["Blog", "/blog"], ["The homes came first, then the schools", "/blog/eastlake-schools-history"]], published: "2026-09-26" },
   "blog/first-eastlake-home-132000.html": { url: "/blog/first-eastlake-home-132000", type: "Article", crumbs: [["Blog", "/blog"], ["Our first Eastlake home: $132,000 at a 10.25% interest rate", "/blog/first-eastlake-home-132000"]], published: "2026-09-19" },
   "blog/camping-out-for-eastlake-homes.html": { url: "/blog/camping-out-for-eastlake-homes", type: "Article", crumbs: [["Blog", "/blog"], ["Would you camp out overnight to buy a home? Eastlake buyers did", "/blog/camping-out-for-eastlake-homes"]], published: "2026-09-12" },
