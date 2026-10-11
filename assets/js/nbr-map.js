@@ -42,6 +42,7 @@ var NBR_BOUNDARIES = {
   },
   "eastlake-trails-north": {
     name: "Eastlake Trails North",
+    label: "left",
     // South tip: Otay Lakes Rd & Hunte Pkwy (shared corner with Greens and Trails) · East: Hunte Pkwy
     shape: [[32.657051, -116.953114], [32.654783, -116.954264], [32.652884, -116.952791], [32.649687, -116.953873],
             [32.647329, -116.950849], [32.648331, -116.949569], [32.649590, -116.949270], [32.650889, -116.949270]]
@@ -85,8 +86,15 @@ var NBR_BOUNDARIES = {
       var all = L.featureGroup().addTo(map);
       list.forEach(function (b) {
         L.polygon(b.shape, { color: "#15427d", weight: 3, fillColor: "#15427d", fillOpacity: 0.18 })
-          .bindTooltip(b.name, list.length > 1 ? { permanent: true, direction: "center", className: "nbr-label" } : { sticky: true })
+          .bindTooltip(b.name, { sticky: true })
           .addTo(all);
+        if (b.label === "left") {
+          // Label set off to the side, pointing at the area, so it never covers the streets
+          var west = b.shape.reduce(function (w, p) { return p[1] < w[1] ? p : w; });
+          var mid = b.shape.reduce(function (s, p) { return s + p[0]; }, 0) / b.shape.length;
+          L.tooltip({ permanent: true, direction: "left", offset: [-14, 0], className: "nbr-label" })
+            .setLatLng([mid, west[1]]).setContent(b.name).addTo(map);
+        }
         (b.spots || []).forEach(function (p) {
           L.circleMarker([p.lat, p.lng], { radius: 6, color: "#ffffff", weight: 2, fillColor: "#c9a84c", fillOpacity: 1 })
             .bindTooltip(p.name)
