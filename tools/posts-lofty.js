@@ -1,6 +1,189 @@
 // Posts moved from bettytorano.com (Lofty) on 2026-10-10, lightly edited for fair-housing wording.
 module.exports = [
 {
+slug: "living-in-eastlake-trails",
+title: "Living in Eastlake Trails, Chula Vista: Little League, Parks and Trails",
+short: "Living in Eastlake Trails: Little League, parks and trails",
+desc: "A local's guide to Eastlake Trails: the Eastlake Little League fields, the Eastlake III HOA, Mello-Roos, schools and parks, from an Eastlake resident since 1987.",
+date: "2026-10-11", img: "eastlake-trails.jpg", tag: "Neighborhoods",
+body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on land donated by the EastLake Development Company, and it's part of the Eastlake III association with its clubhouses, pools and trails.</p>
+<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched Eastlake Trails take shape. Here's what to know if you're thinking about buying or selling here.</p>
+<p><mark class="draft-note">[Betty: when Eastlake Trails was built, and what you remember about it being developed]</mark></p>
+
+<h2>Where is Eastlake Trails?</h2>
+<p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north and Olympic Parkway to the south.</p>
+<div class="nbr-map" data-nbr="eastlake-trails" role="region" aria-label="Map of the Eastlake Trails boundary"></div>
+<p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
+<script src="/assets/js/nbr-map.js?v=6" defer></script>
+
+<h2>The Eastlake III association</h2>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<ul>
+<li><strong>Eastlake Creekside Clubhouse</strong></li>
+<li><strong>Eastlake Woods Clubhouse</strong></li>
+<li><strong>Eastlake Pond</strong></li>
+<li>Multiple pools, fitness spaces, parks, playgrounds and scenic trails</li>
+</ul>
+<p>Some homes, especially condos, townhomes and gated communities, also belong to a smaller sub-association with its own dues. Always add the two together when you compare homes. See my <a href="/blog/eastlake-hoas-and-amenities">complete guide to the Eastlake HOAs and amenities</a>.</p>
+
+<h2>Home of Eastlake Little League</h2>
+<p>After years of playing on temporary lots, Eastlake Little League got its permanent fields here in Eastlake Trails. Today the complex hosts Opening Day, spring and fall seasons and All-Star games, and it's the home league of the 2013 U.S. Little League Champions. Read <a href="/blog/eastlake-little-league-history">the history of Eastlake Little League</a>.</p>
+<p><mark class="draft-note">[Betty: a favorite spot or two in Eastlake Trails, and what residents love most about living here]</mark></p>
+
+<h2>Homes and architecture</h2>
+<p><mark class="draft-note">[Betty: typical home styles and sizes in Eastlake Trails, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
+
+<h2>A note on property taxes</h2>
+<p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. Amounts and end dates depend on the specific home.</p>
+<p>The only way to know is to check the property tax bill for the specific address. My <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a> shows you how in about ten minutes, or send me the address and I'll look it up with you.</p>
+
+<h2>Schools</h2>
+<p>Arroyo Vista Charter School opened in Eastlake Trails in 1999. It started as a K–6 charter school and is now K–8. Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
+
+<h2>Parks and the outdoors</h2>
+<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
+
+<h2>Who is Eastlake Trails right for?</h2>
+<p>The Trails is a great fit for baseball fans, anyone who loves parks and trails, and buyers who want Eastlake III clubhouse amenities close to home.</p>
+
+<h2>Ready to buy or sell in Eastlake Trails?</h2>
+<p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144636/eastlaketrails" rel="noopener">See homes for sale in Eastlake Trails</a>, or <a href="/home-value">request your free home value</a>.</p>`
+},
+{
+slug: "living-in-eastlake-trails-north",
+title: "Living in Eastlake Trails North, Chula Vista: A Local's Guide",
+short: "Living in Eastlake Trails North: a local's guide",
+desc: "A local's guide to Eastlake Trails North: location, the Eastlake III HOA, Mello-Roos, schools and parks, from an Eastlake resident since 1987.",
+date: "2026-10-11", img: "eastlake-trails-north.jpg", tag: "Neighborhoods",
+body: `<p>Eastlake Trails North is part of the Eastlake III association, alongside Eastlake Trails, The Woods and Eastlake Vistas, with access to Eastlake III's clubhouses, pools and trails.</p>
+<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched Trails North take shape. Here's what to know if you're thinking about buying or selling here.</p>
+<p><mark class="draft-note">[Betty: when Trails North was built, and what you remember about it being developed]</mark></p>
+
+<h2>Where is Eastlake Trails North?</h2>
+<p>Trails North sits just north of Otay Lakes Road near Hunte Parkway, across Otay Lakes Road from Eastlake Trails.</p>
+<p><mark class="draft-note">[Betty: send the Trails North boundary drawn in red, and I'll add the map here]</mark></p>
+
+<h2>The Eastlake III association</h2>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<ul>
+<li><strong>Eastlake Creekside Clubhouse</strong></li>
+<li><strong>Eastlake Woods Clubhouse</strong></li>
+<li><strong>Eastlake Pond</strong></li>
+<li>Multiple pools, fitness spaces, parks, playgrounds and scenic trails</li>
+</ul>
+<p>Some homes, especially condos, townhomes and gated communities, also belong to a smaller sub-association with its own dues. Always add the two together when you compare homes. See my <a href="/blog/eastlake-hoas-and-amenities">complete guide to the Eastlake HOAs and amenities</a>.</p>
+
+<h2>What makes Trails North special</h2>
+<p><mark class="draft-note">[Betty: a favorite spot or two in Trails North, and what residents love most about living here]</mark></p>
+
+<h2>Homes and architecture</h2>
+<p><mark class="draft-note">[Betty: typical home styles and sizes in Trails North, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
+
+<h2>A note on property taxes</h2>
+<p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. Amounts and end dates depend on the specific home.</p>
+<p>The only way to know is to check the property tax bill for the specific address. My <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a> shows you how in about ten minutes, or send me the address and I'll look it up with you.</p>
+
+<h2>Schools</h2>
+<p>Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
+
+<h2>Parks and the outdoors</h2>
+<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
+
+<h2>Ready to buy or sell in Eastlake Trails North?</h2>
+<p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" rel="noopener">See homes for sale in Eastlake Trails North</a>, or <a href="/home-value">request your free home value</a>.</p>`
+},
+{
+slug: "living-in-the-woods-eastlake",
+title: "Living in The Woods at Eastlake, Chula Vista: Hillside Views and Clubhouse Life",
+short: "Living in The Woods at Eastlake: hillside views and clubhouse life",
+desc: "A local's guide to The Woods at Eastlake: the Woods Clubhouse, the Eastlake III HOA, Mello-Roos and CFD 07M, schools and parks, from an Eastlake resident since 1987.",
+date: "2026-10-11", img: "eastlake-woods-aerial-1.jpg", tag: "Neighborhoods",
+body: `<p>The Woods is part of the Eastlake III association, with hillside streets, views toward the mountains and its own Eastlake Woods Clubhouse.</p>
+<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched The Woods take shape. Here's what to know if you're thinking about buying or selling here.</p>
+<p><mark class="draft-note">[Betty: when The Woods was built, and what you remember about it being developed]</mark></p>
+
+<h2>Where is The Woods?</h2>
+<p>The Woods sits on Eastlake's eastern hills, near EastLake Middle School and the District at Eastlake shops.</p>
+<p><mark class="draft-note">[Betty: send The Woods boundary drawn in red, and I'll add the map here]</mark></p>
+
+<h2>The Eastlake III association</h2>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<ul>
+<li><strong>Eastlake Creekside Clubhouse</strong></li>
+<li><strong>Eastlake Woods Clubhouse</strong></li>
+<li><strong>Eastlake Pond</strong></li>
+<li>Multiple pools, fitness spaces, parks, playgrounds and scenic trails</li>
+</ul>
+<p>Some homes, especially condos, townhomes and gated communities, also belong to a smaller sub-association with its own dues. Always add the two together when you compare homes. See my <a href="/blog/eastlake-hoas-and-amenities">complete guide to the Eastlake HOAs and amenities</a>.</p>
+
+<h2>Hillside living</h2>
+<p>Streets in The Woods climb into Eastlake's eastern hills, so many homes look out toward the mountains and the Otay Lakes.</p>
+<p><mark class="draft-note">[Betty: a favorite spot or two in The Woods, and what residents love most about living here]</mark></p>
+
+<h2>Homes and architecture</h2>
+<p><mark class="draft-note">[Betty: typical home styles and sizes in The Woods, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
+
+<h2>A note on property taxes</h2>
+<p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. The Woods is also in the City of Chula Vista's CFD 07M, a maintenance district that funds upkeep of public landscaping and open space in the Woods and Vistas area. Amounts and end dates depend on the specific home.</p>
+<p>The only way to know is to check the property tax bill for the specific address. My <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a> shows you how in about ten minutes, or send me the address and I'll look it up with you.</p>
+
+<h2>Schools</h2>
+<p>EastLake Middle School opened in 2003, about 16 years after the first Eastlake residents moved in. Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
+
+<h2>Parks and the outdoors</h2>
+<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
+
+<h2>Who is The Woods right for?</h2>
+<p>The Woods is a great fit for anyone who wants views, hillside streets and clubhouse amenities, with shopping and the middle school close by.</p>
+
+<h2>Ready to buy or sell in The Woods?</h2>
+<p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" rel="noopener">See homes for sale in The Woods</a>, or <a href="/home-value">request your free home value</a>.</p>`
+},
+{
+slug: "living-in-eastlake-vistas",
+title: "Living in Eastlake Vistas, Chula Vista: Views, Parks and the Otay Lakes",
+short: "Living in Eastlake Vistas: views, parks and the Otay Lakes",
+desc: "A local's guide to Eastlake Vistas: Mountain Hawk Park, the Otay Lakes, the Eastlake III HOA, Mello-Roos and CFD 07M, and schools, from an Eastlake resident since 1987.",
+date: "2026-10-11", img: "eastlake-hawk-park-1.jpg", tag: "Neighborhoods",
+body: `<p>Eastlake Vistas sits along Eastlake's eastern hills near Mountain Hawk Park and the Otay Lakes, with scenic views, outdoor recreation and newer construction.</p>
+<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched Eastlake Vistas take shape. Here's what to know if you're thinking about buying or selling here.</p>
+<p><mark class="draft-note">[Betty: when Eastlake Vistas was built, and what you remember about it being developed]</mark></p>
+
+<h2>Where is Eastlake Vistas?</h2>
+<p>Eastlake Vistas is on the eastern edge of Eastlake, near Mountain Hawk Park and the Otay Lakes.</p>
+<p><mark class="draft-note">[Betty: send the Eastlake Vistas boundary drawn in red, and I'll add the map here]</mark></p>
+
+<h2>The Eastlake III association</h2>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<ul>
+<li><strong>Eastlake Creekside Clubhouse</strong></li>
+<li><strong>Eastlake Woods Clubhouse</strong></li>
+<li><strong>Eastlake Pond</strong></li>
+<li>Multiple pools, fitness spaces, parks, playgrounds and scenic trails</li>
+</ul>
+<p>Some homes, especially condos, townhomes and gated communities, also belong to a smaller sub-association with its own dues. Always add the two together when you compare homes. See my <a href="/blog/eastlake-hoas-and-amenities">complete guide to the Eastlake HOAs and amenities</a>.</p>
+
+<h2>Views and the outdoors</h2>
+<p>Mountain Hawk Park and the Otay Lakes are right nearby, and the hills around the neighborhood give many homes wide views. The Eastlake Little League Juniors Field on Olympic Vista Road is also in the Vistas, home to the league's Juniors and Challenger divisions.</p>
+<p><mark class="draft-note">[Betty: a favorite spot or two in Eastlake Vistas, and what residents love most about living here]</mark></p>
+
+<h2>Homes and architecture</h2>
+<p><mark class="draft-note">[Betty: typical home styles and sizes in Eastlake Vistas, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
+
+<h2>A note on property taxes</h2>
+<p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. Eastlake Vistas is also in the City of Chula Vista's CFD 07M, a maintenance district that funds upkeep of public landscaping and open space in the Woods and Vistas area. Amounts and end dates depend on the specific home.</p>
+<p>The only way to know is to check the property tax bill for the specific address. My <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a> shows you how in about ten minutes, or send me the address and I'll look it up with you.</p>
+
+<h2>Schools</h2>
+<p>Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
+
+<h2>Who is Eastlake Vistas right for?</h2>
+<p>The Vistas is a great fit for anyone who loves the outdoors, wants views and appreciates newer construction close to the Otay Lakes.</p>
+
+<h2>Ready to buy or sell in Eastlake Vistas?</h2>
+<p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144635/eastlakevistas" rel="noopener">See homes for sale in Eastlake Vistas</a>, or <a href="/home-value">request your free home value</a>.</p>`
+},
+{
 slug: "living-in-eastlake-greens",
 title: "Living in Eastlake Greens, Chula Vista: Golf Course Views and Club Life",
 short: "Living in Eastlake Greens: golf course views and club life",
@@ -14,7 +197,7 @@ body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green 
 <p>Eastlake Greens sits in the middle of Eastlake, bounded by Otay Lakes Road to the north, Eastlake Parkway to the west, Hunte Parkway to the east and Olympic Parkway to the south.</p>
 <div class="nbr-map" data-nbr="eastlake-greens" role="region" aria-label="Map of the Eastlake Greens boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=5" defer></script>
+<script src="/assets/js/nbr-map.js?v=6" defer></script>
 
 <h2>The Eastlake II association</h2>
 <p>Every home in the Greens belongs to the Eastlake II master association. Its amenities are just for Greens residents:</p>
@@ -217,7 +400,7 @@ body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, C
 <p>Eastlake Hills sits on the west side of Eastlake, between Corral Canyon Road and East H Street, just west of State Route 125.</p>
 <div class="nbr-map" data-nbr="eastlake-hills" role="region" aria-label="Map of the Eastlake Hills boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=5" defer></script>
+<script src="/assets/js/nbr-map.js?v=6" defer></script>
 <h2>The original Eastlake: a neighborhood with real history</h2>
 <p>When Eastlake launched in the mid-1980s, it was a defining moment for Chula Vista. As the city's first master-planned community, Eastlake set the standard for how large-scale residential development would work in Southern California. Eastlake Hills and Eastlake Shores were the pioneering first phases, the neighborhoods that established the Eastlake identity before the golf course, the later villages and the gated enclaves followed.</p>
 <p>That founding status gives Eastlake Hills real depth: decades of history, an engaged resident base and a reputation that has only strengthened over time.</p>
@@ -250,7 +433,7 @@ body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, 
 <p>Eastlake Shores sits around the Eastlake lake, between East H Street and State Route 125, just across East H Street from Eastlake Hills.</p>
 <div class="nbr-map" data-nbr="eastlake-shores" role="region" aria-label="Map of the Eastlake Shores boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=5" defer></script>
+<script src="/assets/js/nbr-map.js?v=6" defer></script>
 <h2>A founding neighborhood with four decades of community</h2>
 <p>Eastlake Shores was one of the first addresses to take shape when Eastlake launched. The neighborhood was designed around a community lake, giving it a resort-inspired character that was distinctive from day one. Mature landscaping, established common areas and a resident base that has grown together over decades give Shores the kind of genuine community feel newer developments rarely achieve.</p>
 <h2>Homes and architecture</h2>
