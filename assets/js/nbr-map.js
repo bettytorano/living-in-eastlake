@@ -7,8 +7,7 @@ var NBR_BOUNDARIES = {
     name: "Eastlake Hills",
     // West: Corral Canyon Rd · Southeast: East H St · Northeast corner near State Route 125
     shape: [[32.660345, -116.991536], [32.661267, -116.980283], [32.658416, -116.977647], [32.655173, -116.980283],
-            [32.650615, -116.986163], [32.650769, -116.988677], [32.659423, -116.992205]],
-    spots: [{ name: "EastLake Elementary School", lat: 32.6559, lng: -116.9845 }]
+            [32.650615, -116.986163], [32.650769, -116.988677], [32.659423, -116.992205]]
   },
   "eastlake-shores": {
     name: "Eastlake Shores",
