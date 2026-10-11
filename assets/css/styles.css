@@ -1000,3 +1000,30 @@ h1, h2, h3 { color: var(--brand-dark); }
 .sg-cta { justify-content: center; margin-top: 32px; }
 @media (max-width: 900px) { .sg-steps, .sg-docs { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .sg-steps, .sg-docs { grid-template-columns: 1fr; } .sg-feature { flex-direction: column; } }
+
+/* Neighborhoods page */
+.nb-jump { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; margin-top: 24px; max-width: 900px; }
+.nb-jump a { display: block; background: #fff; border: 1px solid rgba(201,168,76,.5); text-decoration: none; transition: transform .2s; }
+.nb-jump a:hover { transform: translateY(-3px); }
+.nb-jump img { display: block; width: 100%; aspect-ratio: 3/2; object-fit: cover; }
+.nb-jump span { display: block; padding: 7px 6px; font-size: .78rem; font-weight: 600; color: var(--brand); text-align: center; }
+.nb-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 28px; }
+.nb-card { background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); display: flex; flex-direction: column; scroll-margin-top: 90px; }
+.nb-card-img { position: relative; }
+.nb-card-img img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+.nb-hoa { position: absolute; left: 16px; top: 16px; background: var(--brand); color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; }
+.nb-card-body { padding: 24px 26px 26px; display: flex; flex-direction: column; flex: 1; }
+.nb-card-body h3 { margin: 0 0 8px; font-size: 1.5rem; }
+.nb-card-body > p { margin: 0 0 14px; color: #3d4852; }
+.nb-card-body h4 { margin: 0 0 6px; font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.nb-card-body .checks { margin: 0 0 18px; }
+.nb-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+.nb-guide { margin-top: 14px; font-weight: 600; font-size: .9rem; }
+.nb-fits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 26px; }
+.nb-fit { display: flex; gap: 16px; align-items: flex-start; background: #fff; padding: 22px; border-top: 3px solid var(--gold); box-shadow: var(--shadow); }
+.nb-fit .ww-icon { flex: 0 0 auto; }
+.nb-fit h3 { margin: 2px 0 6px; font-size: 1.15rem; }
+.nb-fit p { margin: 0; font-size: .95rem; color: #3d4852; }
+#map .bg-head { margin-bottom: 18px; }
+@media (max-width: 900px) { .nb-jump { grid-template-columns: repeat(4, 1fr); } .nb-fits { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 700px) { .nb-grid, .nb-fits { grid-template-columns: 1fr; } .nb-jump { grid-template-columns: repeat(3, 1fr); } }
