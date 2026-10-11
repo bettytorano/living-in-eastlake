@@ -17,7 +17,7 @@ body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on
 <script src="/assets/js/nbr-map.js?v=6" defer></script>
 
 <h2>The Eastlake III association</h2>
-<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
 <ul>
 <li><strong>Eastlake Creekside Clubhouse</strong></li>
 <li><strong>Eastlake Woods Clubhouse</strong></li>
@@ -64,7 +64,7 @@ body: `<p>Eastlake Trails North is part of the Eastlake III association, alongsi
 <p><mark class="draft-note">[Betty: send the Trails North boundary drawn in red, and I'll add the map here]</mark></p>
 
 <h2>The Eastlake III association</h2>
-<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
 <ul>
 <li><strong>Eastlake Creekside Clubhouse</strong></li>
 <li><strong>Eastlake Woods Clubhouse</strong></li>
@@ -107,7 +107,7 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 <p><mark class="draft-note">[Betty: send The Woods boundary drawn in red, and I'll add the map here]</mark></p>
 
 <h2>The Eastlake III association</h2>
-<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
 <ul>
 <li><strong>Eastlake Creekside Clubhouse</strong></li>
 <li><strong>Eastlake Woods Clubhouse</strong></li>
@@ -154,7 +154,7 @@ body: `<p>Eastlake Vistas sits along Eastlake's eastern hills near Mountain Hawk
 <p><mark class="draft-note">[Betty: send the Eastlake Vistas boundary drawn in red, and I'll add the map here]</mark></p>
 
 <h2>The Eastlake III association</h2>
-<p>Every home here belongs to the <strong>Eastlake III</strong> master association, shared with Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
+<p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
 <ul>
 <li><strong>Eastlake Creekside Clubhouse</strong></li>
 <li><strong>Eastlake Woods Clubhouse</strong></li>
