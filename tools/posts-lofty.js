@@ -76,8 +76,8 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 <p>Streets in The Woods climb into Eastlake's eastern hills, so many homes look out toward the mountains and the Otay Lakes.</p>
 
 <h2>Homes and Architecture</h2>
-<p>The Woods is considered Eastlake's high-end neighborhood. Every home is detached, and most are larger homes on larger lots. At the top is <strong>The Gates</strong>, a gated enclave of custom homes, many with views of the Otay Lakes.</p>
-<p>Several smaller clusters of homes in The Woods also have their own private gates. Gated communities usually come with a sub-association and its own dues, so be sure to add those to the Eastlake III dues when you compare homes.</p>
+<p>The Woods is widely regarded as Eastlake's premier address. Every residence is detached, and most are generously sized homes on larger lots, offering a sense of space and privacy that's rare in a master-planned community. Within the neighborhood lies <strong>The Gates</strong>, an exclusive gated enclave of custom homes, many framed by sweeping views of the Otay Lakes.</p>
+<p>Several smaller collections of homes throughout The Woods enjoy their own private gated entries as well. Gated communities typically include a sub-association with separate dues, so be sure to factor those in alongside the Eastlake III dues when comparing homes.</p>
 
 <h2>A Note on Property Taxes</h2>
 <p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. The Woods is also in the City of Chula Vista's CFD 07M, a maintenance district that funds upkeep of public landscaping and open space in the Woods and Vistas area. Amounts and end dates depend on the specific home.</p>
