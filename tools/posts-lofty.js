@@ -10,6 +10,12 @@ body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green 
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched the Greens grow from open land into one of Eastlake's most popular addresses. Here's what to know if you're thinking about buying or selling here.</p>
 <p><mark class="draft-note">[Betty: when the first Greens homes were built, and what you remember about the Greens being developed]</mark></p>
 
+<h2>Where is Eastlake Greens?</h2>
+<p>Eastlake Greens sits in the middle of Eastlake, bounded by Otay Lakes Road to the north, Eastlake Parkway to the west, Hunte Parkway to the east and Olympic Parkway to the south.</p>
+<div class="nbr-map" data-nbr="eastlake-greens" role="region" aria-label="Map of the Eastlake Greens boundary"></div>
+<p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
+<script src="/assets/js/nbr-map.js?v=4" defer></script>
+
 <h2>The Eastlake II association</h2>
 <p>Every home in the Greens belongs to the Eastlake II master association. Its amenities are just for Greens residents:</p>
 <ul>
@@ -207,6 +213,11 @@ desc: "A local's guide to Eastlake Hills, one of Eastlake's two original neighbo
 date: "2026-03-17", img: "eastlake-hills.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, Chula Vista's first master-planned community. Built in the mid-1980s alongside Eastlake Shores, it is where the Eastlake story started, and that history is something you can feel the moment you drive through the neighborhood. Mature trees, well-established streets and a genuine sense of community give Eastlake Hills a character that newer developments are still working to build.</p>
 <p>It's also my home. I moved to Eastlake Hills in 1987, and as a Realtor® who works in every Eastlake neighborhood, I'm in Eastlake Hills regularly. Here's an honest guide to what makes it worth your attention, whether you are buying or selling.</p>
+<h2>Where is Eastlake Hills?</h2>
+<p>Eastlake Hills sits on the west side of Eastlake, between Corral Canyon Road and East H Street, just west of State Route 125.</p>
+<div class="nbr-map" data-nbr="eastlake-hills" role="region" aria-label="Map of the Eastlake Hills boundary"></div>
+<p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
+<script src="/assets/js/nbr-map.js?v=4" defer></script>
 <h2>The original Eastlake: a neighborhood with real history</h2>
 <p>When Eastlake launched in the mid-1980s, it was a defining moment for Chula Vista. As the city's first master-planned community, Eastlake set the standard for how large-scale residential development would work in Southern California. Eastlake Hills and Eastlake Shores were the pioneering first phases, the neighborhoods that established the Eastlake identity before the golf course, the later villages and the gated enclaves followed.</p>
 <p>That founding status gives Eastlake Hills real depth: decades of history, an engaged resident base and a reputation that has only strengthened over time.</p>
@@ -235,6 +246,11 @@ desc: "A local's guide to Eastlake Shores: the lake, Beach Club and lagoon, home
 date: "2026-03-27", img: "eastlake-shores-beach.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, Chula Vista's first master-planned community. Built in the mid-1980s alongside Eastlake Hills, Shores helped establish the Eastlake identity before the golf course, the later village phases and the gated enclaves that followed. Four decades later, it remains one of the most beloved and in-demand communities in Eastlake.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I work with buyers and sellers in Eastlake Shores regularly. Here's what you need to know about this established, lakefront neighborhood.</p>
+<h2>Where is Eastlake Shores?</h2>
+<p>Eastlake Shores sits around the Eastlake lake, between East H Street and State Route 125, just across East H Street from Eastlake Hills.</p>
+<div class="nbr-map" data-nbr="eastlake-shores" role="region" aria-label="Map of the Eastlake Shores boundary"></div>
+<p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
+<script src="/assets/js/nbr-map.js?v=4" defer></script>
 <h2>A founding neighborhood with four decades of community</h2>
 <p>Eastlake Shores was one of the first addresses to take shape when Eastlake launched. The neighborhood was designed around a community lake, giving it a resort-inspired character that was distinctive from day one. Mature landscaping, established common areas and a resident base that has grown together over decades give Shores the kind of genuine community feel newer developments rarely achieve.</p>
 <h2>Homes and architecture</h2>
