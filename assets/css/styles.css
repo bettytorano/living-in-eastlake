@@ -1032,3 +1032,13 @@ h1, h2, h3 { color: var(--brand-dark); }
 .nbr-map { height: 420px; margin: 18px 0 8px; border: 1px solid var(--line); box-shadow: var(--shadow); z-index: 0; font-family: var(--sans); }
 .nbr-map-note { font-size: .85rem; color: var(--muted); margin-top: 0; }
 @media (max-width: 640px) { .nbr-map { height: 340px; } }
+
+/* Life in Eastlake page */
+.lf-why { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 28px; margin-top: 26px; }
+.lf-why-1 { grid-template-columns: 1fr; margin-top: 0; }
+.lf-why .ww-item { background: #fff; padding: 20px 22px; border-top: 3px solid var(--gold); box-shadow: var(--shadow); }
+.lf-why .ww-item h3 { margin: 0 0 6px; font-size: 1.15rem; }
+.lf-why .ww-item p { margin: 0; font-size: .95rem; color: #3d4852; }
+.lf-parks { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 24px 0; }
+#things-to-do .bg-head, #parks .bg-head, #stories .bg-head { margin-bottom: 12px; }
+@media (max-width: 760px) { .lf-why, .lf-parks { grid-template-columns: 1fr; } }
