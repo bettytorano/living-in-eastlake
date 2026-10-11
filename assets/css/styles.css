@@ -981,3 +981,4 @@ h1, h2, h3 { color: var(--brand-dark); }
 .mr-help { margin-top: 18px; font-weight: 600; }
 @media (max-width: 900px) { .mr-quicks { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .mr-quicks, .mr-districts, .mr-two { grid-template-columns: 1fr; } }
+.mr-district p + p { margin-top: 10px; }
