@@ -1048,11 +1048,5 @@ h1, h2, h3 { color: var(--brand-dark); }
 .leaflet-tooltip-left.nbr-label::before { border-left-color: var(--brand); }
 .leaflet-tooltip-right.nbr-label::before { border-right-color: var(--brand); }
 
-/* About page timeline (simple list) */
-.ab-tl { list-style: none; margin: 18px 0 0; padding: 0; max-width: 760px; }
-.ab-tl li { display: grid; grid-template-columns: 190px 1fr; gap: 12px; padding: 9px 0; border-bottom: 1px solid rgba(21,66,125,.08); color: #3d4852; font-size: .98rem; }
-.ab-tl li:last-child { border-bottom: 0; }
-.ab-when { font-weight: 600; color: var(--brand); }
-@media (max-width: 640px) { .ab-tl li { grid-template-columns: 1fr; gap: 2px; } }
 #story .bg-head { margin-bottom: 14px; }
 .ww-solo .bg-head { justify-content: center; margin-bottom: 14px; }
