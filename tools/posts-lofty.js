@@ -46,7 +46,8 @@ body: `<p>Eastlake Trails is home to the celebrated Eastlake Little League field
 <p>The Eastlake III neighborhoods sit close to some of South County's finest outdoor spaces: Mountain Hawk Park, Salt Creek Park &amp; Recreation Center and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
 
 <h2>Who Are the Trails and Trails North Right For?</h2>
-<p>The Trails and Trails North are a wonderful fit for baseball fans, outdoor enthusiasts who love parks and trails, and buyers who want Eastlake III clubhouse amenities just minutes from home.</p>
+<p>With a townhome complex alongside detached homes of every size, the Trails welcomes a wide range of buyers. First-time buyers can find an entry point into Eastlake III, while move-up buyers will appreciate the larger single-family homes, and Trails North offers detached homes in a quieter, tucked-away setting.</p>
+<p>Both are a wonderful fit for baseball fans, outdoor enthusiasts who love parks and trails, and anyone who wants Eastlake III clubhouse amenities just minutes from home.</p>
 
 <h2>Ready to Buy or Sell in Eastlake Trails or Trails North?</h2>
 <p>Whether you're searching for your next home or preparing to sell, I bring nearly 40 years of Eastlake knowledge and a neighbor's perspective to every move. <a href="https://bettytorano.com/neighborhood/159144636/eastlaketrails" rel="noopener">See homes for sale in Eastlake Trails</a> or <a href="https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" rel="noopener">Trails North</a>, or <a href="/home-value">request your free home value</a>.</p>`
@@ -139,7 +140,8 @@ body: `<p>Perched along Eastlake's eastern hills near Mountain Hawk Park and the
 <p>Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Because attendance boundaries can change, always confirm the assigned schools for a specific address with each district.</p>
 
 <h2>Who Is Eastlake Vistas Right For?</h2>
-<p>The Vistas is an excellent fit for outdoor enthusiasts, buyers who want views, and anyone who appreciates newer construction close to the Otay Lakes.</p>
+<p>Because it offers everything from condos and townhomes to larger detached homes and a collection of gated homes, the Vistas appeals to an unusually broad range of buyers. First-time buyers and downsizers will find low-maintenance condo and townhome living, move-up buyers can step into a larger single-family home, and buyers seeking privacy and views will be drawn to the gated homes overlooking the Otay Lakes. The condos and townhomes also attract investors looking for steady rental demand in a desirable neighborhood.</p>
+<p>It is an excellent fit for outdoor enthusiasts, buyers who want views, and anyone who appreciates newer construction close to the Otay Lakes.</p>
 
 <h2>Ready to Buy or Sell in Eastlake Vistas?</h2>
 <p>Whether you're searching for your next home or preparing to sell, I bring nearly 40 years of Eastlake knowledge and a neighbor's perspective to every move. <a href="https://bettytorano.com/neighborhood/159144635/eastlakevistas" rel="noopener">See homes for sale in Eastlake Vistas</a>, or <a href="/home-value">request your free home value</a>.</p>`
