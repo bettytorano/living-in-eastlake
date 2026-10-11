@@ -193,7 +193,8 @@ body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green 
 <p>Beyond the Eastlake II parks, Chula Vista Community Park and Sunset View Park are close by.</p>
 
 <h2>Who Is Eastlake Greens Right For?</h2>
-<p>The Greens is a great fit for golfers, tennis and pickleball players, and anyone who loves green open space and club-style amenities close to home.</p>
+<p>Eastlake Greens offers one of the widest variety of home types in Eastlake, from townhomes and single-family homes of every size to gated custom homes on golf course view lots. That range makes the Greens a great fit for first-time buyers, move-up buyers and downsizers alike.</p>
+<p>It's also a natural choice for golfers, tennis and pickleball players, and anyone who loves green open space and club-style amenities close to home.</p>
 
 <h2>Ready to Buy or Sell in Eastlake Greens?</h2>
 <p>Whether you're looking for a home on the golf course or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144634/eastlakegreens" rel="noopener">See homes for sale in Eastlake Greens</a>, or <a href="/home-value">request your free home value</a>.</p>`
