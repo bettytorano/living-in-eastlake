@@ -11,7 +11,7 @@ body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on
 <p><mark class="draft-note">[Betty: when Eastlake Trails was built, and what you remember about it being developed]</mark></p>
 
 <h2>Where is Eastlake Trails?</h2>
-<p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north and Olympic Parkway to the south.</p>
+<p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north, Old Janal Ranch Road to the east and Olympic Parkway to the south.</p>
 <div class="nbr-map" data-nbr="eastlake-trails" role="region" aria-label="Map of the Eastlake Trails boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
 <script src="/assets/js/nbr-map.js?v=7" defer></script>
