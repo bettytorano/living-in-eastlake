@@ -19,7 +19,7 @@ module.exports = [
   "desc": "In 1987 Betty Torano bought a three-bedroom Eastlake home for $132,000 at a 10.25% mortgage rate. What buying in early Eastlake was really like.",
   "date": "2026-09-19",
   "dateLabel": "September 19, 2026",
-  "img": "eastlake-hills.jpg",
+  "img": "eastlake-hills-sign.jpg",
   "reel": "DdYMIosyvF4",
   "tag": "Eastlake History",
   "body": "\n<p>Our first Eastlake home cost $132,000. Our mortgage interest rate? <strong>10.25%.</strong></p>\n<h2>What $132,000 bought in 1987</h2>\n<p>In 1987 we purchased a three-bedroom, two-and-a-half-bath home with about 1,800 square feet, in the final phase of our neighborhood.</p>\n<h2>Why each phase cost more</h2>\n<p>Builders released Eastlake homes in phases, and prices increased with each new release. Buyers knew that if they missed one phase, they could pay more in the next. That's a big part of why some families <a href=\"/blog/camping-out-for-eastlake-homes\">camped out overnight</a> for the opportunity to buy.</p>\n<h2>Then and now</h2>\n<p>Interest rates and prices have changed a lot since then, and so has Eastlake. If you bought in the early years, you've likely built significant equity. If you're curious what your home is worth today, I'm happy to prepare a <a href=\"/home-value\">free, no-pressure home value</a> based on recent sales near you.</p>\n<p><strong>Did you buy an early Eastlake home?</strong> What did you pay, and do you remember your interest rate? I'd love to hear.</p>"
