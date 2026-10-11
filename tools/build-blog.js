@@ -63,7 +63,7 @@ ${p.body}
 </section>
 <section class="section alt">
   <div class="wrap">
-    <h2 class="center">More from the blog</h2>
+    <h2 class="center">More from the Blog</h2>
     <div class="grid grid-3 blog-grid">
 ${related.map(card).join("\n")}
     </div>
@@ -74,16 +74,16 @@ ${p.reel ? IG : ""}`;
 }
 
 // Index, grouped by topic
-const groups = [["Eastlake Guide", "Eastlake guides"], ["Neighborhoods", "Neighborhoods"], ["Selling", "Selling in Eastlake"], ["Eastlake History", "Eastlake history"], ["Chula Vista", "Around Chula Vista"]];
+const groups = [["Eastlake Guide", "Eastlake Guides"], ["Neighborhoods", "Neighborhoods"], ["Selling", "Selling in Eastlake"], ["Eastlake History", "Eastlake History"], ["Chula Vista", "Around Chula Vista"]];
 const featured = `      <a class="blog-card blog-featured" href="/mello-roos-eastlake">
         <div class="blog-card-img"><img src="/assets/img/eastlake-greens-golf-view-2.jpg" alt="" width="1200" height="800" loading="lazy"></div>
-        <div class="blog-card-body"><span class="tag">Featured guide</span><h3>Mello-Roos in Eastlake: who still pays, what it pays for, and how to check any home</h3><p>The difference between school Mello-Roos and city open space assessments, plus a 10-minute way to check any Eastlake address.</p><span class="blog-card-more">Read the guide →</span></div>
+        <div class="blog-card-body"><span class="tag">Featured guide</span><h3>Mello-Roos in Eastlake: Who Pays and How to Check Any Home</h3><p>The difference between school Mello-Roos and city open space assessments, plus a 10-minute way to check any Eastlake address.</p><span class="blog-card-more">Read the guide →</span></div>
       </a>`;
 const index = `
 <section class="hero-light" style="--hero-img: url('/assets/img/eastlake-paddleboat.jpg')">
   <div class="wrap">
     <span class="eyebrow">The Living in Eastlake Blog</span>
-    <h1>Eastlake stories, guides &amp; insights</h1>
+    <h1>Eastlake Stories, Guides &amp; Insights</h1>
     <p class="lead">Nearly 40 years of Eastlake history, plus practical guides for buying, selling and living here.</p>
     <div class="blog-topics">${groups.filter(([t]) => posts.some(p => p.tag === t)).map(([t, l]) => `<a href="#${t.toLowerCase().replace(/\s+/g, "-")}">${l}</a>`).join("")}</div>
   </div>
@@ -99,7 +99,7 @@ ${posts.filter(p => p.tag === t).map(card).join("\n")}
 </section>
 <section class="section lake">
   <div class="wrap center">
-    <h2>Have an Eastlake story to share?</h2>
+    <h2>Have an Eastlake Story to Share?</h2>
     <p class="lead">Many of these posts started with neighbors' memories. Send me yours, and follow along for new stories.</p>
     <div class="btn-row" style="justify-content:center"><a class="btn btn-square" href="https://www.instagram.com/bettytorano/" rel="noopener">Follow @bettytorano <span aria-hidden="true">↗</span></a><a class="btn secondary" href="mailto:betty.torano@exprealty.com">Email Betty</a></div>
   </div>

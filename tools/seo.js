@@ -81,6 +81,12 @@ const FAQ = {
     ["When did the Eastlake schools open?", "EastLake Elementary opened in 1989, Eastlake High School in 1992, Olympic View Elementary in 1995, Arroyo Vista Charter School in 1999, EastLake Middle School in 2003 (about 16 years after the first residents moved in) and Salt Creek Elementary in 2004."],
     ["Can you help me compare the total monthly cost of two Eastlake homes?", "Yes. I'll line up price, HOA dues, Mello-Roos and other special taxes, and estimated property tax side by side so you can compare the real monthly cost. <a href=\"#ask\">Send me your question</a>."]
   ],
+  "life-in-eastlake.html": [
+    ["What is there to do in Eastlake, Chula Vista?", "Each of Eastlake's three HOAs has its own amenities for its residents. Eastlake I (Hills and Shores) has the Beach Club, the lagoon and paddleboats, and the walking path around the Eastlake lake is open to everyone. Eastlake II (Greens) has the Tennis & Swim Club, Dolphin Beach and Augusta Park. Eastlake III (Trails, Trails North, The Woods and Vistas) has the Creekside and Woods clubhouses and Eastlake Pond. Open to everyone nearby are the Enagic Golf Club, Eastlake Little League, Mountain Hawk Park, the Otay Lakes, Mother Miguel Mountain, the Elite Athlete Training Center, Sesame Place San Diego and the North Island Credit Union Amphitheatre."],
+    ["Is Eastlake close to the Otay Lakes?", "Yes. The Lower Otay Reservoir sits on Eastlake's eastern edge, near Eastlake Vistas, The Woods and Mountain Hawk Park, with fishing, boating, picnics and trails."],
+    ["Where do Eastlake residents shop?", "Most everyday shopping is at the Eastlake Village Center, Eastlake Village Marketplace and Village Walk at Eastlake. Otay Ranch Town Center, an outdoor mall with dining and a movie theater, is just south."],
+    ["Do Eastlake HOAs include amenities?", "Yes. Each of Eastlake's three HOAs has its own amenities for residents, such as the Beach Club in Eastlake I, the Tennis & Swim Club in Eastlake II and the Creekside and Woods clubhouses in Eastlake III. See the Eastlake HOAs and amenities guide on this site to compare them."]
+  ],
   "sellers-guide.html": [
     ["How do I find out what my Eastlake home is worth?", "Request a free home value. I prepare it personally using recent Eastlake sales near you, and I account for things online estimates miss, like views, upgrades, HOA and Mello-Roos status."],
     ["What documents do Eastlake sellers need?", "Every seller completes the standard California disclosures, including the Transfer Disclosure Statement (TDS) and Seller Property Questionnaire (SPQ), which I give you when we list so your answers are ready before escrow. Eastlake sellers also usually need HOA documents for the Eastlake I, II or III association (Civil Code §4525) and the Notice of Special Tax for any Mello-Roos district on the home (Civil Code §1102.6b)."],
@@ -207,7 +213,7 @@ for (const [file, cfg] of Object.entries(PAGES)) {
     const section = `<section class="section alt" id="faq">
   <div class="wrap faq">
     <span class="eyebrow">Questions, answered</span>
-    <h2>Frequently asked questions</h2>
+    <h2>Frequently Asked Questions</h2>
 ${faqs.map(([q, a]) => `    <details>\n      <summary>${q}</summary>\n      <p>${a}</p>\n    </details>`).join("\n")}
   </div>
 </section>`;
