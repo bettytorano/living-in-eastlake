@@ -1042,3 +1042,4 @@ h1, h2, h3 { color: var(--brand-dark); }
 .lf-parks { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin: 24px 0; }
 #things-to-do .bg-head, #parks .bg-head, #stories .bg-head { margin-bottom: 12px; }
 @media (max-width: 760px) { .lf-why, .lf-parks { grid-template-columns: 1fr; } }
+.lf-jump small::before { content: ""; }
