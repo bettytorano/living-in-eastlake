@@ -952,3 +952,32 @@ h1, h2, h3 { color: var(--brand-dark); }
 .hp-cols .hp-box:only-child { grid-column: 1 / -1; }
 .hp-cols .hp-box:only-child .checks { columns: 2; column-gap: 28px; }
 @media (max-width: 700px) { .hp-cols .hp-box:only-child .checks { columns: 1; } }
+
+/* Mello-Roos guide sections */
+.mr-short-title { margin: 30px 0 14px; }
+.mr-quicks { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.mr-quick { background: var(--sand); padding: 20px 18px; border-top: 3px solid var(--gold); }
+.mr-quick .ww-icon { width: 44px; height: 44px; margin-bottom: 10px; }
+.mr-quick h3 { margin: 0 0 6px; font-size: 1.1rem; }
+.mr-quick p { margin: 0; font-size: .92rem; color: #3d4852; }
+.mr-section { margin-top: 56px; padding-top: 8px; scroll-margin-top: 90px; }
+.mr-section .bg-head { margin-bottom: 14px; }
+.mr-quote { margin: 22px 0 0; padding: 18px 22px; border-left: 3px solid var(--gold); background: var(--sand); font-family: var(--serif); font-style: italic; font-size: 1.15rem; color: var(--brand-dark); }
+.mr-quote cite { display: block; margin-top: 8px; font-family: inherit; font-style: normal; font-size: .8rem; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); }
+.mr-districts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; margin-top: 18px; }
+.mr-district { background: #fff; border: 1px solid var(--line); padding: 22px; box-shadow: var(--shadow); }
+.mr-district h3 { margin: 10px 0 8px; font-size: 1.15rem; }
+.mr-district p { margin: 0; font-size: .95rem; color: #3d4852; }
+.mr-badge { display: inline-block; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 5px 10px; }
+.mr-b-cfd { background: var(--brand); color: #fff; }
+.mr-b-assess { background: var(--gold); color: #fff; }
+.mr-b-other { background: var(--sand); color: var(--brand); }
+.mr-two { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 18px 0; }
+.mr-panel { background: var(--sand); padding: 24px; }
+.mr-panel h3 { margin: 0 0 8px; }
+.mr-panel .ww-icon { margin-bottom: 12px; }
+.mr-panel p:last-child, .mr-panel ul { margin-bottom: 0; }
+.mr-example { margin-top: 22px; }
+.mr-help { margin-top: 18px; font-weight: 600; }
+@media (max-width: 900px) { .mr-quicks { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .mr-quicks, .mr-districts, .mr-two { grid-template-columns: 1fr; } }
