@@ -81,6 +81,12 @@ const FAQ = {
     ["When did the Eastlake schools open?", "EastLake Elementary opened in 1989, Eastlake High School in 1992, Olympic View Elementary in 1995, Arroyo Vista Charter School in 1999, EastLake Middle School in 2003 (about 16 years after the first residents moved in) and Salt Creek Elementary in 2004."],
     ["Can you help me compare the total monthly cost of two Eastlake homes?", "Yes. I'll line up price, HOA dues, Mello-Roos and other special taxes, and estimated property tax side by side so you can compare the real monthly cost. <a href=\"#ask\">Send me your question</a>."]
   ],
+  "about.html": [
+    ["How long has Betty Torano lived in Eastlake?", "Since 1987. Betty moved to Eastlake Hills with her family when Eastlake was brand new, before EastLake Elementary opened, and has lived there ever since."],
+    ["What areas does Betty Torano serve?", "Betty specializes in Eastlake, Chula Vista, including Eastlake Hills, Shores, Greens, Trails, Trails North, The Woods and Vistas, and also helps buyers and sellers throughout Chula Vista and San Diego's South County."],
+    ["Does Betty help with downsizing, probate or trust sales?", "Yes. Betty is a Seniors Real Estate Specialist® (SRES®) and holds the C.A.R. Probate & Trust Certification, so she can help longtime owners plan a move and work alongside attorneys and trustees on estate and trust sales."],
+    ["How can I contact Betty Torano?", "Call 619-851-6028, email betty.torano@exprealty.com, or request a free home value on this site. Betty is a REALTOR® with eXp Realty of California, CA DRE #01922296."]
+  ],
   "life-in-eastlake.html": [
     ["What is there to do in Eastlake, Chula Vista?", "Each of Eastlake's three HOAs has its own amenities for its residents. Eastlake I (Hills and Shores) has the Beach Club, the lagoon and paddleboats, and the walking path around the Eastlake lake is open to everyone. Eastlake II (Greens) has the Tennis & Swim Club, Dolphin Beach and Augusta Park. Eastlake III (Trails, Trails North, The Woods and Vistas) has the Creekside and Woods clubhouses and Eastlake Pond. Open to everyone nearby are the Enagic Golf Club, Eastlake Little League, Mountain Hawk Park, the Otay Lakes, Mother Miguel Mountain, the Elite Athlete Training Center, Sesame Place San Diego and the North Island Credit Union Amphitheatre."],
     ["Is Eastlake close to the Otay Lakes?", "Yes. The Lower Otay Reservoir sits on Eastlake's eastern edge, near Eastlake Vistas, The Woods and Mountain Hawk Park, with fishing, boating, picnics and trails."],
