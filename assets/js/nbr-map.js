@@ -1,5 +1,5 @@
 // Neighborhood boundary maps (Leaflet + OpenStreetMap tiles).
-// Usage: <div class="nbr-map" data-nbr="eastlake-hills"></div>
+// Usage: <div class="nbr-map" data-nbr="eastlake-hills"></div> (several: data-nbr="eastlake-trails,eastlake-trails-north")
 // Boundaries are traced along neighborhood streets from Betty's own map drawings and are approximate.
 
 var NBR_BOUNDARIES = {
@@ -75,22 +75,25 @@ var NBR_BOUNDARIES = {
 
   load(function () {
     Array.prototype.forEach.call(els, function (el) {
-      var b = NBR_BOUNDARIES[el.getAttribute("data-nbr")];
-      if (!b) return;
+      var list = el.getAttribute("data-nbr").split(",").map(function (k) { return NBR_BOUNDARIES[k.trim()]; }).filter(Boolean);
+      if (!list.length) return;
       var map = L.map(el, { scrollWheelZoom: false, dragging: !L.Browser.mobile, tap: !L.Browser.mobile });
       L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       }).addTo(map);
-      var poly = L.polygon(b.shape, { color: "#15427d", weight: 3, fillColor: "#15427d", fillOpacity: 0.18 })
-        .bindTooltip(b.name, { sticky: true })
-        .addTo(map);
-      (b.spots || []).forEach(function (p) {
-        L.circleMarker([p.lat, p.lng], { radius: 6, color: "#ffffff", weight: 2, fillColor: "#c9a84c", fillOpacity: 1 })
-          .bindTooltip(p.name)
-          .addTo(map);
+      var all = L.featureGroup().addTo(map);
+      list.forEach(function (b) {
+        L.polygon(b.shape, { color: "#15427d", weight: 3, fillColor: "#15427d", fillOpacity: 0.18 })
+          .bindTooltip(b.name, { sticky: true })
+          .addTo(all);
+        (b.spots || []).forEach(function (p) {
+          L.circleMarker([p.lat, p.lng], { radius: 6, color: "#ffffff", weight: 2, fillColor: "#c9a84c", fillOpacity: 1 })
+            .bindTooltip(p.name)
+            .addTo(map);
+        });
       });
-      map.fitBounds(poly.getBounds(), { padding: [24, 24] });
+      map.fitBounds(all.getBounds(), { padding: [24, 24] });
     });
   });
 })();

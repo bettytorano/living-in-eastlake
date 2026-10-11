@@ -125,8 +125,7 @@ const PAGES = {
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
   "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
-  "blog/living-in-eastlake-trails.html": { url: "/blog/living-in-eastlake-trails", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Trails: Little League, parks and trails", "/blog/living-in-eastlake-trails"]], published: "2026-10-11" },
-  "blog/living-in-eastlake-trails-north.html": { url: "/blog/living-in-eastlake-trails-north", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Trails North: a local's guide", "/blog/living-in-eastlake-trails-north"]], published: "2026-10-11" },
+  "blog/living-in-eastlake-trails.html": { url: "/blog/living-in-eastlake-trails", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Trails and Trails North", "/blog/living-in-eastlake-trails"]], published: "2026-10-11" },
   "blog/living-in-the-woods-eastlake.html": { url: "/blog/living-in-the-woods-eastlake", type: "Article", crumbs: [["Blog", "/blog"], ["Living in The Woods at Eastlake: hillside views and clubhouse life", "/blog/living-in-the-woods-eastlake"]], published: "2026-10-11" },
   "blog/living-in-eastlake-vistas.html": { url: "/blog/living-in-eastlake-vistas", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Vistas: views, parks and the Otay Lakes", "/blog/living-in-eastlake-vistas"]], published: "2026-10-11" },
   "blog/living-in-eastlake-greens.html": { url: "/blog/living-in-eastlake-greens", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Greens: golf course views and club life", "/blog/living-in-eastlake-greens"]], published: "2026-10-11" },

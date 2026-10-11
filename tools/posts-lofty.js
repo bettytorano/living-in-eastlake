@@ -2,19 +2,19 @@
 module.exports = [
 {
 slug: "living-in-eastlake-trails",
-title: "Living in Eastlake Trails, Chula Vista: Little League, Parks and Trails",
-short: "Living in Eastlake Trails: Little League, parks and trails",
-desc: "A local's guide to Eastlake Trails: the Eastlake Little League fields, the Eastlake III HOA, Mello-Roos, schools and parks, from an Eastlake resident since 1987.",
+title: "Living in Eastlake Trails and Trails North, Chula Vista: Little League, Parks and Trails",
+short: "Living in Eastlake Trails and Trails North",
+desc: "A local's guide to Eastlake Trails and Trails North: the Eastlake Little League fields, the Eastlake III HOA, Mello-Roos, schools and parks, from an Eastlake resident since 1987.",
 date: "2026-10-11", img: "eastlake-trails.jpg", tag: "Neighborhoods",
-body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on land donated by the EastLake Development Company, and it's part of the Eastlake III association with its clubhouses, pools and trails.</p>
-<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched Eastlake Trails take shape. Here's what to know if you're thinking about buying or selling here.</p>
+body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on land donated by the EastLake Development Company, and it's part of the Eastlake III association with its clubhouses, pools and trails. Just across Otay Lakes Road, the smaller Trails North neighborhood shares the same association and amenities, so I cover both here.</p>
+<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched the Trails and Trails North take shape. Here's what to know if you're thinking about buying or selling here.</p>
 <p><mark class="draft-note">[Betty: when Eastlake Trails was built, and what you remember about it being developed]</mark></p>
 
-<h2>Where Is Eastlake Trails?</h2>
-<p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north, Old Janal Ranch Road to the east and Olympic Parkway to the south.</p>
-<div class="nbr-map" data-nbr="eastlake-trails" role="region" aria-label="Map of the Eastlake Trails boundary"></div>
+<h2>Where Are Eastlake Trails and Trails North?</h2>
+<p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north, Old Janal Ranch Road to the east and Olympic Parkway to the south. Trails North is the narrow strip just north of Otay Lakes Road, along the west side of Hunte Parkway.</p>
+<div class="nbr-map" data-nbr="eastlake-trails,eastlake-trails-north" role="region" aria-label="Map of the Eastlake Trails and Trails North boundaries"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=12" defer></script>
+<script src="/assets/js/nbr-map.js?v=13" defer></script>
 
 <h2>The Eastlake III Association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
@@ -30,6 +30,10 @@ body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on
 <p>After years of playing on temporary lots, Eastlake Little League got its permanent fields here in Eastlake Trails. Today the complex hosts Opening Day, spring and fall seasons and All-Star games, and it's the home league of the 2013 U.S. Little League Champions. Read <a href="/blog/eastlake-little-league-history">the history of Eastlake Little League</a>.</p>
 <p><mark class="draft-note">[Betty: a favorite spot or two in Eastlake Trails, and what residents love most about living here]</mark></p>
 
+<h2 id="trails-north">Trails North</h2>
+<p>Trails North is a small neighborhood that Eastlake recognizes on its own, tucked just north of Otay Lakes Road along the west side of Hunte Parkway, across the road from Eastlake Trails and Eastlake Greens. It shares the Eastlake III association, clubhouses, pools and trails with the Trails.</p>
+<p><mark class="draft-note">[Betty: when Trails North was built, what makes it special, and what the homes are like]</mark></p>
+
 <h2>Homes and Architecture</h2>
 <p><mark class="draft-note">[Betty: typical home styles and sizes in Eastlake Trails, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
 
@@ -43,56 +47,11 @@ body: `<p>Eastlake Trails is home to the Eastlake Little League fields, built on
 <h2>Parks and the Outdoors</h2>
 <p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
 
-<h2>Who Is Eastlake Trails Right For?</h2>
-<p>The Trails is a great fit for baseball fans, anyone who loves parks and trails, and buyers who want Eastlake III clubhouse amenities close to home.</p>
+<h2>Who Are the Trails and Trails North Right For?</h2>
+<p>The Trails and Trails North are a great fit for baseball fans, anyone who loves parks and trails, and buyers who want Eastlake III clubhouse amenities close to home.</p>
 
-<h2>Ready to Buy or Sell in Eastlake Trails?</h2>
-<p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144636/eastlaketrails" rel="noopener">See homes for sale in Eastlake Trails</a>, or <a href="/home-value">request your free home value</a>.</p>`
-},
-{
-slug: "living-in-eastlake-trails-north",
-title: "Living in Eastlake Trails North, Chula Vista: A Local's Guide",
-short: "Living in Eastlake Trails North: a local's guide",
-desc: "A local's guide to Eastlake Trails North: location, the Eastlake III HOA, Mello-Roos, schools and parks, from an Eastlake resident since 1987.",
-date: "2026-10-11", img: "eastlake-trails-north.jpg", tag: "Neighborhoods",
-body: `<p>Eastlake Trails North is part of the Eastlake III association, alongside Eastlake Trails, The Woods and Eastlake Vistas, with access to Eastlake III's clubhouses, pools and trails.</p>
-<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched Trails North take shape. Here's what to know if you're thinking about buying or selling here.</p>
-<p><mark class="draft-note">[Betty: when Trails North was built, and what you remember about it being developed]</mark></p>
-
-<h2>Where Is Eastlake Trails North?</h2>
-<p>Trails North sits just north of Otay Lakes Road along the west side of Hunte Parkway, across Otay Lakes Road from Eastlake Trails and Eastlake Greens.</p>
-<div class="nbr-map" data-nbr="eastlake-trails-north" role="region" aria-label="Map of the Eastlake Trails North boundary"></div>
-<p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=12" defer></script>
-
-<h2>The Eastlake III Association</h2>
-<p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
-<ul>
-<li><strong>Eastlake Creekside Clubhouse</strong></li>
-<li><strong>Eastlake Woods Clubhouse</strong></li>
-<li><strong>Eastlake Pond</strong></li>
-<li>Multiple pools, fitness spaces, parks, playgrounds and scenic trails</li>
-</ul>
-<p>Some homes, especially condos, townhomes and gated communities, also belong to a smaller sub-association with its own dues. Always add the two together when you compare homes. See my <a href="/blog/eastlake-hoas-and-amenities">complete guide to the Eastlake HOAs and amenities</a>.</p>
-
-<h2>What Makes Trails North Special</h2>
-<p><mark class="draft-note">[Betty: a favorite spot or two in Trails North, and what residents love most about living here]</mark></p>
-
-<h2>Homes and Architecture</h2>
-<p><mark class="draft-note">[Betty: typical home styles and sizes in Trails North, single-story vs. two-story, condos and townhomes, view lots, and any gated enclaves]</mark></p>
-
-<h2>A Note on Property Taxes</h2>
-<p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. Amounts and end dates depend on the specific home.</p>
-<p>The only way to know is to check the property tax bill for the specific address. My <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a> shows you how in about ten minutes, or send me the address and I'll look it up with you.</p>
-
-<h2>Schools</h2>
-<p>Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
-
-<h2>Parks and the Outdoors</h2>
-<p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
-
-<h2>Ready to Buy or Sell in Eastlake Trails North?</h2>
-<p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" rel="noopener">See homes for sale in Eastlake Trails North</a>, or <a href="/home-value">request your free home value</a>.</p>`
+<h2>Ready to Buy or Sell in Eastlake Trails or Trails North?</h2>
+<p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144636/eastlaketrails" rel="noopener">See homes for sale in Eastlake Trails</a> or <a href="https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" rel="noopener">Trails North</a>, or <a href="/home-value">request your free home value</a>.</p>`
 },
 {
 slug: "living-in-the-woods-eastlake",
@@ -108,7 +67,7 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 <p>The Woods sits on Eastlake's eastern hills, east of Hunte Parkway and north of Otay Lakes Road, stretching up toward Proctor Valley Road. EastLake Middle School and the District at Eastlake shops are close by.</p>
 <div class="nbr-map" data-nbr="the-woods" role="region" aria-label="Map of The Woods boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=12" defer></script>
+<script src="/assets/js/nbr-map.js?v=13" defer></script>
 
 <h2>The Eastlake III Association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
@@ -157,7 +116,7 @@ body: `<p>Eastlake Vistas sits along Eastlake's eastern hills near Mountain Hawk
 <p>Eastlake Vistas is on the eastern edge of Eastlake, bounded by Otay Lakes Road to the north, Old Janal Ranch Road to the west and Wueste Road to the east, with a small section just south of Olympic Parkway. Mountain Hawk Park and the Lower Otay Reservoir are close by.</p>
 <div class="nbr-map" data-nbr="eastlake-vistas" role="region" aria-label="Map of the Eastlake Vistas boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=12" defer></script>
+<script src="/assets/js/nbr-map.js?v=13" defer></script>
 
 <h2>The Eastlake III Association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which covers Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Its amenities include:</p>
@@ -203,7 +162,7 @@ body: `<p>Eastlake Greens wraps around the Eastlake golf course, and that green 
 <p>Eastlake Greens sits in the middle of Eastlake, bounded by Otay Lakes Road to the north, Eastlake Parkway to the west, Hunte Parkway to the east and Olympic Parkway to the south.</p>
 <div class="nbr-map" data-nbr="eastlake-greens" role="region" aria-label="Map of the Eastlake Greens boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=12" defer></script>
+<script src="/assets/js/nbr-map.js?v=13" defer></script>
 
 <h2>The Eastlake II Association</h2>
 <p>Every home in the Greens belongs to the Eastlake II master association. Its amenities are just for Greens residents:</p>
@@ -406,7 +365,7 @@ body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, C
 <p>Eastlake Hills sits on the west side of Eastlake, between Corral Canyon Road and East H Street, just west of State Route 125.</p>
 <div class="nbr-map" data-nbr="eastlake-hills" role="region" aria-label="Map of the Eastlake Hills boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=12" defer></script>
+<script src="/assets/js/nbr-map.js?v=13" defer></script>
 <h2>The Original Eastlake: A Neighborhood with Real History</h2>
 <p>When Eastlake launched in the mid-1980s, it was a defining moment for Chula Vista. As the city's first master-planned community, Eastlake set the standard for how large-scale residential development would work in Southern California. Eastlake Hills and Eastlake Shores were the pioneering first phases, the neighborhoods that established the Eastlake identity before the golf course, the later villages and the gated enclaves followed.</p>
 <p>That founding status gives Eastlake Hills real depth: decades of history, an engaged resident base and a reputation that has only strengthened over time.</p>
@@ -439,7 +398,7 @@ body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, 
 <p>Eastlake Shores sits around the Eastlake lake, between East H Street and State Route 125, just across East H Street from Eastlake Hills.</p>
 <div class="nbr-map" data-nbr="eastlake-shores" role="region" aria-label="Map of the Eastlake Shores boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=12" defer></script>
+<script src="/assets/js/nbr-map.js?v=13" defer></script>
 <h2>A Founding Neighborhood with Four Decades of Community</h2>
 <p>Eastlake Shores was one of the first addresses to take shape when Eastlake launched. The neighborhood was designed around a community lake, giving it a resort-inspired character that was distinctive from day one. Mature landscaping, established common areas and a resident base that has grown together over decades give Shores the kind of genuine community feel newer developments rarely achieve.</p>
 <h2>Homes and Architecture</h2>
