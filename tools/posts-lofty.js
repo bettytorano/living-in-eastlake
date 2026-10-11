@@ -75,18 +75,22 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 <h2>Hillside Living</h2>
 <p>Streets in The Woods climb into Eastlake's eastern hills, so many homes look out toward the mountains and the Otay Lakes.</p>
 
+<h2>Homes and Architecture</h2>
+<p>The Woods is considered Eastlake's high-end neighborhood. Every home is detached, and most are larger homes on larger lots. At the top is <strong>The Gates</strong>, a gated enclave of custom homes, many with views of the Otay Lakes.</p>
+<p>Several smaller clusters of homes in The Woods also have their own private gates. Gated communities usually come with a sub-association and its own dues, so be sure to add those to the Eastlake III dues when you compare homes.</p>
+
 <h2>A Note on Property Taxes</h2>
 <p>Eastlake III neighborhoods were built later than the original Hills and Shores, so their Mello-Roos districts generally have more years left. The Woods is also in the City of Chula Vista's CFD 07M, a maintenance district that funds upkeep of public landscaping and open space in the Woods and Vistas area. Amounts and end dates depend on the specific home.</p>
 <p>The only way to know is to check the property tax bill for the specific address. My <a href="/mello-roos-eastlake">Mello-Roos in Eastlake guide</a> shows you how in about ten minutes, or send me the address and I'll look it up with you.</p>
 
 <h2>Schools</h2>
-<p>EastLake Middle School opened in 2003, about 16 years after the first Eastlake residents moved in. Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
+<p>EastLake Middle School, which opened in 2003, is within walking distance of many homes in The Woods, and Salt Creek Elementary, opened in 2004, is close by. Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Attendance boundaries can change, so confirm the assigned schools for any address with each district.</p>
 
 <h2>Parks and the Outdoors</h2>
 <p>Eastlake III neighborhoods are close to some of South County's best outdoor spaces: Mountain Hawk Park, Salt Creek Park and its soccer arena, the Centennial Trail, the Upper Otay Reservoir trailhead and the Elite Athlete Training Center (the former Olympic Training Center).</p>
 
 <h2>Who Is The Woods Right For?</h2>
-<p>The Woods is a great fit for anyone who wants views, hillside streets and clubhouse amenities, with shopping and the middle school close by.</p>
+<p>The Woods is a great fit for move-up buyers looking for a larger home and lot, anyone who wants a gated or custom home with views of the Otay Lakes, and buyers who want clubhouse amenities with schools and shopping close by.</p>
 
 <h2>Ready to Buy or Sell in The Woods?</h2>
 <p>Whether you're looking for your next home or thinking about selling, I bring nearly 40 years of Eastlake knowledge to every move. <a href="https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" rel="noopener">See homes for sale in The Woods</a>, or <a href="/home-value">request your free home value</a>.</p>`
