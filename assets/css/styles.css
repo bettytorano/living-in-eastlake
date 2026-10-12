@@ -1113,3 +1113,6 @@ h1, h2, h3 { color: var(--brand-dark); }
 .plan-close { position: absolute; top: 10px; right: 12px; z-index: 2; width: 36px; height: 36px; border: 0; background: none; font-size: 1.8rem; line-height: 1; color: var(--brand); cursor: pointer; }
 .plan-close:hover { color: var(--gold); }
 .plan-actions button.btn { cursor: pointer; font: inherit; border: 0; }
+
+/* Links to a section (#name) land below the sticky header */
+section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }

@@ -63,3 +63,13 @@ document.addEventListener("DOMContentLoaded", function () {
   dlg.querySelector("[data-close-plan]").addEventListener("click", function () { dlg.close(); });
   dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
 })();
+
+// When arriving at a #section link, jump again once images have loaded (lazy images shift the page)
+(function () {
+  if (!location.hash) return;
+  var go = function () {
+    var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+    if (el) el.scrollIntoView();
+  };
+  window.addEventListener("load", function () { go(); setTimeout(go, 600); });
+})();
