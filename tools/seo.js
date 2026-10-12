@@ -24,7 +24,7 @@ const agent = {
     { "@type": "City", name: "Chula Vista, CA" },
     { "@type": "AdministrativeArea", name: "San Diego County, CA" }
   ],
-  parentOrganization: { "@type": "Organization", name: "eXp Realty of California, Inc." },
+  parentOrganization: { "@type": "Organization", name: "eXp Realty of Southern California, Inc." },
   employee: { "@id": `${SITE}/#betty` },
   sameAs: ["https://www.instagram.com/bettytorano/", "https://www.facebook.com/BettyToranoRealtor/", "https://www.tiktok.com/@bettytoranorealtor", "https://www.youtube.com/@bettytoranorealtor", "https://bettytorano.com/"]
 };
@@ -85,7 +85,7 @@ const FAQ = {
     ["How long has Betty Torano lived in Eastlake?", "Since 1987. Betty and her husband moved to Eastlake Hills when Eastlake was brand new, raised their family there, and have lived there ever since. She has called Chula Vista home since she was ten."],
     ["What areas does Betty Torano serve?", "Betty specializes in Eastlake, Chula Vista, including Eastlake Hills, Shores, Greens, Trails, Trails North, The Woods and Vistas, and also helps buyers and sellers throughout San Diego County."],
     ["Does Betty help with downsizing, probate or trust sales?", "Yes. Betty is a Seniors Real Estate Specialist® (SRES®) and holds the C.A.R. Probate & Trust Certification, so she can help longtime owners plan a move and work alongside attorneys and trustees on estate and trust sales."],
-    ["How can I contact Betty Torano?", "Call 619-851-6028, email betty.torano@exprealty.com, or request a free home value on this site. Betty is a REALTOR® with eXp Realty of California, CA DRE #01922296."]
+    ["How can I contact Betty Torano?", "Call 619-851-6028, email betty.torano@exprealty.com, or request a free home value on this site. Betty is a REALTOR® with eXp Realty of Southern California, CA DRE #01922296."]
   ],
   "life-in-eastlake.html": [
     ["What is there to do in Eastlake, Chula Vista?", "Each of Eastlake's three HOAs has its own amenities for its residents. Eastlake I (Hills and Shores) has the Beach Club, the lagoon and paddleboats, and the walking path around the Eastlake lake is open to everyone. Eastlake II (Greens) has the Tennis & Swim Club, Dolphin Beach and Augusta Park. Eastlake III (Trails, Trails North, The Woods and Vistas) has the Creekside and Woods clubhouses and Eastlake Pond. Open to everyone nearby are the Enagic Golf Club, Eastlake Little League, Mountain Hawk Park, the Otay Lakes, Mother Miguel Mountain, the Elite Athlete Training Center, Sesame Place San Diego and the North Island Credit Union Amphitheatre."],
@@ -129,7 +129,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
   "blog/living-in-eastlake-trails.html": { url: "/blog/living-in-eastlake-trails", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Trails and Trails North", "/blog/living-in-eastlake-trails"]], published: "2026-10-11" },
   "blog/living-in-the-woods-eastlake.html": { url: "/blog/living-in-the-woods-eastlake", type: "Article", crumbs: [["Blog", "/blog"], ["Living in The Woods at Eastlake: hillside views and clubhouse life", "/blog/living-in-the-woods-eastlake"]], published: "2026-10-11" },
