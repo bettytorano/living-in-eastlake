@@ -1118,7 +1118,11 @@ h1, h2, h3 { color: var(--brand-dark); }
 section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 /* Keep the 7-link menu on one line on mid-size screens */
 @media (min-width: 901px) and (max-width: 1240px) {
-  .nav { gap: 14px; }
-  .nav a { font-size: .68rem; letter-spacing: .08em; }
+  .nav { gap: 12px; flex-wrap: wrap; row-gap: 6px; }
+  .nav a { font-size: .66rem; letter-spacing: .06em; }
   .nav a.btn { padding: 7px 10px; }
+}
+@media (min-width: 901px) and (max-width: 1040px) {
+  .nav { gap: 10px; }
+  .nav a { font-size: .62rem; letter-spacing: .04em; }
 }
