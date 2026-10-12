@@ -105,7 +105,6 @@ Add the site in Google Search Console (https://search.google.com/search-console)
 ## Still to do
 - Move SellingEastlake.com DNS from GoDaddy to Cloudflare (step 3 above), then delete or redirect the posts that were moved from the Lofty site.
 - Add the Lofty API key so leads also go into Lofty.
-- Confirm the **Broker DRE number** in the footer (#01878277) with eXp.
 - Send a test message from the "Let's Make a Plan" popup and the home value form.
 
 ## Making changes later
