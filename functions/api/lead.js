@@ -1,5 +1,5 @@
 // Cloudflare Pages Function: receives every form on the site at POST /api/lead.
-// 1) Emails the lead to Betty (via Resend)  2) Sends it to Lofty CRM (if configured)
+// Emails the lead to Betty (Resend) and, if configured, sends it to Lofty, a Google Sheet backup and GoHighLevel
 //
 // Settings live in Cloudflare Pages > Settings > Variables and Secrets:
 //   RESEND_API_KEY  (secret)  API key from resend.com
@@ -9,6 +9,8 @@
 //   LOFTY_API_URL             optional: defaults to https://api.lofty.com/v1.0
 //   LEAD_SHEET_URL            optional: Google Apps Script web app URL that logs every lead to a Google Sheet
 //   LEAD_SHEET_SECRET (secret) optional: shared password the Apps Script checks (see tools/lead-sheet.gs)
+//   GHL_API_KEY     (secret)  optional: GoHighLevel Private Integration token (pit-…), scopes View + Edit Contacts
+//   GHL_LOCATION_ID           optional: GoHighLevel sub-account Location ID (Settings > Business Profile)
 
 const FORM_LABELS = {
   "home-value": "Home Value Request",
@@ -49,18 +51,15 @@ export async function onRequestPost({ request, env }) {
     return Response.redirect(`${origin}/form-error`, 303);
   }
 
-  const results = await Promise.allSettled([sendEmail(env, lead), sendToLofty(env, lead), sendToSheet(env, lead)]);
-  const [emailResult, loftyResult, sheetResult] = results;
-  const names = ["Email", "Lofty", "Sheet"];
+  const results = await Promise.allSettled([sendEmail(env, lead), sendToLofty(env, lead), sendToSheet(env, lead), sendToGHL(env, lead)]);
+  const names = ["Email", "Lofty", "Sheet", "GHL"];
   results.forEach((r, i) => {
     if (r.status === "rejected") console.error(names[i] + " failed:", r.reason);
   });
 
   // Only show an error if the lead reached none of the places
-  const emailed = emailResult.status === "fulfilled" && emailResult.value;
-  const inLofty = loftyResult.status === "fulfilled" && loftyResult.value;
-  const inSheet = sheetResult.status === "fulfilled" && sheetResult.value;
-  if (!emailed && !inLofty && !inSheet) {
+  const delivered = results.some((r) => r.status === "fulfilled" && r.value);
+  if (!delivered) {
     return Response.redirect(`${origin}/form-error`, 303);
   }
   return Response.redirect(`${origin}/thank-you`, 303);
@@ -114,6 +113,50 @@ async function sendToSheet(env, lead) {
   });
   const text = await res.text();
   if (!res.ok || !/"ok":\s*true/.test(text)) throw new Error(`Sheet ${res.status}: ${text.slice(0, 200)}`);
+  return true;
+}
+
+// GoHighLevel (LeadConnector API v2): create or update the contact, then add the form details as a note.
+// Needs a Private Integration token with "View Contacts" + "Edit Contacts" scopes.
+async function sendToGHL(env, lead) {
+  if (!env.GHL_API_KEY || !env.GHL_LOCATION_ID) return false;
+  const base = "https://services.leadconnectorhq.com";
+  const headers = {
+    Authorization: `Bearer ${env.GHL_API_KEY}`,
+    Version: "2021-07-28",
+    "Content-Type": "application/json",
+    Accept: "application/json",
+  };
+  const label = FORM_LABELS[lead.formType] || "Website Lead";
+  const tags = ["SellingEastlake.com", label, lead.formType === "home-value" ? "Seller" : "Buyer"];
+  if (lead.neighborhood) tags.push(lead.neighborhood);
+
+  const contact = {
+    locationId: env.GHL_LOCATION_ID,
+    firstName: lead.firstName,
+    lastName: lead.lastName || undefined,
+    email: lead.email,
+    phone: lead.phone || undefined,
+    address1: lead.address || undefined,
+    source: "SellingEastlake.com",
+    tags,
+  };
+  const res = await fetch(`${base}/contacts/upsert`, { method: "POST", headers, body: JSON.stringify(contact) });
+  if (!res.ok) throw new Error(`GHL contact ${res.status}: ${(await res.text()).slice(0, 300)}`);
+  const id = (await res.json())?.contact?.id;
+
+  if (id) {
+    const body = [
+      `${label} from SellingEastlake.com`,
+      lead.address ? `Property address: ${lead.address}` : null,
+      lead.neighborhood ? `Neighborhood: ${lead.neighborhood}` : null,
+      lead.timeframe ? `Timeframe: ${lead.timeframe}` : null,
+      lead.message ? `Message: ${lead.message}` : null,
+      lead.page ? `Page: ${lead.page}` : null,
+    ].filter(Boolean).join("\n");
+    const n = await fetch(`${base}/contacts/${id}/notes`, { method: "POST", headers, body: JSON.stringify({ body }) });
+    if (!n.ok) console.error("GHL note failed:", n.status, (await n.text()).slice(0, 200));
+  }
   return true;
 }
 
