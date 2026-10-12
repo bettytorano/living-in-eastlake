@@ -64,14 +64,18 @@ document.addEventListener("DOMContentLoaded", function () {
   dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
 })();
 
-// When arriving at a #section link, jump again once images have loaded (lazy images shift the page)
+// When arriving at a #section link, keep the section in place while Instagram embeds and lazy images
+// change the page height (they can add thousands of pixels for a few seconds), until the visitor scrolls.
 (function () {
-  if (!location.hash) return;
-  var go = function () {
-    var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (el) el.scrollIntoView({ behavior: "instant", block: "start" });
-  };
-  // Instagram embeds and lazy images keep changing the page height for a few seconds, so re-jump a few times
-  [300, 900, 1800, 3000].forEach(function (t) { setTimeout(go, t); });
-  window.addEventListener("load", go);
+  if (!location.hash || typeof ResizeObserver === "undefined") return;
+  var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (!el) return;
+  var done = false;
+  var go = function () { if (!done) el.scrollIntoView({ behavior: "instant", block: "start" }); };
+  var stop = function () { done = true; ro.disconnect(); };
+  var ro = new ResizeObserver(go);
+  ro.observe(document.body);
+  ["wheel", "touchstart", "keydown", "mousedown"].forEach(function (e) { window.addEventListener(e, stop, { once: true, passive: true }); });
+  setTimeout(stop, 8000);
+  go();
 })();
