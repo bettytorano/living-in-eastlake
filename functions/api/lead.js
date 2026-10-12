@@ -13,6 +13,7 @@ const FORM_LABELS = {
   "buyer": "Buyer Question",
   "neighborhood": "Neighborhood Question",
   "mello-roos": "Mello-Roos Question",
+  "contact": "General Question",
 };
 
 export async function onRequestPost({ request, env }) {
