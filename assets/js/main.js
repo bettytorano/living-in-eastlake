@@ -52,3 +52,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (q && b && q.scrollHeight <= q.clientHeight + 2) b.hidden = true;
   });
 });
+
+// "Let's make a plan" contact popup
+(function () {
+  var dlg = document.getElementById("plan-dialog");
+  if (!dlg || typeof dlg.showModal !== "function") return;
+  document.querySelectorAll("[data-open-plan]").forEach(function (b) {
+    b.addEventListener("click", function () { dlg.showModal(); var f = dlg.querySelector("input:not([type=hidden]):not([tabindex])"); if (f) f.focus(); });
+  });
+  dlg.querySelector("[data-close-plan]").addEventListener("click", function () { dlg.close(); });
+  dlg.addEventListener("click", function (e) { if (e.target === dlg) dlg.close(); });
+})();
