@@ -128,7 +128,10 @@ async function sendToGHL(env, lead) {
     Accept: "application/json",
   };
   const label = FORM_LABELS[lead.formType] || "Website Lead";
-  const tags = ["SellingEastlake.com", label, lead.formType === "home-value" ? "Seller" : "Buyer"];
+  // Only tag Seller/Buyer when the form makes it clear (home value = seller, Buyer's Guide = buyer)
+  const tags = ["SellingEastlake.com", label];
+  if (lead.formType === "home-value") tags.push("Seller");
+  if (lead.formType === "buyer") tags.push("Buyer");
   if (lead.neighborhood) tags.push(lead.neighborhood);
 
   const contact = {
