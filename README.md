@@ -2,19 +2,51 @@
 
 Betty Torano's Eastlake website. Plain HTML pages hosted free on **Cloudflare Pages**, with the files stored on **GitHub**. Every time a change is pushed to GitHub, Cloudflare updates the live site automatically within about a minute.
 
+- Live site (until the domain moves): https://living-in-eastlake.pages.dev
+- Previews: each GitHub branch gets its own address, `https://<branch-name>.living-in-eastlake.pages.dev`
+
 ## What's in here
 
 | File | Page |
 |---|---|
-| `index.html` | Home: Betty's story, history reels, neighborhoods, home value form |
-| `home-value.html` | `/home-value`: seller landing page (use for seller ads) |
-| `buyers-guide.html` | `/buyers-guide`: HOAs, Mello-Roos, schools (use for buyer ads) |
-| `neighborhoods.html` | `/neighborhoods`: all 7 Eastlake neighborhoods |
+| `index.html` | Home: history reels, Why Eastlake, neighborhoods, places to eat, reviews, "Before the Offer" ZIP values, Meet Betty, home value form, "Let's Make a Plan" popup form |
+| `about.html` | `/about`: Betty's story, Why Work with Me, reviews, credentials, FAQ |
+| `buyers-guide.html` | `/buyers-guide`: HOAs, Mello-Roos, schools, buying process |
+| `sellers-guide.html` | `/sellers-guide`: six-step selling process, paperwork, special situations |
+| `neighborhoods.html` | `/neighborhoods`: map, 3 HOAs, 7 neighborhood cards (with ZIP codes), "Which one fits you?" |
+| `life-in-eastlake.html` | `/life-in-eastlake`: things to do, why locals love it, parks & trails, getting around |
+| `mello-roos-eastlake.html` | `/mello-roos-eastlake`: Mello-Roos guide |
 | `eastlake-history.html` | `/eastlake-history`: timeline and Instagram reels |
-| `thank-you.html`, `form-error.html`, `404.html`, `privacy.html` | Supporting pages |
-| `functions/api/lead.js` | Form handler: emails each lead and sends it to Lofty |
+| `home-value.html` | `/home-value`: seller landing page (use for seller ads) |
+| `blog.html`, `blog/*.html` | Blog and posts, **generated** by `tools/build-blog.js` (do not edit the HTML directly) |
+| `thank-you.html`, `form-error.html`, `404.html`, `privacy.html`, `photo-credits.html` | Supporting pages |
+| `functions/api/lead.js` | Form handler: emails each lead (Resend) and sends it to Lofty |
 | `assets/css/styles.css` | Colors, fonts and layout |
-| `assets/img/` | Photos (see `assets/img/README.txt` for file names) |
+| `assets/js/main.js` | Menu, popup contact form |
+| `assets/js/nbr-map.js` | Neighborhood boundary maps (one outline per neighborhood) |
+| `assets/js/eastlake-map.js` | Interactive map on the Neighborhoods page |
+| `assets/img/` | Photos. `assets/img/originals/` holds full-size and private files and is **never** published |
+| `tools/posts-lofty.js`, `tools/posts-history.js` | Blog post text (including all seven neighborhood guides) |
+| `tools/build-blog.js` | Builds `blog.html` and `blog/*.html` from the post files |
+| `tools/seo.js` | Adds Google data (JSON-LD) and FAQ sections to pages, and rebuilds `sitemap.xml` |
+| `tools/titlecase.js` | Puts section headings in Title Case (Betty's preferred style) |
+
+## How to update the site
+1. Edit page text in the `.html` files, or blog/neighborhood text in `tools/posts-lofty.js`.
+2. Run `node tools/build-blog.js` then `node tools/seo.js`.
+3. If you changed `styles.css` or `main.js`, raise the `?v=` number in every page so browsers load the new version.
+4. Commit and push to a preview branch, check it, then merge to `main` to go live.
+
+## Site style and content rules
+- Section headings and page titles in **Title Case**.
+- **No HOA dues amounts** anywhere on the site (they change).
+- **Photos**: only Betty's own or licensed photos. No Google, Google Earth or MLS images.
+- **Neighborhood boundaries** are Betty's own drawings traced onto OpenStreetMap. Never copy Lofty/MLS boundary data.
+- **Fair housing**: describe places and home types, not people (avoid "family-friendly", "safe", "ideal for families").
+- Service area: Eastlake specialist, serving buyers and sellers **throughout San Diego County**.
+- Mello-Roos = CFDs only. Eastlake Maintenance District #1 (OSD 101) is a city assessment, **not** Mello-Roos.
+- Neighborhood ZIP codes: Hills & Shores 91913 · Trails North & The Woods 91914 · Greens, Trails & Vistas 91915.
+- Homepage ZIP values come from Zillow's Home Value Index (ZHVI). Refresh them every few months and keep the Zillow credit.
 
 ---
 
@@ -70,11 +102,11 @@ Add the site in Google Search Console (https://search.google.com/search-console)
 
 ---
 
-## Before going live, please check
-- **Broker DRE number** in the footer (`#01878277` for eXp Realty of California, Inc.). Confirm it with eXp.
-- **Neighborhood descriptions** in `neighborhoods.html`. Add your own insider details (home styles, parks, price ranges).
-- **Photos**: add them to `assets/img/` (names listed in `assets/img/README.txt`).
-- **Testimonials**: none are on the site yet. Send them over and they can go on the home page.
+## Still to do
+- Move SellingEastlake.com DNS from GoDaddy to Cloudflare (step 3 above), then delete or redirect the posts that were moved from the Lofty site.
+- Add the Lofty API key so leads also go into Lofty.
+- Confirm the **Broker DRE number** in the footer (#01878277) with eXp.
+- Send a test message from the "Let's Make a Plan" popup and the home value form.
 
 ## Making changes later
 Edit the `.html` files (any text editor works), then commit and push to GitHub. Cloudflare redeploys automatically.
