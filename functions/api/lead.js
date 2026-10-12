@@ -7,6 +7,8 @@
 //   LEAD_FROM_EMAIL           sender, e.g. "Living in Eastlake <leads@sellingeastlake.com>"
 //   LOFTY_API_KEY   (secret)  optional: Lofty Open API key
 //   LOFTY_API_URL             optional: defaults to https://api.lofty.com/v1.0
+//   LEAD_SHEET_URL            optional: Google Apps Script web app URL that logs every lead to a Google Sheet
+//   LEAD_SHEET_SECRET (secret) optional: shared password the Apps Script checks (see tools/lead-sheet.gs)
 
 const FORM_LABELS = {
   "home-value": "Home Value Request",
@@ -47,16 +49,18 @@ export async function onRequestPost({ request, env }) {
     return Response.redirect(`${origin}/form-error`, 303);
   }
 
-  const results = await Promise.allSettled([sendEmail(env, lead), sendToLofty(env, lead)]);
-  const [emailResult, loftyResult] = results;
+  const results = await Promise.allSettled([sendEmail(env, lead), sendToLofty(env, lead), sendToSheet(env, lead)]);
+  const [emailResult, loftyResult, sheetResult] = results;
+  const names = ["Email", "Lofty", "Sheet"];
   results.forEach((r, i) => {
-    if (r.status === "rejected") console.error(i === 0 ? "Email failed:" : "Lofty failed:", r.reason);
+    if (r.status === "rejected") console.error(names[i] + " failed:", r.reason);
   });
 
-  // Only show an error if the lead reached neither place
+  // Only show an error if the lead reached none of the places
   const emailed = emailResult.status === "fulfilled" && emailResult.value;
   const inLofty = loftyResult.status === "fulfilled" && loftyResult.value;
-  if (!emailed && !inLofty) {
+  const inSheet = sheetResult.status === "fulfilled" && sheetResult.value;
+  if (!emailed && !inLofty && !inSheet) {
     return Response.redirect(`${origin}/form-error`, 303);
   }
   return Response.redirect(`${origin}/thank-you`, 303);
@@ -96,6 +100,20 @@ async function sendEmail(env, lead) {
     }),
   });
   if (!res.ok) throw new Error(`Resend ${res.status}: ${await res.text()}`);
+  return true;
+}
+
+// Backup log: one row per lead in a Google Sheet (via the Apps Script in tools/lead-sheet.gs)
+async function sendToSheet(env, lead) {
+  if (!env.LEAD_SHEET_URL) return false;
+  const res = await fetch(env.LEAD_SHEET_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ secret: env.LEAD_SHEET_SECRET || "", label: FORM_LABELS[lead.formType] || "Website Lead", ...lead }),
+    redirect: "follow",
+  });
+  const text = await res.text();
+  if (!res.ok || !/"ok":\s*true/.test(text)) throw new Error(`Sheet ${res.status}: ${text.slice(0, 200)}`);
   return true;
 }
 
