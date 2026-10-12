@@ -1116,3 +1116,9 @@ h1, h2, h3 { color: var(--brand-dark); }
 
 /* Links to a section (#name) land below the sticky header */
 section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
+/* Keep the 7-link menu on one line on mid-size screens */
+@media (min-width: 901px) and (max-width: 1240px) {
+  .nav { gap: 14px; }
+  .nav a { font-size: .68rem; letter-spacing: .08em; }
+  .nav a.btn { padding: 7px 10px; }
+}
