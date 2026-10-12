@@ -1050,3 +1050,9 @@ h1, h2, h3 { color: var(--brand-dark); }
 
 #story .bg-head { margin-bottom: 14px; }
 .ww-solo .bg-head { justify-content: center; margin-bottom: 14px; }
+/* About: smaller photo on the left, wider story text */
+@media (min-width: 861px) {
+  #story .split { grid-template-columns: 300px 1fr; gap: 56px; align-items: start; }
+  #story .photo-frame.portrait { width: 300px; justify-self: start; padding-top: 0; }
+}
+@media (max-width: 860px) { #story .photo-frame.portrait { max-width: 280px; margin: 0 auto; } }
