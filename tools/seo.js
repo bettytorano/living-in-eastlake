@@ -83,7 +83,7 @@ const FAQ = {
   ],
   "about.html": [
     ["How long has Betty Torano lived in Eastlake?", "Since 1987. Betty and her husband moved to Eastlake Hills when Eastlake was brand new, raised their family there, and have lived there ever since. She has called Chula Vista home since she was ten."],
-    ["What areas does Betty Torano serve?", "Betty specializes in Eastlake, Chula Vista, including Eastlake Hills, Shores, Greens, Trails, Trails North, The Woods and Vistas, and also helps buyers and sellers throughout Chula Vista and San Diego's South County."],
+    ["What areas does Betty Torano serve?", "Betty specializes in Eastlake, Chula Vista, including Eastlake Hills, Shores, Greens, Trails, Trails North, The Woods and Vistas, and also helps buyers and sellers throughout San Diego County."],
     ["Does Betty help with downsizing, probate or trust sales?", "Yes. Betty is a Seniors Real Estate Specialist® (SRES®) and holds the C.A.R. Probate & Trust Certification, so she can help longtime owners plan a move and work alongside attorneys and trustees on estate and trust sales."],
     ["How can I contact Betty Torano?", "Call 619-851-6028, email betty.torano@exprealty.com, or request a free home value on this site. Betty is a REALTOR® with eXp Realty of California, CA DRE #01922296."]
   ],
@@ -129,7 +129,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
   "blog/living-in-eastlake-trails.html": { url: "/blog/living-in-eastlake-trails", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Trails and Trails North", "/blog/living-in-eastlake-trails"]], published: "2026-10-11" },
   "blog/living-in-the-woods-eastlake.html": { url: "/blog/living-in-the-woods-eastlake", type: "Article", crumbs: [["Blog", "/blog"], ["Living in The Woods at Eastlake: hillside views and clubhouse life", "/blog/living-in-the-woods-eastlake"]], published: "2026-10-11" },
