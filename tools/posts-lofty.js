@@ -1,6 +1,63 @@
 // Posts moved from bettytorano.com (Lofty) on 2026-10-10, lightly edited for fair-housing wording.
 module.exports = [
 {
+slug: "top-chula-vista-neighborhoods-parks-schools",
+title: "Top 5 Chula Vista Neighborhoods for Parks and Schools",
+short: "Top 5 Chula Vista neighborhoods for parks and schools",
+desc: "A local REALTOR's guide to five Chula Vista neighborhoods known for parks, trails, nearby schools and everyday convenience: Eastlake, Otay Ranch, Rancho del Rey, Rolling Hills Ranch and Sunbow.",
+date: "2026-10-12", img: "eastlake-shores-bridge.jpg", tag: "Chula Vista",
+body: `<p>Chula Vista offers some of San Diego County's most appealing neighborhoods for buyers who want parks, trails and schools close to home, along with easy access to shopping and the rest of the county. As a REALTOR® with eXp Realty of Southern California and an Eastlake resident since 1987, here are five neighborhoods I often recommend exploring, and what makes each one stand out.</p>
+
+<h2>1. Eastlake: Master-Planned Living Around a Lake</h2>
+<p>Eastlake is one of Chula Vista's best-known master-planned communities, with seven neighborhoods, three HOAs, a man-made lake with a public walking path, the Enagic Golf Club and miles of greenbelts.</p>
+<ul>
+<li>Schools within the community, including EastLake Elementary, Olympic View Elementary, Arroyo Vista Charter, EastLake Middle School and Eastlake High School</li>
+<li>HOA clubhouses, pools and sports courts, plus Eastlake Little League and Mountain Hawk Park</li>
+<li>Eastlake Village Center and Village Marketplace for everyday shopping and dining</li>
+</ul>
+<p><strong>Insider tip:</strong> Homes in Eastlake can move quickly, and Mello-Roos and HOA dues vary from street to street. See my <a href="/neighborhoods">guide to Eastlake's seven neighborhoods</a> and my <a href="/mello-roos-eastlake">Mello-Roos guide</a> before you start touring.</p>
+
+<h2>2. Otay Ranch: Newer Construction and Walkable Villages</h2>
+<p>Otay Ranch is a large master-planned area made up of villages, many with newer homes, neighborhood parks and walking paths.</p>
+<ul>
+<li>Village parks, paseos and scenic trails</li>
+<li>Schools in the Chula Vista Elementary and Sweetwater Union High School districts</li>
+<li>Otay Ranch Town Center for shopping, dining and entertainment</li>
+</ul>
+<p><strong>Insider tip:</strong> Many Otay Ranch homes are newer construction, a good fit if you want a move-in-ready home. Newer areas often carry Mello-Roos, so check the tax bill for each address.</p>
+
+<h2>3. Rancho Del Rey: Established Streets and Generous Lots</h2>
+<p>Rancho del Rey is an established neighborhood with mature landscaping, spacious homes and a central location.</p>
+<ul>
+<li>Larger homes and generous lots</li>
+<li>Community parks and schools nearby</li>
+<li>Quick access to State Route 125 and Interstate 805</li>
+</ul>
+<p><strong>Insider tip:</strong> Rancho del Rey often appeals to move-up buyers looking for more space in an established setting.</p>
+
+<h2>4. Rolling Hills Ranch: Hillside Views and Trails</h2>
+<p>Rolling Hills Ranch offers an upscale hillside setting with mountain views and easy access to the outdoors.</p>
+<ul>
+<li>Scenic trails and outdoor recreation nearby</li>
+<li>Schools and parks close by</li>
+<li>Views toward the mountains and the Otay Lakes from many homes</li>
+</ul>
+<p><strong>Insider tip:</strong> Special taxes vary by tract, so ask about Mello-Roos for any home you're considering.</p>
+
+<h2>5. Sunbow: A Smaller Neighborhood with Easy Access</h2>
+<p>Sunbow is a smaller neighborhood with well-kept homes and quick access to shopping, schools, parks and medical services.</p>
+<ul>
+<li>Close to Sharp Chula Vista Medical Center and retail</li>
+<li>Parks and schools nearby</li>
+<li>Convenient routes to Interstate 805 and downtown San Diego</li>
+</ul>
+<p><strong>Insider tip:</strong> Sunbow can offer good value for buyers who want a quieter street with quick city access.</p>
+
+<h2>Which Chula Vista Neighborhood Is Right for You?</h2>
+<p>Each of these neighborhoods has its own character, from newer construction in Otay Ranch to the lake and clubs of Eastlake and the established streets of Rancho del Rey. The right fit depends on your budget, commute, home style and the amenities you'll use most. School assignments can change, so always confirm the schools for a specific address with each district.</p>
+<p>I'd be happy to help you compare them. <a href="https://bettytorano.com/neighborhood/158384753/eastlake" rel="noopener">Search Eastlake homes</a>, read my <a href="/buyers-guide">Eastlake Buyer's Guide</a>, or <a href="/home-value">request a free home value</a> if you're thinking about selling.</p>`
+},
+{
 slug: "living-in-eastlake-trails",
 title: "Living in Eastlake Trails and Trails North, Chula Vista: Little League, Parks and Trails",
 short: "Living in Eastlake Trails and Trails North",

@@ -131,8 +131,9 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
+  "blog/top-chula-vista-neighborhoods-parks-schools.html": { url: "/blog/top-chula-vista-neighborhoods-parks-schools", type: "Article", crumbs: [["Blog", "/blog"], ["Top 5 Chula Vista neighborhoods for parks and schools", "/blog/top-chula-vista-neighborhoods-parks-schools"]], published: "2026-10-12" },
   "blog/living-in-eastlake-trails.html": { url: "/blog/living-in-eastlake-trails", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Trails and Trails North", "/blog/living-in-eastlake-trails"]], published: "2026-10-11" },
   "blog/living-in-the-woods-eastlake.html": { url: "/blog/living-in-the-woods-eastlake", type: "Article", crumbs: [["Blog", "/blog"], ["Living in The Woods at Eastlake: hillside views and clubhouse life", "/blog/living-in-the-woods-eastlake"]], published: "2026-10-11" },
   "blog/living-in-eastlake-vistas.html": { url: "/blog/living-in-eastlake-vistas", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Vistas: views, parks and the Otay Lakes", "/blog/living-in-eastlake-vistas"]], published: "2026-10-11" },
