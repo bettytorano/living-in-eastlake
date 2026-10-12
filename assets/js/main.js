@@ -69,7 +69,9 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!location.hash) return;
   var go = function () {
     var el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    if (el) el.scrollIntoView();
+    if (el) el.scrollIntoView({ behavior: "instant", block: "start" });
   };
-  window.addEventListener("load", function () { go(); setTimeout(go, 600); });
+  // Instagram embeds and lazy images keep changing the page height for a few seconds, so re-jump a few times
+  [300, 900, 1800, 3000].forEach(function (t) { setTimeout(go, t); });
+  window.addEventListener("load", go);
 })();
