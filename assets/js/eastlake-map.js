@@ -50,12 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
-  EASTLAKE_LANDMARKS.forEach(function (p) {
-    L.circleMarker([p.lat, p.lng], { radius: 5, color: "#ffffff", weight: 2, fillColor: "#1f6f8b", fillOpacity: 1 })
-      .bindTooltip(p.name)
-      .addTo(map);
-  });
-
   var bounds = [];
   EASTLAKE_NEIGHBORHOODS.forEach(function (n) {
     var icon = L.divIcon({
@@ -88,7 +82,8 @@ document.addEventListener("DOMContentLoaded", function () {
     bounds.push([n.lat, n.lng]);
   });
 
-  map.fitBounds(bounds, { padding: [40, 40] });
+  // Extra room on the right so the name labels beside each pin are not cut off
+  map.fitBounds(bounds, { paddingTopLeft: [30, 30], paddingBottomRight: [140, 30] });
 
   if (editMode) {
     var out = document.createElement("p");
