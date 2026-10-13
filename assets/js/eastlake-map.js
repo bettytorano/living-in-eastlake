@@ -12,7 +12,7 @@ var EASTLAKE_NEIGHBORHOODS = [
   { name: "Eastlake Greens", slug: "eastlake-greens", hoa: "Eastlake II", labelLeft: true, lat: 32.6433, lng: -116.9625,
     desc: "Surrounding the Enagic Golf Club at Eastlake (formerly EastLake Country Club), with its own association and amenities.",
     listings: "https://bettytorano.com/neighborhood/159144634/eastlakegreens" },
-  { name: "Eastlake Trails", slug: "eastlake-trails", hoa: "Eastlake III", labelUp: true, lat: 32.6392, lng: -116.9498,
+  { name: "Eastlake Trails", slug: "eastlake-trails", hoa: "Eastlake III", lat: 32.6445, lng: -116.9498,
     desc: "Home of the permanent Eastlake Little League fields and Arroyo Vista Elementary.",
     listings: "https://bettytorano.com/neighborhood/159144636/eastlaketrails" },
   { name: "Eastlake Trails North", slug: "eastlake-trails-north", hoa: "Eastlake III", lat: 32.6500, lng: -116.9512,
@@ -21,7 +21,7 @@ var EASTLAKE_NEIGHBORHOODS = [
   { name: "The Woods", slug: "the-woods", hoa: "Eastlake III", lat: 32.6556, lng: -116.9450,
     desc: "Home of EastLake Middle School and close to the District at Eastlake shops.",
     listings: "https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" },
-  { name: "Eastlake Vistas", slug: "eastlake-vistas", hoa: "Eastlake III", lat: 32.6392, lng: -116.9440,
+  { name: "Eastlake Vistas", slug: "eastlake-vistas", hoa: "Eastlake III", lat: 32.6392, lng: -116.9425,
     desc: "Part of the Eastlake III association. Ask Betty about current Mello-Roos status.",
     listings: "https://bettytorano.com/neighborhood/159144635/eastlakevistas" }
 ];
