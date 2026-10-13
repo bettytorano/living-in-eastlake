@@ -83,7 +83,8 @@ document.addEventListener("DOMContentLoaded", function () {
     bounds.push([n.lat, n.lng]);
   });
 
-  map.fitBounds(bounds, { padding: [40, 40] });
+  // Extra room on the right for the name labels that sit beside each pin
+  map.fitBounds(bounds, { paddingTopLeft: [30, 30], paddingBottomRight: [110, 50] });
 
   if (editMode) {
     var out = document.createElement("p");
