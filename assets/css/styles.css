@@ -1127,4 +1127,4 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
   .nav a { font-size: .62rem; letter-spacing: .04em; }
 }
 .rv-src .rv-count { color: var(--gold-soft); font-weight: 600; font-size: .9rem; }
-.nb-pin-left .nb-pin-label { left: auto; right: -6px; top: 20px; }
+.nb-pin-up .nb-pin-label { top: -28px; left: 6px; }

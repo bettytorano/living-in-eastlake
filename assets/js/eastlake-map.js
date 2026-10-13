@@ -9,10 +9,10 @@ var EASTLAKE_NEIGHBORHOODS = [
   { name: "Eastlake Shores", slug: "eastlake-shores", hoa: "Eastlake I", lat: 32.6525, lng: -116.9765,
     desc: "Built around Eastlake's lake, home of the Beach Club and lagoon.",
     listings: "https://bettytorano.com/neighborhood/159144633/eastlakeshores" },
-  { name: "Eastlake Greens", slug: "eastlake-greens", hoa: "Eastlake II", lat: 32.6433, lng: -116.9625,
+  { name: "Eastlake Greens", slug: "eastlake-greens", hoa: "Eastlake II", labelUp: true, lat: 32.6433, lng: -116.9625,
     desc: "Surrounding the Enagic Golf Club at Eastlake (formerly EastLake Country Club), with its own association and amenities.",
     listings: "https://bettytorano.com/neighborhood/159144634/eastlakegreens" },
-  { name: "Eastlake Trails", slug: "eastlake-trails", hoa: "Eastlake III", lat: 32.6392, lng: -116.9498,
+  { name: "Eastlake Trails", slug: "eastlake-trails", hoa: "Eastlake III", labelUp: true, lat: 32.6392, lng: -116.9498,
     desc: "Home of the permanent Eastlake Little League fields and Arroyo Vista Elementary.",
     listings: "https://bettytorano.com/neighborhood/159144636/eastlaketrails" },
   { name: "Eastlake Trails North", slug: "eastlake-trails-north", hoa: "Eastlake III", lat: 32.6500, lng: -116.9512,
@@ -21,7 +21,7 @@ var EASTLAKE_NEIGHBORHOODS = [
   { name: "The Woods", slug: "the-woods", hoa: "Eastlake III", lat: 32.6556, lng: -116.9450,
     desc: "Home of EastLake Middle School and close to the District at Eastlake shops.",
     listings: "https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" },
-  { name: "Eastlake Vistas", slug: "eastlake-vistas", hoa: "Eastlake III", labelLeft: true, lat: 32.6384, lng: -116.9356,
+  { name: "Eastlake Vistas", slug: "eastlake-vistas", hoa: "Eastlake III", lat: 32.6392, lng: -116.9440,
     desc: "Part of the Eastlake III association. Ask Betty about current Mello-Roos status.",
     listings: "https://bettytorano.com/neighborhood/159144635/eastlakevistas" }
 ];
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var bounds = [];
   EASTLAKE_NEIGHBORHOODS.forEach(function (n) {
     var icon = L.divIcon({
-      className: "nb-pin" + (n.labelLeft ? " nb-pin-left" : ""),
+      className: "nb-pin" + (n.labelUp ? " nb-pin-up" : ""),
       html: '<span class="nb-pin-dot"></span><span class="nb-pin-label">' + n.name + "</span>",
       iconSize: null,
       iconAnchor: [9, 9]
