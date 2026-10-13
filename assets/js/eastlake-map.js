@@ -21,7 +21,7 @@ var EASTLAKE_NEIGHBORHOODS = [
   { name: "The Woods", slug: "the-woods", hoa: "Eastlake III", lat: 32.6556, lng: -116.9450,
     desc: "Home of EastLake Middle School and close to the District at Eastlake shops.",
     listings: "https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" },
-  { name: "Eastlake Vistas", slug: "eastlake-vistas", hoa: "Eastlake III", lat: 32.6384, lng: -116.9356,
+  { name: "Eastlake Vistas", slug: "eastlake-vistas", hoa: "Eastlake III", labelLeft: true, lat: 32.6384, lng: -116.9356,
     desc: "Part of the Eastlake III association. Ask Betty about current Mello-Roos status.",
     listings: "https://bettytorano.com/neighborhood/159144635/eastlakevistas" }
 ];
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var bounds = [];
   EASTLAKE_NEIGHBORHOODS.forEach(function (n) {
     var icon = L.divIcon({
-      className: "nb-pin",
+      className: "nb-pin" + (n.labelLeft ? " nb-pin-left" : ""),
       html: '<span class="nb-pin-dot"></span><span class="nb-pin-label">' + n.name + "</span>",
       iconSize: null,
       iconAnchor: [9, 9]
@@ -82,8 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     bounds.push([n.lat, n.lng]);
   });
 
-  // Extra room on the right so the name labels beside each pin are not cut off
-  map.fitBounds(bounds, { paddingTopLeft: [30, 30], paddingBottomRight: [140, 30] });
+  map.fitBounds(bounds, { padding: [40, 40] });
 
   if (editMode) {
     var out = document.createElement("p");
