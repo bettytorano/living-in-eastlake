@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var editMode = /[?&]edit\b/.test(location.search);
   var map = L.map(el, {
+    zoomSnap: 0.25,                  // fit the pins snugly on any screen width
     scrollWheelZoom: false,          // don't hijack page scrolling
     dragging: !L.Browser.mobile,     // let phones scroll the page with one finger
     tap: !L.Browser.mobile
