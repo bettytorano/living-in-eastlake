@@ -1081,6 +1081,7 @@ h1, h2, h3 { color: var(--brand-dark); }
 .wp-row strong { display: block; color: #fff; font-weight: 600; }
 .wp-row small { font-size: .72rem; letter-spacing: .06em; color: rgba(255,255,255,.65); }
 .wp-val { font-family: var(--serif); font-size: 1.7rem; color: #fff; }
+.wp-dep { font-size: 1.15rem; color: var(--gold); white-space: nowrap; }
 .wp-note { font-size: .88rem; color: rgba(255,255,255,.72); margin-top: 22px; line-height: 1.7; }
 .wp-note a { color: #fff; }
 .wp-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 56px; padding-top: 40px; border-top: 1px solid rgba(255,255,255,.18); }

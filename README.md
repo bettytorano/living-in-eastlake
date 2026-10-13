@@ -9,7 +9,7 @@ Betty Torano's Eastlake website. Plain HTML pages hosted free on **Cloudflare Pa
 
 | File | Page |
 |---|---|
-| `index.html` | Home: history reels, Why Eastlake, neighborhoods, places to eat, reviews, "Before the Offer" ZIP values, Meet Betty, home value form, "Let's Make a Plan" popup form |
+| `index.html` | Home: history reels, Why Eastlake, neighborhoods, places to eat, reviews, "Before the Offer" cost factors, Meet Betty, home value form, "Let's Make a Plan" popup form |
 | `about.html` | `/about`: Betty's story, Why Work with Me, reviews, credentials, FAQ |
 | `buyers-guide.html` | `/buyers-guide`: HOAs, Mello-Roos, schools, buying process |
 | `sellers-guide.html` | `/sellers-guide`: six-step selling process, paperwork, special situations |
@@ -46,7 +46,7 @@ Betty Torano's Eastlake website. Plain HTML pages hosted free on **Cloudflare Pa
 - Service area: Eastlake specialist, serving buyers and sellers **throughout San Diego County**.
 - Mello-Roos = CFDs only. Eastlake Maintenance District #1 (OSD 101) is a city assessment, **not** Mello-Roos.
 - Neighborhood ZIP codes: Hills & Shores 91913 · Trails North & The Woods 91914 · Greens, Trails & Vistas 91915.
-- Homepage ZIP values come from Zillow's Home Value Index (ZHVI). Refresh them every few months and keep the Zillow credit.
+- No ZIP-level home values on the homepage: each ZIP covers more than Eastlake, so the numbers mislead.
 
 ---
 
