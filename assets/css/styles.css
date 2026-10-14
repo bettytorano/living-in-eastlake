@@ -1092,7 +1092,7 @@ h1, h2, h3 { color: var(--brand-dark); }
 .wp-link:hover strong { color: var(--gold-soft); }
 @media (max-width: 900px) { .wp-grid, .wp-links { grid-template-columns: 1fr; gap: 36px; } }
 @media (max-width: 1100px) { .wp-link strong { white-space: normal; } }
-.nb-zip { position: absolute; right: 16px; top: 16px; background: rgba(255,255,255,.92); color: var(--brand); font-size: .68rem; font-weight: 700; letter-spacing: .1em; padding: 6px 10px; }
+.nb-card-body .nb-meta { margin: -4px 0 12px; font-size: .74rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--brand); }
 
 /* Closing band: Let's make a plan */
 .plan-band { background: var(--brand-dark); color: rgba(255,255,255,.85); padding: 88px 0; border-bottom: 2px solid rgba(201,168,76,.55); }
