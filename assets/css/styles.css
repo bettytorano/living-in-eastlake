@@ -1011,7 +1011,6 @@ h1, h2, h3 { color: var(--brand-dark); }
 .nb-card { background: #fff; border: 1px solid var(--line); box-shadow: var(--shadow); display: flex; flex-direction: column; scroll-margin-top: 90px; }
 .nb-card-img { position: relative; }
 .nb-card-img img { display: block; width: 100%; aspect-ratio: 16/9; object-fit: cover; }
-.nb-hoa { position: absolute; left: 16px; top: 16px; background: var(--brand); color: #fff; font-size: .68rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; padding: 6px 10px; }
 .nb-card-body { padding: 24px 26px 26px; display: flex; flex-direction: column; flex: 1; }
 .nb-card-body h3 { margin: 0 0 8px; font-size: 1.5rem; }
 .nb-card-body > p { margin: 0 0 14px; color: #3d4852; }
