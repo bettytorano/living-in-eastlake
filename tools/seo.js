@@ -131,7 +131,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
-  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
+  "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
   "blog/top-chula-vista-neighborhoods-parks-schools.html": { url: "/blog/top-chula-vista-neighborhoods-parks-schools", type: "Article", crumbs: [["Blog", "/blog"], ["Top 5 Chula Vista neighborhoods for parks and schools", "/blog/top-chula-vista-neighborhoods-parks-schools"]], published: "2026-10-12" },
   "blog/living-in-eastlake-trails.html": { url: "/blog/living-in-eastlake-trails", type: "Article", crumbs: [["Blog", "/blog"], ["Living in Eastlake Trails and Trails North", "/blog/living-in-eastlake-trails"]], published: "2026-10-11" },
@@ -151,7 +151,8 @@ const PAGES = {
   "blog/ultimate-guide-living-in-eastlake.html": { url: "/blog/ultimate-guide-living-in-eastlake", type: "Article", crumbs: [["Blog", "/blog"], ["The ultimate guide to living in Eastlake", "/blog/ultimate-guide-living-in-eastlake"]], published: "2025-12-09" },
   "blog/eastlake-little-league-history.html": { url: "/blog/eastlake-little-league-history", type: "Article", crumbs: [["Blog", "/blog"], ["The history of Eastlake Little League", "/blog/eastlake-little-league-history"]], published: "2025-12-08" },
   "blog/san-diego-country-club-chula-vista.html": { url: "/blog/san-diego-country-club-chula-vista", type: "Article", crumbs: [["Blog", "/blog"], ["A hidden gem in Chula Vista: the historic San Diego Country Club", "/blog/san-diego-country-club-chula-vista"]], published: "2025-11-17" },
-  "privacy.html":          { url: "/privacy",           type: "WebPage",        crumbs: [["Privacy Policy", "/privacy"]] }
+  "privacy.html":          { url: "/privacy",           type: "WebPage",        crumbs: [["Privacy Policy", "/privacy"]] },
+  "terms.html":            { url: "/terms",             type: "WebPage",        crumbs: [["Terms of Service", "/terms"]] }
 };
 
 const strip = s => s.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/\s+/g, " ").trim();
