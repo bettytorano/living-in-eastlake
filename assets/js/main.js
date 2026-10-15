@@ -79,3 +79,23 @@ document.addEventListener("DOMContentLoaded", function () {
   setTimeout(stop, 8000);
   go();
 })();
+
+// GoHighLevel chat widget: on phones, lift the bubble above the Call Betty / Home Value bar.
+// The widget lives in a shadow root, so page CSS can't reach it; inject a style once it appears.
+(function () {
+  var tries = 0;
+  var timer = setInterval(function () {
+    var host = document.querySelector("chat-widget");
+    var root = host && host.shadowRoot;
+    if (root && root.getElementById("lc_text-widget--btn")) {
+      clearInterval(timer);
+      if (root.getElementById("lift-for-cta")) return;
+      var s = document.createElement("style");
+      s.id = "lift-for-cta";
+      s.textContent = "@media (max-width: 640px) { #lc_text-widget--btn, #lc_text-widget { bottom: 92px !important; } }";
+      root.appendChild(s);
+    } else if (++tries > 60) {
+      clearInterval(timer);
+    }
+  }, 500);
+})();
