@@ -5,3 +5,10 @@
 
 /assets/*
   Cache-Control: public, max-age=3600
+
+# Keep Cloudflare preview copies of the site out of Google (the real site is sellingeastlake.com)
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex
