@@ -47,7 +47,7 @@ Betty Torano's Eastlake website. Plain HTML pages hosted free on **Cloudflare Pa
 - Mello-Roos = CFDs only. Eastlake Maintenance District #1 (OSD 101) is a city assessment, **not** Mello-Roos.
 - Neighborhood ZIP codes: Hills & Shores 91913 · Trails North & The Woods 91914 · Greens, Trails & Vistas 91915.
 - No ZIP-level home values on the homepage: each ZIP covers more than Eastlake, so the numbers mislead.
-- **Text messages (A2P 10DLC)**: every lead form has an optional, unchecked SMS consent box (`sms_consent`). Only text leads who checked it (GHL tag "SMS Opt-In"). SMS terms live at /privacy#sms. Keep the box wording when adding new forms.
+- **Text messages (A2P 10DLC)**: the GoHighLevel chat widget is the ONLY SMS opt-in on each page (carriers require one consent form per page). Website forms collect email/phone only, with no SMS checkbox. Never add an SMS checkbox to a form on a page that loads the widget. SMS terms: /privacy#sms.
 
 ---
 
