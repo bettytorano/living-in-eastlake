@@ -184,6 +184,8 @@ a.card:hover { transform: translateY(-3px); }
 @media (max-width: 560px) { .field-row { grid-template-columns: 1fr; } }
 .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .consent { font-size: .8rem; color: var(--muted); margin-top: 12px; }
+.sms-consent { display: flex; gap: 10px; align-items: flex-start; margin-top: 14px; font-size: .8rem; line-height: 1.5; color: var(--muted); cursor: pointer; }
+.sms-consent input { flex: none; width: 18px; height: 18px; margin: 2px 0 0; accent-color: var(--brand); }
 .form-card .btn { width: 100%; }
 
 /* Checklist */
