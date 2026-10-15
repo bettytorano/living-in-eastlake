@@ -34,6 +34,8 @@ const GHL_AREAS = ["Eastlake Hills", "Eastlake Shores", "Eastlake Greens", "East
 // New website leads land here as an opportunity (looked up by name, so renaming in GHL needs a change here)
 const GHL_PIPELINE = "Lead Nurture";
 const GHL_STAGE = "New Lead";
+// Betty's GHL user (Settings > Users): new contacts and pipeline cards are assigned to her
+const GHL_OWNER = "egkoA4v6O0SnSFGpLn0S";
 
 export async function onRequestPost({ request, env }) {
   const origin = new URL(request.url).origin;
@@ -167,6 +169,7 @@ async function sendToGHL(env, lead) {
     phone: lead.phone || undefined,
     address1: lead.address || undefined,
     source: "SellingEastlake.com",
+    assignedTo: GHL_OWNER,
     tags,
   };
   const res = await fetch(`${base}/contacts/upsert`, { method: "POST", headers, body: JSON.stringify(contact) });
@@ -245,6 +248,7 @@ async function addGHLOpportunity(base, headers, locationId, contactId, lead, lab
       contactId,
       name: `${name} – ${label}`,
       status: "open",
+      assignedTo: GHL_OWNER,
       source: "SellingEastlake.com",
     }),
   });
