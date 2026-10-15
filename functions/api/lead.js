@@ -9,7 +9,8 @@
 //   LOFTY_API_URL             optional: defaults to https://api.lofty.com/v1.0
 //   LEAD_SHEET_URL            optional: Google Apps Script web app URL that logs every lead to a Google Sheet
 //   LEAD_SHEET_SECRET (secret) optional: shared password the Apps Script checks (see tools/lead-sheet.gs)
-//   GHL_API_KEY     (secret)  optional: GoHighLevel Private Integration token (pit-…), scopes View + Edit Contacts
+//   GHL_API_KEY     (secret)  optional: GoHighLevel Private Integration token (pit-…),
+//                             scopes View + Edit Contacts and View + Edit Opportunities
 //   GHL_LOCATION_ID           optional: GoHighLevel sub-account Location ID (Settings > Business Profile)
 
 const FORM_LABELS = {
@@ -19,6 +20,20 @@ const FORM_LABELS = {
   "mello-roos": "Mello-Roos Question",
   "contact": "General Question",
 };
+
+// GoHighLevel contact custom fields (Settings > Custom Fields). Option text must match GHL exactly.
+const GHL_FIELDS = {
+  leadSource: "ArjLCkIs1JUJx50ycvJr",     // Lead Source (single)
+  timeframe: "5LAiWX3Hv9WGEX5hhxMt",      // Timeframe (single): same options as the site forms
+  area: "c0qzWe2O8O3LVYvPAvI9",           // Area of Interest (multiple): neighborhood names as on the site forms
+  clientType: "flIbIllD5VVeEscJ3BU5",     // Client Type (multiple)
+};
+const GHL_TIMEFRAMES = ["0–3 months", "3–6 months", "6–12 months", "12+ months", "Just curious"];
+const GHL_AREAS = ["Eastlake Hills", "Eastlake Shores", "Eastlake Greens", "Eastlake Trails", "Eastlake Trails North",
+  "The Woods", "Eastlake Vistas", "Chula Vista", "San Diego County", "Not sure / other"];
+// New website leads land here as an opportunity (looked up by name, so renaming in GHL needs a change here)
+const GHL_PIPELINE = "Lead Nurture";
+const GHL_STAGE = "New Lead";
 
 export async function onRequestPost({ request, env }) {
   const origin = new URL(request.url).origin;
@@ -172,8 +187,68 @@ async function sendToGHL(env, lead) {
     ].filter(Boolean).join("\n");
     const n = await fetch(`${base}/contacts/${id}/notes`, { method: "POST", headers, body: JSON.stringify({ body }) });
     if (!n.ok) console.error("GHL note failed:", n.status, (await n.text()).slice(0, 200));
+
+    // Custom fields and the pipeline card are extras: a failure is logged but the lead still counts as delivered
+    try { await updateGHLFields(base, headers, id, lead); } catch (e) { console.error("GHL fields failed:", e); }
+    try { await addGHLOpportunity(base, headers, env.GHL_LOCATION_ID, id, lead, label); } catch (e) { console.error("GHL opportunity failed:", e); }
   }
   return true;
+}
+
+// Fill Lead Source, Timeframe, Area of Interest and Client Type without wiping what Betty set by hand:
+// Lead Source only if empty, Area and Client Type are added to the existing picks, Timeframe takes the newest answer.
+async function updateGHLFields(base, headers, id, lead) {
+  const res = await fetch(`${base}/contacts/${id}`, { headers });
+  if (!res.ok) throw new Error(`get contact ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  const current = {};
+  for (const f of (await res.json())?.contact?.customFields || []) current[f.id] = f.value;
+  const list = (v) => (Array.isArray(v) ? v : v ? [v] : []);
+  const addTo = (fieldId, value) => {
+    const had = list(current[fieldId]);
+    return had.includes(value) ? null : { id: fieldId, field_value: [...had, value] };
+  };
+
+  const fields = [];
+  if (!current[GHL_FIELDS.leadSource]) fields.push({ id: GHL_FIELDS.leadSource, field_value: "SellingEastlake.com" });
+  if (GHL_TIMEFRAMES.includes(lead.timeframe)) fields.push({ id: GHL_FIELDS.timeframe, field_value: lead.timeframe });
+  if (GHL_AREAS.includes(lead.neighborhood)) fields.push(addTo(GHL_FIELDS.area, lead.neighborhood));
+  const type = lead.formType === "home-value" ? "Seller" : lead.formType === "buyer" ? "Buyer" : null;
+  if (type) fields.push(addTo(GHL_FIELDS.clientType, type));
+  const customFields = fields.filter(Boolean);
+  if (!customFields.length) return;
+
+  const put = await fetch(`${base}/contacts/${id}`, { method: "PUT", headers, body: JSON.stringify({ customFields }) });
+  if (!put.ok) throw new Error(`update contact ${put.status}: ${(await put.text()).slice(0, 200)}`);
+}
+
+// One open card per contact in Lead Nurture > New Lead (a repeat form submission doesn't add a second card)
+async function addGHLOpportunity(base, headers, locationId, contactId, lead, label) {
+  const p = await fetch(`${base}/opportunities/pipelines?locationId=${locationId}`, { headers });
+  if (!p.ok) throw new Error(`pipelines ${p.status}: ${(await p.text()).slice(0, 200)}`);
+  const pipeline = ((await p.json())?.pipelines || []).find((x) => x.name === GHL_PIPELINE);
+  if (!pipeline) throw new Error(`pipeline "${GHL_PIPELINE}" not found`);
+  const stage = (pipeline.stages || []).find((s) => s.name === GHL_STAGE) || (pipeline.stages || [])[0];
+
+  const q = new URLSearchParams({ location_id: locationId, contact_id: contactId, pipeline_id: pipeline.id, status: "open" });
+  const s = await fetch(`${base}/opportunities/search?${q}`, { headers });
+  if (!s.ok) throw new Error(`search ${s.status}: ${(await s.text()).slice(0, 200)}`);
+  if (((await s.json())?.opportunities || []).length) return;
+
+  const name = `${lead.firstName} ${lead.lastName}`.trim();
+  const res = await fetch(`${base}/opportunities/`, {
+    method: "POST",
+    headers,
+    body: JSON.stringify({
+      locationId,
+      pipelineId: pipeline.id,
+      pipelineStageId: stage?.id,
+      contactId,
+      name: `${name} – ${label}`,
+      status: "open",
+      source: "SellingEastlake.com",
+    }),
+  });
+  if (!res.ok) throw new Error(`create ${res.status}: ${(await res.text()).slice(0, 200)}`);
 }
 
 async function sendToLofty(env, lead) {
