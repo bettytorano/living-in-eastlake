@@ -204,7 +204,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function lookup() {
       var q = input.value.trim();
-      if (q.length < 3 || !places) { close(); return; }
+      if (q.length < 3) { close(); return; }
+      // Typed before Google finished loading: look up as soon as it's ready
+      if (!places) { loadPlaces().then(function (p) { places = p; lookup(); }).catch(close); return; }
       if (!token) token = new places.AutocompleteSessionToken();
       var mine = ++seq;
       places.AutocompleteSuggestion.fetchAutocompleteSuggestions({
