@@ -64,13 +64,26 @@ export async function onRequestPost({ request, env }) {
     page: clean(request.headers.get("referer"), 300),
     // Optional SMS opt-in checkbox (A2P 10DLC): only text leads who checked it
     smsConsent: clean(form.get("sms_consent")) === "yes",
+    fillMs: Number(clean(form.get("fill_ms"))) || 0,
   };
 
   if (!lead.firstName || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(lead.email)) {
     return Response.redirect(`${origin}/form-error`, 303);
   }
 
-  const results = await Promise.allSettled([sendEmail(env, lead), sendToLofty(env, lead), sendToSheet(env, lead), sendToGHL(env, lead)]);
+  // Bot filter. 2+ warning signs = dropped quietly (the bot still sees the thank-you page).
+  // 1 sign = "possible spam": Betty gets the email and a sheet row, but nothing goes to GoHighLevel or Lofty,
+  // so no instant reply, task or pipeline card is created for it.
+  const signs = spamSigns(lead);
+  if (signs.length >= 2) {
+    console.log("Spam dropped:", signs.join(", "), lead.email);
+    return Response.redirect(`${origin}/thank-you`, 303);
+  }
+  lead.suspect = signs[0] || "";
+
+  const results = await Promise.allSettled(lead.suspect
+    ? [sendEmail(env, lead), Promise.resolve(false), sendToSheet(env, lead), Promise.resolve(false)]
+    : [sendEmail(env, lead), sendToLofty(env, lead), sendToSheet(env, lead), sendToGHL(env, lead)]);
   const names = ["Email", "Lofty", "Sheet", "GHL"];
   results.forEach((r, i) => {
     if (r.status === "rejected") console.error(names[i] + " failed:", r.reason);
@@ -84,6 +97,28 @@ export async function onRequestPost({ request, env }) {
   return Response.redirect(`${origin}/thank-you`, 303);
 }
 
+function spamSigns(lead) {
+  const signs = [];
+  // Real visitors' browsers report how long the form took to fill in (assets/js/main.js); bots that post directly don't
+  if (lead.fillMs < 2000) signs.push(lead.fillMs ? "filled in under 2 seconds" : "no browser check");
+  // Phone (optional) must look like a US number, or an international one written with a leading +
+  if (lead.phone) {
+    const d = lead.phone.replace(/\D/g, "");
+    const ok = lead.phone.trim().startsWith("+") ? d.length >= 8 && d.length <= 15
+      : (d.length === 10 && /^[2-9]/.test(d)) || (d.length === 11 && /^1[2-9]/.test(d));
+    if (!ok) signs.push("phone is not a valid number");
+  }
+  // Bot names like "ElijahpalGM HenrypalGM": first and last name end in the same made-up suffix
+  const a = lead.firstName.toLowerCase(), b = lead.lastName.toLowerCase();
+  let n = 0;
+  while (n < a.length && n < b.length && a[a.length - 1 - n] === b[b.length - 1 - n]) n++;
+  if (n >= 4 && a !== b) signs.push("names share a made-up ending");
+  // Mass-mailer wording, or text in Cyrillic, Greek, Arabic, Hebrew or Asian scripts
+  if (/\b(know|get) your price\b|\byour (price|prices)\b/i.test(lead.message)) signs.push("generic 'your price' message");
+  if (/[\u0370-\u03FF\u0400-\u052F\u0590-\u06FF\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF]/.test(lead.message + lead.firstName + lead.lastName)) signs.push("non-Latin script");
+  return signs;
+}
+
 function clean(value, max = 200) {
   return (value == null ? "" : String(value)).trim().slice(0, max);
 }
@@ -94,6 +129,7 @@ async function sendEmail(env, lead) {
   const name = `${lead.firstName} ${lead.lastName}`.trim();
   const lines = [
     `New ${label} from SellingEastlake.com`,
+    lead.suspect ? `Possible spam (${lead.suspect}). Not sent to GoHighLevel or Lofty, so no auto-reply went out. If this is a real person, add them by hand.` : null,
     "",
     `Name: ${name}`,
     `Email: ${lead.email}`,
@@ -114,7 +150,7 @@ async function sendEmail(env, lead) {
       from: env.LEAD_FROM_EMAIL || "Living in Eastlake <leads@sellingeastlake.com>",
       to: env.LEAD_TO_EMAIL.split(",").map(s => s.trim()),
       reply_to: lead.email,
-      subject: `${label}: ${name}${lead.address ? " – " + lead.address : ""}`,
+      subject: `${lead.suspect ? "[Possible spam] " : ""}${label}: ${name}${lead.address ? " – " + lead.address : ""}`,
       text: lines.join("\n"),
     }),
   });
@@ -131,7 +167,7 @@ async function sendToSheet(env, lead) {
     // The sheet has no SMS column, so the opt-in rides along in the Message column
     body: JSON.stringify({
       secret: env.LEAD_SHEET_SECRET || "",
-      label: FORM_LABELS[lead.formType] || "Website Lead",
+      label: (lead.suspect ? "Possible spam: " : "") + (FORM_LABELS[lead.formType] || "Website Lead"),
       ...lead,
       message: [lead.message, `Text messages OK: ${lead.smsConsent ? "Yes" : "No"}`].filter(Boolean).join(" | "),
     }),

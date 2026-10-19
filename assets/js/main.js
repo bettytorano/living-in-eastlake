@@ -12,8 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
   if (year) year.textContent = new Date().getFullYear();
 
   // Prevent double submits on lead forms
+  var loadedAt = Date.now();
   document.querySelectorAll("form.lead-form").forEach(function (form) {
     form.addEventListener("submit", function () {
+      // Spam check: how long the form was open before sending (bots post instantly or skip this script)
+      var t = form.querySelector("input[name=fill_ms]");
+      if (!t) { t = document.createElement("input"); t.type = "hidden"; t.name = "fill_ms"; form.appendChild(t); }
+      t.value = String(Date.now() - loadedAt);
       var btn = form.querySelector("button[type=submit]");
       if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
     });
