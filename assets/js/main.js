@@ -20,8 +20,16 @@ document.addEventListener("DOMContentLoaded", function () {
       if (!t) { t = document.createElement("input"); t.type = "hidden"; t.name = "fill_ms"; form.appendChild(t); }
       t.value = String(Date.now() - loadedAt);
       var btn = form.querySelector("button[type=submit]");
-      if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+      if (btn) { btn.dataset.label = btn.dataset.label || btn.textContent; btn.disabled = true; btn.textContent = "Sending…"; }
     });
+  });
+});
+
+// Coming back to a form page (Back button / restored tab) must not leave the button stuck on "Sending…"
+window.addEventListener("pageshow", function () {
+  document.querySelectorAll("form.lead-form button[type=submit]").forEach(function (btn) {
+    btn.disabled = false;
+    if (btn.dataset.label) btn.textContent = btn.dataset.label;
   });
 });
 
