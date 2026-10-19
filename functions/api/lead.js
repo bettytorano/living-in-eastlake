@@ -65,6 +65,8 @@ export async function onRequestPost({ request, env }) {
     // Optional SMS opt-in checkbox (A2P 10DLC): only text leads who checked it
     smsConsent: clean(form.get("sms_consent")) === "yes",
     fillMs: Number(clean(form.get("fill_ms"))) || 0,
+    // "yes" when the visitor picked the address from Google's suggestions (assets/js/main.js), "no" when typed by hand
+    addressPicked: clean(form.get("address_picked")),
   };
 
   if (!lead.firstName || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(lead.email)) {
@@ -80,6 +82,13 @@ export async function onRequestPost({ request, env }) {
     return Response.redirect(`${origin}/thank-you`, 303);
   }
   lead.suspect = signs[0] || "";
+
+  // A real person whose email domain can't receive mail (usually a typo like "gmial.com") is sent back to fix it
+  if (!(await emailDomainWorks(lead.email))) {
+    return Response.redirect(`${origin}/form-error?reason=email`, 303);
+  }
+  lead.addressNote = !lead.address || !lead.addressPicked ? ""
+    : lead.addressPicked === "yes" ? "picked from Google's address list" : "typed by hand, please double-check";
 
   const results = await Promise.allSettled(lead.suspect
     ? [sendEmail(env, lead), Promise.resolve(false), sendToSheet(env, lead), Promise.resolve(false)]
@@ -119,6 +128,30 @@ function spamSigns(lead) {
   return signs;
 }
 
+// Asks Cloudflare's public DNS whether the email's domain has a mail server (or at least exists).
+// Any lookup problem counts as "works", so a DNS hiccup never blocks a real lead.
+async function emailDomainWorks(email) {
+  const domain = email.split("@").pop().toLowerCase();
+  const ask = async (type) => {
+    const res = await fetch(`https://cloudflare-dns.com/dns-query?name=${encodeURIComponent(domain)}&type=${type}`, {
+      headers: { Accept: "application/dns-json" },
+      signal: AbortSignal.timeout(2000),
+    });
+    if (!res.ok) throw new Error(`DNS ${res.status}`);
+    return res.json();
+  };
+  try {
+    const mx = await ask("MX");
+    if (mx.Status === 3) return false; // the domain doesn't exist
+    if ((mx.Answer || []).some((a) => a.type === 15)) return true;
+    const a = await ask("A"); // no mail server listed: mail can still go to the domain's own address
+    return (a.Answer || []).some((r) => r.type === 1);
+  } catch (e) {
+    console.error("Email domain check skipped:", e);
+    return true;
+  }
+}
+
 function clean(value, max = 200) {
   return (value == null ? "" : String(value)).trim().slice(0, max);
 }
@@ -134,7 +167,7 @@ async function sendEmail(env, lead) {
     `Name: ${name}`,
     `Email: ${lead.email}`,
     `Phone: ${lead.phone || "-"}`,
-    lead.address ? `Property address: ${lead.address}` : null,
+    lead.address ? `Property address: ${lead.address}${lead.addressNote ? ` (${lead.addressNote})` : ""}` : null,
     lead.neighborhood ? `Neighborhood: ${lead.neighborhood}` : null,
     lead.timeframe ? `Timeframe: ${lead.timeframe}` : null,
     lead.message ? `Message: ${lead.message}` : null,
@@ -215,7 +248,7 @@ async function sendToGHL(env, lead) {
   if (id) {
     const body = [
       `${label} from SellingEastlake.com`,
-      lead.address ? `Property address: ${lead.address}` : null,
+      lead.address ? `Property address: ${lead.address}${lead.addressNote ? ` (${lead.addressNote})` : ""}` : null,
       lead.neighborhood ? `Neighborhood: ${lead.neighborhood}` : null,
       lead.timeframe ? `Timeframe: ${lead.timeframe}` : null,
       lead.message ? `Message: ${lead.message}` : null,

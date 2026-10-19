@@ -93,3 +93,188 @@ document.addEventListener("DOMContentLoaded", function () {
   go();
 })();
 
+
+// Email typo hint under every lead form's email box: "Did you mean name@gmail.com?" (a suggestion only, never blocks)
+(function () {
+  var DOMAINS = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "icloud.com", "aol.com", "msn.com", "live.com",
+    "me.com", "comcast.net", "cox.net", "att.net", "sbcglobal.net", "verizon.net", "exprealty.com"];
+  function dist(a, b) {
+    var row = [], i, j, prev, tmp;
+    for (j = 0; j <= b.length; j++) row[j] = j;
+    for (i = 1; i <= a.length; i++) {
+      prev = row[0]; row[0] = i;
+      for (j = 1; j <= b.length; j++) {
+        tmp = row[j];
+        row[j] = Math.min(row[j] + 1, row[j - 1] + 1, prev + (a[i - 1] === b[j - 1] ? 0 : 1));
+        prev = tmp;
+      }
+    }
+    return row[b.length];
+  }
+  function suggest(email) {
+    var at = email.lastIndexOf("@");
+    if (at < 1) return null;
+    var domain = email.slice(at + 1).toLowerCase();
+    if (!domain || DOMAINS.indexOf(domain) >= 0) return null;
+    var best = null, bestDist = 3;
+    DOMAINS.forEach(function (d) { var k = dist(domain, d); if (k < bestDist) { bestDist = k; best = d; } });
+    return best ? email.slice(0, at + 1) + best : null;
+  }
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("form.lead-form input[type=email]").forEach(function (input) {
+      var hint = document.createElement("p");
+      hint.className = "email-hint";
+      hint.hidden = true;
+      hint.setAttribute("aria-live", "polite");
+      input.insertAdjacentElement("afterend", hint);
+      input.addEventListener("blur", function () {
+        var s = suggest(input.value.trim());
+        if (!s) { hint.hidden = true; return; }
+        hint.textContent = "Did you mean ";
+        var fix = document.createElement("button");
+        fix.type = "button";
+        fix.textContent = s;
+        fix.addEventListener("click", function () { input.value = s; hint.hidden = true; input.focus(); });
+        hint.appendChild(fix);
+        hint.appendChild(document.createTextNode("?"));
+        hint.hidden = false;
+      });
+      input.addEventListener("input", function () { hint.hidden = true; });
+    });
+  });
+})();
+
+// Address suggestions (Google Places) on "Property address" boxes. Google loads only when someone clicks into the box.
+// The key is a browser key locked in Google Cloud (project "SellingEastlake") to sellingeastlake.com and the
+// living-in-eastlake.pages.dev previews, and to the Maps JavaScript + Places APIs only.
+(function () {
+  var KEY = "AIzaSyCF__pbzNQ7tvbmCYGxkW_0H_ZKtks4a_U";
+  var loading;
+  function loadPlaces() {
+    if (!loading) {
+      loading = new Promise(function (resolve, reject) {
+        window.__gmReady = function () { google.maps.importLibrary("places").then(resolve, reject); };
+        var s = document.createElement("script");
+        s.src = "https://maps.googleapis.com/maps/api/js?key=" + KEY + "&loading=async&callback=__gmReady";
+        s.async = true;
+        s.onerror = reject;
+        document.head.appendChild(s);
+      });
+    }
+    return loading;
+  }
+
+  function setup(input) {
+    var form = input.form;
+    input.parentNode.classList.add("addr-wrap");
+    var list = document.createElement("ul");
+    list.className = "addr-list";
+    list.id = input.id + "-list";
+    list.setAttribute("role", "listbox");
+    list.hidden = true;
+    input.insertAdjacentElement("afterend", list);
+    input.setAttribute("autocomplete", "off");
+    input.setAttribute("role", "combobox");
+    input.setAttribute("aria-autocomplete", "list");
+    input.setAttribute("aria-controls", list.id);
+    input.setAttribute("aria-expanded", "false");
+    // Tells Betty's lead email whether the address was picked from Google's list or typed by hand
+    var picked = document.createElement("input");
+    picked.type = "hidden";
+    picked.name = "address_picked";
+    picked.value = "no";
+    form.appendChild(picked);
+
+    var places = null, token = null, timer, items = [], active = -1, seq = 0;
+    input.addEventListener("focus", function () {
+      loadPlaces().then(function (p) { places = p; }).catch(function () {});
+    });
+    input.addEventListener("input", function () {
+      picked.value = "no";
+      clearTimeout(timer);
+      timer = setTimeout(lookup, 250);
+    });
+    input.addEventListener("keydown", function (e) {
+      if (list.hidden) return;
+      if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); move(e.key === "ArrowDown" ? 1 : -1); }
+      else if (e.key === "Enter" && active >= 0) { e.preventDefault(); choose(active); }
+      else if (e.key === "Escape") { close(); }
+    });
+    input.addEventListener("blur", function () { setTimeout(close, 150); });
+
+    function lookup() {
+      var q = input.value.trim();
+      if (q.length < 3 || !places) { close(); return; }
+      if (!token) token = new places.AutocompleteSessionToken();
+      var mine = ++seq;
+      places.AutocompleteSuggestion.fetchAutocompleteSuggestions({
+        input: q,
+        sessionToken: token,
+        includedRegionCodes: ["us"],
+        includedPrimaryTypes: ["street_address", "premise", "subpremise"],
+        locationBias: { center: { lat: 32.64, lng: -116.97 }, radius: 40000 },
+      }).then(function (res) {
+        if (mine !== seq) return;
+        items = (res.suggestions || [])
+          .map(function (s) { return s.placePrediction && s.placePrediction.text.toString(); })
+          .filter(Boolean)
+          .map(function (t) { return t.replace(/, USA$/, ""); })
+          .slice(0, 5);
+        render();
+      }).catch(function () { close(); });
+    }
+    function render() {
+      list.innerHTML = "";
+      active = -1;
+      if (!items.length) { close(); return; }
+      items.forEach(function (text, i) {
+        var li = document.createElement("li");
+        li.id = list.id + "-" + i;
+        li.setAttribute("role", "option");
+        li.textContent = text;
+        li.addEventListener("mousedown", function (e) { e.preventDefault(); choose(i); });
+        list.appendChild(li);
+      });
+      var credit = document.createElement("li");
+      credit.className = "addr-credit";
+      credit.setAttribute("aria-hidden", "true");
+      credit.textContent = "Powered by Google";
+      list.appendChild(credit);
+      list.hidden = false;
+      input.setAttribute("aria-expanded", "true");
+    }
+    function move(step) {
+      var opts = list.querySelectorAll("[role=option]");
+      active = (active + step + opts.length) % opts.length;
+      opts.forEach(function (o, i) {
+        o.classList.toggle("active", i === active);
+        o.setAttribute("aria-selected", i === active ? "true" : "false");
+      });
+      input.setAttribute("aria-activedescendant", opts[active].id);
+    }
+    function choose(i) {
+      input.value = items[i];
+      picked.value = "yes";
+      token = null;
+      close();
+    }
+    function close() {
+      list.hidden = true;
+      input.setAttribute("aria-expanded", "false");
+      input.removeAttribute("aria-activedescendant");
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("form.lead-form input[name=address]").forEach(setup);
+  });
+})();
+
+// Form error page: say which field to fix when the server sends ?reason=email
+document.addEventListener("DOMContentLoaded", function () {
+  var msg = document.getElementById("form-error-reason");
+  if (msg && /[?&]reason=email\b/.test(location.search)) {
+    msg.textContent = "That email address doesn't seem to be able to receive mail. Please go back, double-check it and try again.";
+    msg.hidden = false;
+  }
+});
