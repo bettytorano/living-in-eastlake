@@ -7,7 +7,6 @@ Allow: /
 Disallow: /thank-you
 Disallow: /form-error
 Disallow: /api/
-Disallow: /ig-covers
 
 User-agent: GPTBot
 Allow: /
