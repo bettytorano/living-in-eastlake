@@ -46,9 +46,10 @@ export async function onRequestPost({ request, env }) {
     return Response.redirect(`${origin}/form-error`, 303);
   }
 
-  // Spam trap: real people never fill in the hidden "website" field
+  // Spam trap: real people never fill in the hidden "website" field.
+  // Spam goes to /thank-you?r=s so the page looks normal but does not report a Meta Pixel "Lead".
   if (clean(form.get("website"))) {
-    return Response.redirect(`${origin}/thank-you`, 303);
+    return Response.redirect(`${origin}/thank-you?r=s`, 303);
   }
 
   const lead = {
@@ -79,7 +80,7 @@ export async function onRequestPost({ request, env }) {
   const signs = spamSigns(lead);
   if (signs.length >= 2) {
     console.log("Spam dropped:", signs.join(", "), lead.email);
-    return Response.redirect(`${origin}/thank-you`, 303);
+    return Response.redirect(`${origin}/thank-you?r=s`, 303);
   }
   lead.suspect = signs[0] || "";
 

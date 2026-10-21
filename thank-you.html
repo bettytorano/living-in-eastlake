@@ -70,8 +70,8 @@
   </div>
 </section>
 <script>
-  // Fires a Meta Pixel "Lead" event if the pixel is installed
-  if (typeof fbq === "function") fbq("track", "Lead");
+  // Fires a Meta Pixel "Lead" event, except for submissions the spam filter dropped (?r=s)
+  if (typeof fbq === "function" && !/[?&]r=s\b/.test(location.search)) fbq("track", "Lead");
 </script>
 </main>
 <footer class="site-footer">
