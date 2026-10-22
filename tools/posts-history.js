@@ -35,5 +35,29 @@ module.exports = [
   "reel": "Dd9rii7SDhW",
   "tag": "Eastlake History",
   "body": "\n<p>Eastlake promised brand-new neighborhood schools, but the homes and the families arrived faster than the schools could keep up.</p>\n<h2>The Timeline</h2>\n<ul class=\"timeline\">\n  <li><strong>1987</strong>My family moves to Eastlake. EastLake Elementary hasn't opened yet.</li>\n  <li><strong>1989</strong>EastLake Elementary School opens.</li>\n  <li><strong>1992</strong>Eastlake High School opens.</li>\n  <li><strong>1995</strong>Olympic View Elementary School opens.</li>\n  <li><strong>1999</strong>Arroyo Vista Charter School opens.</li>\n  <li><strong>2003</strong>EastLake Middle School opens, nearly 16 years after the first residents moved in.</li>\n  <li><strong>2004</strong>Salt Creek Elementary School opens.</li>\n</ul>\n<h2>Eastlake Schools Today</h2>\n<p>Today Eastlake is served by the Chula Vista Elementary School District for grades K–6 and the Sweetwater Union High School District for grades 7–12. You'll find the current list in my <a href=\"/buyers-guide#schools\">Buyer's Guide</a>.</p>\n<p>Attendance boundaries can change over time, so always confirm the assigned schools for a specific address with each district.</p>\n<p><strong>Were your children able to attend EastLake Elementary, or were they assigned to another school?</strong> Tell me your story.</p>"
+ },
+ {
+  "slug": "eastlake-before-the-125-freeway",
+  "title": "Eastlake Existed for 20 Years Before the SR-125 Opened",
+  "short": "Eastlake existed for 20 years before the SR-125 opened",
+  "desc": "When Betty Torano moved to Eastlake in 1987 there was no 125 freeway. Residents drove East H Street, Telegraph Canyon and Otay Lakes Road until the South Bay Expressway opened in 2007.",
+  "date": "2026-10-16",
+  "dateLabel": "October 16, 2026",
+  "img": "hero-eastlake.jpg",
+  "reel": "Dek7tjzylk0",
+  "tag": "Eastlake History",
+  "body": "\n<p>Today it's hard to picture Eastlake without the 125, but the community existed for about 20 years before the freeway opened.</p>\n<h2>Getting Around in 1987</h2>\n<p>When we moved to Eastlake in 1987, there was no 125 freeway. To head west, we relied on East H Street, Telegraph Canyon Road and Otay Lakes Road.</p>\n<h2>The South Bay Expressway Opens</h2>\n<p>The South Bay Expressway, State Route 125, finally opened in 2007. Today I use it all the time. With FasTrak, my short trip between Birch Road and East H Street cost only 50 cents when I made this video.</p>\n<h2>Then and Now</h2>\n<p>The 125 changed everyday life in Eastlake and made commuting across the South Bay much easier. If you're thinking about a move and want to know how a neighborhood fits your daily drive, my <a href=\"/neighborhoods\">neighborhood guides</a> are a good place to start.</p>\n<p><strong>Do you remember Eastlake before the 125? Should it remain a toll road or become free?</strong> Tell me what you think.</p>"
+ },
+ {
+  "slug": "when-vons-opened-in-eastlake",
+  "title": "Can You Imagine Eastlake Without a Grocery Store? Before Vons Opened in 1996",
+  "short": "Can you imagine Eastlake without a grocery store?",
+  "desc": "When Betty Torano moved to Eastlake in 1987, groceries meant driving toward Bonita or central Chula Vista. Vons opened at Eastlake Village Center in 1996.",
+  "date": "2026-10-22",
+  "dateLabel": "October 22, 2026",
+  "img": "eastlake-shores.jpg",
+  "reel": "DezJRW8yldW",
+  "tag": "Eastlake History",
+  "body": "\n<p>Can you imagine living in Eastlake without a grocery store? For the first several years, that's exactly how it was.</p>\n<h2>Groceries Meant a Drive</h2>\n<p>When we moved here in 1987, buying groceries meant driving west toward Bonita or central Chula Vista.</p>\n<h2>Vons Opens at Eastlake Village Center</h2>\n<p>In 1996, Vons opened at Eastlake Village Center and changed everyday life for the growing community.</p>\n<h2>Eastlake Today</h2>\n<p>Today, shopping, dining and everyday errands are close by. You'll find more about everyday life here in my <a href=\"/life-in-eastlake\">Life in Eastlake</a> guide.</p>\n<p><strong>Do you remember when Vons opened? Where did your family shop before then?</strong> I'd love to hear.</p>"
  }
 ];
