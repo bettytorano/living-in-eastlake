@@ -36,6 +36,7 @@ const SEO_TITLES = {
   "eastlake-neighborhoods-no-mello-roos": "Eastlake Neighborhoods With No Mello-Roos",
   "ultimate-guide-living-in-eastlake": "The Ultimate Guide to Living in Eastlake, CA",
 };
+const ANSWERS = require("./post-answers");
 const tpl = read("about.html");
 function page(file, urlPath, title, desc, ogImage, main) {
   const t = tpl
@@ -66,7 +67,7 @@ for (const p of posts) {
   <div class="wrap">
     <span class="eyebrow"><a href="/blog">Blog</a> · ${p.tag}</span>
     <h1 class="post-title">${p.title}</h1>
-    <p class="reviewed">By Betty Torano, REALTOR® · Eastlake resident since 1987 · ${fmt(p.date)}</p>
+${ANSWERS[p.slug] ? `    <p class="lead post-answer">${ANSWERS[p.slug]}</p>\n` : ""}    <p class="reviewed">By Betty Torano, REALTOR® · Eastlake resident since 1987 · ${fmt(p.date)}</p>
   </div>
 </section>
 <section class="section">
