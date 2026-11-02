@@ -4,7 +4,7 @@ module.exports = [
 slug: "top-chula-vista-neighborhoods-parks-schools",
 title: "Top 5 Chula Vista Neighborhoods for Parks and Schools",
 short: "Top 5 Chula Vista neighborhoods for parks and schools",
-desc: "A local REALTOR's guide to five Chula Vista neighborhoods known for parks, trails, nearby schools and everyday convenience: Eastlake, Otay Ranch, Rancho del Rey, Rolling Hills Ranch and Sunbow.",
+desc: "Five Chula Vista neighborhoods known for parks, trails and nearby schools: Eastlake, Otay Ranch, Rancho del Rey, Rolling Hills Ranch and Sunbow.",
 date: "2026-10-12", img: "eastlake-shores-bridge.jpg", tag: "Chula Vista",
 body: `<p>Chula Vista offers some of San Diego County's most appealing neighborhoods for buyers who want parks, trails and schools close to home, along with easy access to shopping and the rest of the county. As a REALTOR® with eXp Realty of Southern California and an Eastlake resident since 1987, here are five neighborhoods I often recommend exploring, and what makes each one stand out.</p>
 
@@ -27,13 +27,13 @@ body: `<p>Chula Vista offers some of San Diego County's most appealing neighborh
 <p><strong>Insider tip:</strong> Many Otay Ranch homes are newer construction, a good fit if you want a move-in-ready home. Newer areas often carry Mello-Roos, so check the tax bill for each address.</p>
 
 <h2>3. Rancho Del Rey: Established Streets and Generous Lots</h2>
-<p>Rancho del Rey is an established neighborhood with mature landscaping, spacious homes and a central location.</p>
+<p>Rancho del Rey has mature landscaping, spacious homes and a central location.</p>
 <ul>
 <li>Larger homes and generous lots</li>
 <li>Community parks and schools nearby</li>
 <li>Quick access to State Route 125 and Interstate 805</li>
 </ul>
-<p><strong>Insider tip:</strong> Rancho del Rey often appeals to move-up buyers looking for more space in an established setting.</p>
+<p><strong>Insider tip:</strong> Rancho del Rey offers larger homes, mature trees and a central location.</p>
 
 <h2>4. Rolling Hills Ranch: Hillside Views and Trails</h2>
 <p>Rolling Hills Ranch offers an upscale hillside setting with mountain views and easy access to the outdoors.</p>
@@ -54,14 +54,14 @@ body: `<p>Chula Vista offers some of San Diego County's most appealing neighborh
 <p><strong>Insider tip:</strong> Sunbow can offer good value for buyers who want a quieter street with quick city access.</p>
 
 <h2>Which Chula Vista Neighborhood Is Right for You?</h2>
-<p>Each of these neighborhoods has its own character, from newer construction in Otay Ranch to the lake and clubs of Eastlake and the established streets of Rancho del Rey. The right fit depends on your budget, commute, home style and the amenities you'll use most. School assignments can change, so always confirm the schools for a specific address with each district.</p>
+<p>Each of these neighborhoods has its own character, from newer construction in Otay Ranch to the lake and clubs of Eastlake and the tree-lined streets of Rancho del Rey. The right fit depends on your budget, commute, home style and the amenities you'll use most. School assignments can change, so always confirm the schools for a specific address with each district.</p>
 <p>I'd be happy to help you compare them. <a href="https://bettytorano.com/neighborhood/158384753/eastlake" rel="noopener">Search Eastlake homes</a>, read my <a href="/buyers-guide">Eastlake Buyer's Guide</a>, or <a href="/home-value">request a free home value</a> if you're thinking about selling.</p>`
 },
 {
 slug: "living-in-eastlake-trails",
 title: "Living in Eastlake Trails and Trails North, Chula Vista: Little League, Parks and Trails",
 short: "Living in Eastlake Trails and Trails North",
-desc: "A local's guide to Eastlake Trails and Trails North: the Eastlake Little League fields, the Eastlake III HOA, Mello-Roos, schools and parks, from an Eastlake resident since 1987.",
+desc: "A local's guide to Eastlake Trails and Trails North: the Eastlake Little League fields, the Eastlake III HOA, Mello-Roos, schools and parks.",
 date: "2026-10-11", img: "eastlake-trails.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Trails is home to the celebrated Eastlake Little League fields, built on land donated by the EastLake Development Company, and enjoys the clubhouses, pools and trails of the Eastlake III association. Just across Otay Lakes Road, the smaller Trails North neighborhood shares the same association and amenities, so I cover both here.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched the Trails and Trails North take shape. Here is what to know if you're considering buying or selling here.</p>
@@ -113,7 +113,7 @@ body: `<p>Eastlake Trails is home to the celebrated Eastlake Little League field
 slug: "living-in-the-woods-eastlake",
 title: "Living in The Woods at Eastlake, Chula Vista: Hillside Views and Clubhouse Life",
 short: "Living in The Woods at Eastlake: hillside views and clubhouse life",
-desc: "A local's guide to The Woods at Eastlake: the Woods Clubhouse, the Eastlake III HOA, Mello-Roos and CFD 07M, schools and parks, from an Eastlake resident since 1987.",
+desc: "A local's guide to The Woods at Eastlake: the Woods Clubhouse, the Eastlake III HOA, Mello-Roos and CFD 07M, schools and parks.",
 date: "2026-10-11", img: "eastlake-woods-aerial-1.jpg", tag: "Neighborhoods",
 body: `<p>The Woods is part of the Eastlake III association, with hillside streets, views toward the mountains and its own Eastlake Woods Clubhouse.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched The Woods take shape. Here's what to know if you're thinking about buying or selling here.</p>
@@ -161,7 +161,7 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 slug: "living-in-eastlake-vistas",
 title: "Living in Eastlake Vistas, Chula Vista: Views, Parks and the Otay Lakes",
 short: "Living in Eastlake Vistas: views, parks and the Otay Lakes",
-desc: "A local's guide to Eastlake Vistas: Mountain Hawk Park, the Otay Lakes, the Eastlake III HOA, Mello-Roos and CFD 07M, and schools, from an Eastlake resident since 1987.",
+desc: "A local's guide to Eastlake Vistas: Mountain Hawk Park, the Otay Lakes, the Eastlake III HOA, Mello-Roos and CFD 07M, and nearby schools.",
 date: "2026-10-11", img: "eastlake-hawk-park-1.jpg", tag: "Neighborhoods",
 body: `<p>Perched along Eastlake's eastern hills near Mountain Hawk Park and the Otay Lakes, Eastlake Vistas pairs scenic views and outdoor recreation with some of Eastlake's newer construction.</p>
 <p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I've watched Eastlake Vistas take shape. Here is what to know if you're considering buying or selling here.</p>
@@ -395,7 +395,7 @@ body: `<p>If you're thinking about selling a home in <strong>Eastlake or Chula V
 <h2>What If My Mello-Roos Is Ending Soon?</h2>
 <p>If you've verified that a special tax on your parcel has a defined end date approaching, that could be useful information for a prospective buyer. But the word <strong>verified</strong> matters. Get documentation, and don't rely on what someone remembers from years ago or on what a neighbor says about their own property.</p>
 <h2>Does Every Home in Chula Vista Have Mello-Roos?</h2>
-<p>No. And even among properties that do have special taxes, the amounts and districts vary. Chula Vista includes older established neighborhoods as well as newer master-planned communities developed and financed at different times. When you're selling a specific house, what matters is <strong>that house</strong>: its parcel, its tax bill, its HOA, its district and its competition.</p>
+<p>No. And even among properties that do have special taxes, the amounts and districts vary. Chula Vista includes older neighborhoods as well as newer master-planned communities developed and financed at different times. When you're selling a specific house, what matters is <strong>that house</strong>: its parcel, its tax bill, its HOA, its district and its competition.</p>
 <h2>Common Questions About HOA and Mello-Roos in Eastlake</h2>
 <h3>How long does Mello-Roos last in Eastlake, Chula Vista?</h3>
 <p>There isn't one expiration date that applies to every Eastlake property. Mello-Roos is associated with specific Community Facilities Districts, and the terms can differ. Verify the CFD and governing documents for your individual parcel.</p>
@@ -413,7 +413,7 @@ title: "Living in Eastlake Hills, Chula Vista: Where Eastlake's Story Began",
 short: "Living in Eastlake Hills: where Eastlake's story began",
 desc: "A local's guide to Eastlake Hills, one of Eastlake's two original neighborhoods: homes, HOA, Mello-Roos, amenities, schools and commute.",
 date: "2026-03-17", img: "eastlake-hills.jpg", tag: "Neighborhoods",
-body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, Chula Vista's first master-planned community. Built in the mid-1980s alongside Eastlake Shores, it is where the Eastlake story started, and that history is something you can feel the moment you drive through the neighborhood. Mature trees, well-established streets and a genuine sense of community give Eastlake Hills a character that newer developments are still working to build.</p>
+body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, Chula Vista's first master-planned community. Built in the mid-1980s alongside Eastlake Shores, it is where the Eastlake story started, and that history is something you can feel the moment you drive through the neighborhood. Mature trees, homes built from the late 1980s on and parks within walking distance give Eastlake Hills a character that newer developments are still working to build.</p>
 <p>It's also my home. I moved to Eastlake Hills in 1987, and as a Realtor® who works in every Eastlake neighborhood, I'm in Eastlake Hills regularly. Here's an honest guide to what makes it worth your attention, whether you are buying or selling.</p>
 <h2>Where Is Eastlake Hills?</h2>
 <p>Eastlake Hills sits on the west side of Eastlake, between Corral Canyon Road and East H Street, just west of State Route 125. Its ZIP code is 91913 (Chula Vista, CA 91913).</p>
@@ -421,7 +421,7 @@ body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, C
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
 <script src="/assets/js/nbr-map.js?v=17" defer></script>
 <h2>The Original Eastlake: A Neighborhood with Real History</h2>
-<p>When Eastlake launched in the mid-1980s, it was a defining moment for Chula Vista. As the city's first master-planned community, Eastlake set the standard for how large-scale residential development would work in Southern California. Eastlake Hills and Eastlake Shores were the pioneering first phases, the neighborhoods that established the Eastlake identity before the golf course, the later villages and the gated enclaves followed.</p>
+<p>When Eastlake launched in the mid-1980s, it was a defining moment for Chula Vista. As the city's first master-planned community, Eastlake set the standard for how large-scale residential development would work in Southern California. Eastlake Hills and Eastlake Shores were the pioneering first phases, the neighborhoods that set the look of Eastlake before the golf course, the later villages and the gated enclaves followed.</p>
 <p>That founding status gives Eastlake Hills real depth: decades of history, an engaged resident base and a reputation that has only strengthened over time.</p>
 <h2>Homes and Architecture</h2>
 <p>Eastlake Hills reflects the Mediterranean and contemporary styles of the mid-1980s, with stucco exteriors, tiled roofs and well-kept streetscapes. Many homes have been thoughtfully updated over the years with modern kitchens, renovated bathrooms and open-concept improvements that bring interiors in line with today's expectations while keeping the neighborhood's original character.</p>
@@ -435,7 +435,7 @@ body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, C
 <h2>Location and Commute</h2>
 <p>Eastlake Hills sits in the southeastern part of Chula Vista with convenient access to State Route 125 and Interstate 805. Downtown San Diego is approximately 20 to 25 minutes away, downtown Chula Vista is about 10 minutes, and the U.S.-Mexico border is roughly 10 miles south, a practical location for residents with personal or professional ties on both sides of the border. San Diego International Airport is approximately 25 miles away.</p>
 <h2>Who Is Eastlake Hills Right For?</h2>
-<p>Eastlake Hills consistently attracts buyers who want the depth and stability of an established neighborhood without giving up the amenities that make Eastlake one of the most sought-after addresses in Chula Vista. It's an excellent fit for buyers who want to be near EastLake Elementary and the Swim and Tennis Club, move-up buyers looking for more space and long-term value, and anyone who appreciates the character that only time can build into a community.</p>
+<p>Eastlake Hills consistently attracts buyers who want mature landscaping and homes with a long history, without giving up the amenities that make Eastlake one of the most sought-after addresses in Chula Vista. It's an excellent fit for buyers who want to be near EastLake Elementary and the Swim and Tennis Club, move-up buyers looking for more space and long-term value, and anyone who appreciates the character that only time can build into a community.</p>
 <p>For sellers, Eastlake Hills properties benefit from strong, consistent demand. Buyers who know Eastlake often seek out the original neighborhoods specifically, and that focused attention works in your favor when it comes time to list.</p>
 <h2>Ready to Buy or Sell in Eastlake Hills?</h2>
 <p>Whether you are buying your first home here or selling a property you have loved for years, I bring local knowledge and nearly 40 years as an Eastlake resident to guide you to the best possible outcome. <a href="https://bettytorano.com/neighborhood/159144632/eastlakehills">See homes for sale in Eastlake Hills</a>, or <a href="/home-value">request your free home value</a>.</p>`
@@ -447,16 +447,16 @@ short: "Living in Eastlake Shores: lake living in an original Eastlake neighborh
 desc: "A local's guide to Eastlake Shores: the lake, Beach Club and lagoon, home types, Mello-Roos, schools, commute and what locals love most.",
 date: "2026-03-27", img: "eastlake-shores-beach.jpg", tag: "Neighborhoods",
 body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, Chula Vista's first master-planned community. Built in the mid-1980s alongside Eastlake Hills, Shores helped establish the Eastlake identity before the golf course, the later village phases and the gated enclaves that followed. Four decades later, it remains one of the most beloved and in-demand communities in Eastlake.</p>
-<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I work with buyers and sellers in Eastlake Shores regularly. Here's what you need to know about this established, lakefront neighborhood.</p>
+<p>As an Eastlake resident since 1987 and a Realtor® who works in every Eastlake neighborhood, I work with buyers and sellers in Eastlake Shores regularly. Here's what you need to know about this original lakefront neighborhood.</p>
 <h2>Where Is Eastlake Shores?</h2>
 <p>Eastlake Shores sits around the Eastlake lake, between East H Street and State Route 125, just across East H Street from Eastlake Hills. Its ZIP code is 91913 (Chula Vista, CA 91913).</p>
 <div class="nbr-map" data-nbr="eastlake-shores" role="region" aria-label="Map of the Eastlake Shores boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
 <script src="/assets/js/nbr-map.js?v=17" defer></script>
 <h2>A Founding Neighborhood with Four Decades of Community</h2>
-<p>Eastlake Shores was one of the first addresses to take shape when Eastlake launched. The neighborhood was designed around a community lake, giving it a resort-inspired character that was distinctive from day one. Mature landscaping, established common areas and a resident base that has grown together over decades give Shores the kind of genuine community feel newer developments rarely achieve.</p>
+<p>Eastlake Shores was one of the first addresses to take shape when Eastlake launched. The neighborhood was designed around a community lake, giving it a resort-inspired character that was distinctive from day one. Mature landscaping, the lake and common areas cared for since the late 1980s give Shores a settled look that newer developments rarely achieve.</p>
 <h2>Homes and Architecture</h2>
-<p>Eastlake Shores offers the widest mix of homes in Eastlake I: two condominium complexes on and near the lake, townhomes right on the lake, and detached single-family homes. The architecture is predominantly Mediterranean and contemporary, consistent with the original Eastlake development. Many homes have been updated with modern kitchens, refreshed bathrooms and open-plan living areas that feel current while keeping the warmth of an established neighborhood.</p>
+<p>Eastlake Shores offers the widest mix of homes in Eastlake I: two condominium complexes on and near the lake, townhomes right on the lake, and detached single-family homes. The architecture is predominantly Mediterranean and contemporary, consistent with the original Eastlake development. Many homes have been updated with modern kitchens, refreshed bathrooms and open-plan living areas that feel current while keeping the charm of the original architecture.</p>
 <p>That variety makes the Shores home to some of Eastlake's best starter homes, and one of the more accessible ways to live by the lake. It attracts first-time buyers, downsizers, investors and long-term residents alike.</p>
 <h2>Lake Living and Resort-Style Amenities</h2>
 <p>The centerpiece of Eastlake Shores is its community lake. Walking paths along the waterfront, mature trees and a peaceful residential atmosphere make it one of the most distinctive places to live in Chula Vista. Residents enjoy multiple swimming pools, a sandy beach lagoon, sand volleyball courts, paddle boats, clubhouses available for private events, tennis and basketball courts, and parks and playgrounds throughout the community.</p>
@@ -468,12 +468,12 @@ body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, 
 <h2>Location and Commute</h2>
 <p>Eastlake Shores sits in the southeastern part of Chula Vista with convenient access to State Route 125 and State Route 54. Downtown San Diego is approximately 20 to 25 minutes away, downtown Chula Vista is about 10 minutes, and the U.S.-Mexico border is roughly 10 miles south. The Eastlake Village Marketplace and Otay Ranch Town Center provide shopping, dining and everyday errands close to home.</p>
 <h2>Who Is Eastlake Shores Right For?</h2>
-<p>Eastlake Shores attracts a wide range of buyers because of its variety of home types and its lakefront character. It's an excellent fit for first-time buyers entering the Eastlake market, downsizers who want low-maintenance living with great amenities, buyers who want to be close to the lake, schools and parks, and investors who recognize the steady demand an established, amenity-rich neighborhood generates.</p>
+<p>Eastlake Shores attracts a wide range of buyers because of its variety of home types and its lakefront character. It's an excellent fit for first-time buyers entering the Eastlake market, downsizers who want low-maintenance living with great amenities, buyers who want to be close to the lake, schools and parks, and investors who recognize the steady demand for a lakeside neighborhood with this many amenities.</p>
 <p>For sellers, Eastlake Shores properties benefit from strong buyer interest. The neighborhood's reputation as one of the original, lakefront communities is a powerful marketing asset that I put to work in every listing.</p>
 <h3>What locals love about Eastlake Shores</h3>
 <ul><li><strong>The "original" charm:</strong> More mature landscaping and larger trees than the newer phases of Eastlake.</li><li><strong>The Beach Club:</strong> Residents enjoy the private Eastlake Beach Club with its sandy beach lagoon, a rare find in an inland neighborhood.</li><li><strong>Walkability to retail:</strong> It's easy to walk or bike to the Eastlake Village Center for Target, Lowe's, Trader Joe's, Sprouts or a coffee without fighting traffic on Otay Lakes Road.</li><li><strong>Outdoor traditions:</strong> The 15-acre lake is the heart of the community. You'll see neighbors walking the perimeter at sunset or out on the paddle boats.</li><li><strong>Close to school:</strong> Being within walking distance of EastLake Elementary is a major draw for many buyers.</li></ul>
 <h2>Ready to Buy or Sell in Eastlake Shores?</h2>
-<p>Whether you are buying your first home here or selling a property you have cherished for years, I bring the local knowledge to make the process seamless. <a href="https://bettytorano.com/neighborhood/159144633/eastlakeshores">See homes for sale in Eastlake Shores</a>, or <a href="/home-value">request your free home value</a>.</p>`
+<p>Whether you are buying your first home here or selling a property you have cherished for years, I bring the local knowledge to make the process go smoothly. <a href="https://bettytorano.com/neighborhood/159144633/eastlakeshores">See homes for sale in Eastlake Shores</a>, or <a href="/home-value">request your free home value</a>.</p>`
 },
 {
 slug: "eastlake-little-league-history",
@@ -485,7 +485,7 @@ body: `<p>If you live in Eastlake or anywhere in Chula Vista, you already know t
 <p>As a local Realtor, longtime Eastlake resident and former Eastlake Little League board member, I've seen firsthand how meaningful this organization is. Here is the story of how it grew into the beloved program it is today.</p>
 <h2>Before the Fields: Baseball on Empty Lots</h2>
 <p>When our family first moved to Eastlake in 1987, there was no local Little League, so my older son played T-ball at Sweetwater Valley Little League.</p>
-<p>After Eastlake Little League was established, teams played on temporary fields scattered throughout the community, including a lot where the Eastlake Post Office stands today.</p>
+<p>After Eastlake Little League was founded, teams played on temporary fields scattered throughout the community, including a lot where the Eastlake Post Office stands today.</p>
 <h2>How It All Began</h2>
 <p>Eastlake Little League was officially founded in 1998 to serve the growing number of families moving into the master-planned Eastlake community. The vision was clear: create a youth baseball program where children could learn the game, develop character and build strong community ties.</p>
 <p>One of the most significant moments in the league's early history was the construction of its home fields. The land was generously donated by the EastLake Development Company, and a dedicated group of parents stepped forward to help bring the project to life.</p>
@@ -511,7 +511,7 @@ body: `<p>If you live in Eastlake or anywhere in Chula Vista, you already know t
 slug: "ultimate-guide-living-in-eastlake",
 title: "The Ultimate Guide to Living in Eastlake, CA",
 short: "The ultimate guide to living in Eastlake",
-desc: "Everything to know about living in Eastlake, Chula Vista: the neighborhoods in the order they were built, the three HOAs, schools, recreation, shopping and commute.",
+desc: "Everything to know about living in Eastlake, Chula Vista: the neighborhoods in the order they were built, the three HOAs, schools, recreation and shopping.",
 date: "2025-12-09", img: "eastlake-greens-view.jpg", tag: "Eastlake Guide",
 body: `<p>If you are thinking about living in <strong>Eastlake, California</strong>, you are considering one of the most desirable master-planned communities in San Diego County, in the city of Chula Vista. Eastlake offers beautiful neighborhoods, schools within the community, scenic walking trails, resort-style amenities and a welcoming community where neighbors connect and lifestyle and convenience come together.</p>
 <p>As a local Realtor, longtime Eastlake resident and active community volunteer, I have helped many buyers and sellers here. This guide gives you a full overview of what life in Eastlake is like and why so many people choose to call it home.</p>
@@ -524,7 +524,7 @@ body: `<p>If you are thinking about living in <strong>Eastlake, California</stro
 <h3>1. Eastlake Hills</h3>
 <p>One of the two original Eastlake neighborhoods. Known for quiet streets, mature trees and close proximity to parks, schools and early community amenities. <a href="/blog/living-in-eastlake-hills">Read my guide to Eastlake Hills</a>.</p>
 <h3>2. Eastlake Shores</h3>
-<p>The sister neighborhood to Eastlake Hills and also one of the originals. Shores is known for its lakeside views, beautifully maintained scenery and easy access to the Eastlake Beach Club. Residents appreciate the peaceful setting and established feel. <a href="/blog/living-in-eastlake-shores">Read my guide to Eastlake Shores</a>.</p>
+<p>The sister neighborhood to Eastlake Hills and also one of the originals. Shores is known for its lakeside views, beautifully maintained scenery and easy access to the Eastlake Beach Club. The lake, mature trees and walking path give it a peaceful setting. <a href="/blog/living-in-eastlake-shores">Read my guide to Eastlake Shores</a>.</p>
 <h3>3. Eastlake Greens</h3>
 <p>Developed next as Eastlake expanded eastward. Greens surrounds the golf course and features rolling greenbelts, three community pools and a variety of home styles.</p>
 <h3>4. Eastlake Trails and Trails North</h3>
@@ -641,13 +641,13 @@ body: `<p>If you're thinking about buying a home in <strong>Eastlake, Chula Vist
 <h3>Which Eastlake neighborhoods have no Mello-Roos?</h3>
 <p>Buyers can find homes without Mello-Roos in some of Eastlake's older communities, including properties in Eastlake Shores, Eastlake Hills and Eastlake Greens. Always verify the individual property rather than assuming based on the neighborhood name.</p>
 <h3>Does Eastlake Woods have Mello-Roos?</h3>
-<p>The City of Chula Vista has established Community Facilities Districts associated with Eastlake Woods and Vistas. Whether and how a specific property is currently assessed should be verified using that property's tax and district information.</p>
+<p>The City of Chula Vista has formed Community Facilities Districts associated with Eastlake Woods and Vistas. Whether and how a specific property is currently assessed should be verified using that property's tax and district information.</p>
 <h3>How do I know if a house has Mello-Roos before buying it?</h3>
 <p>Look at the property's current tax bill and identify any special taxes or assessments. The property's APN helps determine which assessments apply, and your agent can help you research it before you make an offer.</p>
 <h3>Is a home without Mello-Roos automatically a better buy?</h3>
 <p>Not necessarily. Consider the purchase price, HOA fees, condition, location, amenities, floor plan, financing, insurance and long-term goals too.</p>
 <h2>Thinking About Buying in Eastlake?</h2>
-<p>If finding an <strong>Eastlake home with no Mello-Roos</strong> is one of your priorities, we can make that part of the search. And when it comes to something this important, I don't guess based on a neighborhood name. <strong>We verify the specific property.</strong> <a href="/buyers-guide#ask">Ask me about a home</a>.</p>`
+<p>If finding an <strong>Eastlake home with no Mello-Roos</strong> is one of your priorities, we can make that part of the search. And on something this important, I don't guess based on a neighborhood name. <strong>We verify the specific property.</strong> <a href="/buyers-guide#ask">Ask me about a home</a>.</p>`
 },
 {
 slug: "san-diego-country-club-chula-vista",
@@ -658,14 +658,14 @@ date: "2025-11-17", img: "golf-scene.jpg", tag: "Chula Vista",
 body: `<p>Many people are surprised to learn that one of the oldest and most respected golf courses in San Diego County isn't in La Jolla or Coronado, but right here in <strong>Chula Vista</strong>.</p>
 <p>Located in the heart of the city, the <strong>San Diego Country Club</strong> has been a local treasure for more than a century. It blends history, beauty and a strong sense of community, highlighting the charm residents love about Chula Vista. As a local Realtor and Eastlake resident, I enjoy sharing the stories that make this city special.</p>
 <h2>A Legacy That Dates Back to the 1920s</h2>
-<p>The San Diego Country Club was founded in 1897, but its Chula Vista chapter began in <strong>1920</strong>, when the club purchased land south of downtown. Scottish architect <strong>William Watson</strong> designed the <strong>18-hole, all-grass course</strong>, which opened in <strong>1921</strong>. Today it remains one of the oldest and most established golf courses in the county.</p>
+<p>The San Diego Country Club was founded in 1897, but its Chula Vista chapter began in <strong>1920</strong>, when the club purchased land south of downtown. Scottish architect <strong>William Watson</strong> designed the <strong>18-hole, all-grass course</strong>, which opened in <strong>1921</strong>. Today it remains one of the oldest golf courses in the county.</p>
 <p>It has hosted USGA qualifiers, amateur championships and countless community events. Golfers appreciate the traditional layout, peaceful atmosphere and sense of history woven into every fairway.</p>
 <h2>A Peaceful Escape in the Heart of the City</h2>
 <p>Surrounded by classic neighborhoods and mature landscaping, the country club provides a quiet, scenic retreat. Its wide fairways, shade trees and open green spaces make it a favorite among golfers and longtime residents.</p>
 <p>The location is also convenient. Residents enjoy being minutes from downtown Chula Vista's Third Avenue district, known for coffee shops, dining and community events.</p>
 <h2>Close to Some of Chula Vista's Most Popular Neighborhoods</h2>
 <p>Several of Chula Vista's most desirable residential communities are a short drive from the club:</p>
-<ul><li><strong>Eastlake:</strong> Known for its lake, parks and resort-style amenities, with an easy trip to the club from a peaceful master-planned community.</li><li><strong>Otay Ranch:</strong> A modern, walkable community with shopping, trails and newer homes.</li><li><strong>Rancho del Rey:</strong> Rolling hills, larger homes and established parks, just minutes from the course.</li><li><strong>Rolling Hills Ranch:</strong> An upscale, scenic community with beautiful homes and quick access to parks and trails.</li></ul>
+<ul><li><strong>Eastlake:</strong> Known for its lake, parks and resort-style amenities, with an easy trip to the club from a peaceful master-planned community.</li><li><strong>Otay Ranch:</strong> A modern, walkable community with shopping, trails and newer homes.</li><li><strong>Rancho del Rey:</strong> Rolling hills, larger homes and mature parks, just minutes from the course.</li><li><strong>Rolling Hills Ranch:</strong> An upscale, scenic community with beautiful homes and quick access to parks and trails.</li></ul>
 <h2>A Growing Area: The Chula Vista Bayfront</h2>
 <p>Just minutes from the country club, one of Southern California's most exciting developments is taking shape along the <strong>Chula Vista Bayfront</strong>, with waterfront parks, dining, walkways and the <strong>Gaylord Pacific Resort and Convention Center</strong>, a major destination for tourism, events and entertainment.</p>
 <p>That combination of historic charm and modern growth makes central Chula Vista especially appealing: you can live near a 100-year-old golf course while enjoying the new energy on the waterfront.</p>

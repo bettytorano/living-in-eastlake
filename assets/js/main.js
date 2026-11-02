@@ -44,6 +44,8 @@ document.addEventListener("DOMContentLoaded", function () {
     originals.forEach(function (card) {
       var copy = card.cloneNode(true);
       copy.setAttribute("aria-hidden", "true");
+      copy.setAttribute("inert", "");
+      copy.querySelectorAll("a, button").forEach(function (el) { el.setAttribute("tabindex", "-1"); });
       track.appendChild(copy);
     });
     track.style.setProperty("--reviews-duration", Math.max(40, originals.length * 14) + "s");
@@ -65,6 +67,32 @@ document.addEventListener("DOMContentLoaded", function () {
     if (q && b && q.scrollHeight <= q.clientHeight + 2) b.hidden = true;
   });
 });
+
+// Instagram reels: load Instagram's embed script only when a reel is about to scroll into view,
+// and give each embedded video a title for screen readers
+(function () {
+  var reels = document.querySelectorAll(".instagram-media");
+  if (!reels.length) return;
+  var loaded = false;
+  function load() {
+    if (loaded) return;
+    loaded = true;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.instagram.com/embed.js";
+    document.body.appendChild(s);
+  }
+  if (location.hash || !("IntersectionObserver" in window)) load();
+  else {
+    var io = new IntersectionObserver(function (entries) {
+      if (entries.some(function (e) { return e.isIntersecting; })) { io.disconnect(); load(); }
+    }, { rootMargin: "800px 0px" });
+    reels.forEach(function (r) { io.observe(r); });
+  }
+  new MutationObserver(function () {
+    document.querySelectorAll("iframe.instagram-media:not([title])").forEach(function (f) { f.title = "Instagram video from Betty Torano"; });
+  }).observe(document.body, { childList: true, subtree: true });
+})();
 
 // "Let's make a plan" contact popup
 (function () {

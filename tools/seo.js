@@ -131,6 +131,7 @@ const PAGES = {
   "eastlake-history.html": { url: "/eastlake-history",  type: "WebPage",        crumbs: [["Eastlake History", "/eastlake-history"]] },
   "mello-roos-eastlake.html": { url: "/mello-roos-eastlake", type: "Article",   crumbs: [["Buyer's Guide", "/buyers-guide"], ["Mello-Roos in Eastlake", "/mello-roos-eastlake"]], published: "2026-10-08" },
   "about.html":            { url: "/about",             type: "ProfilePage",    crumbs: [["About Betty", "/about"]] },
+  "contact.html":          { url: "/contact",           type: "ContactPage",    crumbs: [["Contact Betty", "/contact"]] },
   "blog.html":             { url: "/blog",              type: "CollectionPage", crumbs: [["Blog", "/blog"]] },
   "photo-credits.html":    { url: "/photo-credits",     type: "WebPage",        crumbs: [["Photo Credits", "/photo-credits"]] },
   "blog/when-vons-opened-in-eastlake.html": { url: "/blog/when-vons-opened-in-eastlake", type: "Article", crumbs: [["Blog", "/blog"], ["Can you imagine Eastlake without a grocery store?", "/blog/when-vons-opened-in-eastlake"]], published: "2026-10-22" },

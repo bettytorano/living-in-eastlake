@@ -40,7 +40,7 @@ module.exports = [
   "slug": "eastlake-before-the-125-freeway",
   "title": "Eastlake Existed for 20 Years Before the SR-125 Opened",
   "short": "Eastlake existed for 20 years before the SR-125 opened",
-  "desc": "When Betty Torano moved to Eastlake in 1987 there was no 125 freeway. Residents drove East H Street, Telegraph Canyon and Otay Lakes Road until the South Bay Expressway opened in 2007.",
+  "desc": "When Betty Torano moved to Eastlake in 1987 there was no 125 freeway. Residents drove East H Street, Telegraph Canyon and Otay Lakes Road until 2007.",
   "date": "2026-10-16",
   "dateLabel": "October 16, 2026",
   "img": "hero-eastlake.jpg",

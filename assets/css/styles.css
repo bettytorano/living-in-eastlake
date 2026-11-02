@@ -601,13 +601,19 @@ h1, h2, h3 { color: var(--brand-dark); }
 .nb-tile-hoa { font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-soft); margin-bottom: 4px; }
 .nb-tile-name { font-family: var(--serif); font-size: 1.55rem; line-height: 1.15; }
 .nb-tile-more { font-size: .85rem; margin-top: 8px; opacity: .85; padding-bottom: 30px; }
-.nb-tile-homes { position: absolute; left: 20px; bottom: 16px; z-index: 2; font-size: .78rem; font-weight: 600; color: var(--gold-soft); text-decoration: none; letter-spacing: .04em; }
+.nb-tile-homes { position: absolute; left: 12px; bottom: 6px; z-index: 2; display: inline-block; padding: 10px 8px; min-height: 44px; font-size: .78rem; font-weight: 600; color: var(--gold-soft); text-decoration: none; letter-spacing: .04em; }
 .nb-tile-homes:hover { color: #fff; text-decoration: underline; }
 .nb-tile-guide { display: flex; flex-direction: column; justify-content: flex-end; padding: 22px; color: #fff; text-decoration: none; background: linear-gradient(160deg, var(--brand) 0%, var(--brand-dark) 100%); border: 1px solid rgba(201,168,76,.5); }
 .nb-tile-guide .nb-tile-more { padding-bottom: 0; color: var(--gold-soft); opacity: 1; }
 .nb-guide-text { font-size: .92rem; opacity: .85; margin-top: 8px; }
 @media (max-width: 960px) { .nb-tiles { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 520px) { .nb-tiles { gap: 12px; } .nb-tile-name { font-size: 1.2rem; } .nb-tile-link, .nb-tile-guide { padding: 14px; } .nb-tile-homes { left: 14px; bottom: 12px; } }
+@media (max-width: 520px) { .nb-tiles { gap: 12px; } .nb-tile-name { font-size: 1.2rem; } .nb-tile-link, .nb-tile-guide { padding: 14px; } .nb-tile-homes { left: 6px; bottom: 2px; } }
+
+/* Contact page */
+.contact-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 48px; align-items: start; }
+.contact-direct h2 { margin-top: 0; }
+.contact-direct p { margin: 0 0 14px; }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; gap: 32px; } }
 .nb-tile-link::after { background: linear-gradient(180deg, rgba(16,52,95,0) 30%, rgba(16,52,95,.55) 55%, rgba(16,52,95,.94) 100%); }
 .nb-tile-hoa, .nb-tile-name, .nb-tile-more { text-shadow: 0 1px 8px rgba(0,0,0,.45); }
 

@@ -13,6 +13,29 @@ const posts = [...require("./posts-history"), ...require("./posts-lofty")]
   .sort((a, b) => b.date.localeCompare(a.date));
 const fmt = d => new Date(d + "T12:00:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
 
+// Shorter <title>s for search results (Google shows about 60 characters)
+const SEO_TITLES = {
+  "living-in-eastlake-shores": "Living in Eastlake Shores, Chula Vista | Neighborhood Guide",
+  "living-in-eastlake-trails": "Living in Eastlake Trails &amp; Trails North, Chula Vista",
+  "mistakes-selling-home-eastlake": "Biggest Mistakes When Selling a Home in Eastlake",
+  "eastlake-hoas-and-amenities": "Eastlake HOAs and Amenities Guide | Chula Vista, CA",
+  "living-in-the-woods-eastlake": "The Woods at Eastlake, Chula Vista | Neighborhood Guide",
+  "hoa-fees-mello-roos-selling-eastlake": "HOA Fees, Mello-Roos and Selling in Eastlake",
+  "san-diego-country-club-chula-vista": "The Historic San Diego Country Club in Chula Vista",
+  "when-vons-opened-in-eastlake": "When Vons Opened in Eastlake (1996) | Eastlake History",
+  "eastlake-schools-history": "How Eastlake's Schools Caught Up | Eastlake History",
+  "living-in-eastlake-vistas": "Living in Eastlake Vistas, Chula Vista | Neighborhood Guide",
+  "living-in-eastlake-greens": "Living in Eastlake Greens, Chula Vista | Neighborhood Guide",
+  "living-in-eastlake-hills": "Living in Eastlake Hills, Chula Vista | Neighborhood Guide",
+  "camping-out-for-eastlake-homes": "Camping Out Overnight to Buy an Eastlake Home",
+  "first-eastlake-home-132000": "Our First Eastlake Home: $132,000 at 10.25% Interest",
+  "eastlake-little-league-history": "The History of Eastlake Little League, Chula Vista",
+  "eastlake-before-the-125-freeway": "Eastlake Before the SR-125 Freeway | Eastlake History",
+  "top-chula-vista-neighborhoods-parks-schools": "Top 5 Chula Vista Neighborhoods for Parks and Schools",
+  "is-now-a-good-time-to-sell-chula-vista": "Is Now a Good Time to Sell in Chula Vista, CA?",
+  "eastlake-neighborhoods-no-mello-roos": "Eastlake Neighborhoods With No Mello-Roos",
+  "ultimate-guide-living-in-eastlake": "The Ultimate Guide to Living in Eastlake, CA",
+};
 const tpl = read("about.html");
 function page(file, urlPath, title, desc, ogImage, main) {
   const t = tpl
@@ -29,7 +52,8 @@ function page(file, urlPath, title, desc, ogImage, main) {
 }
 
 const reel = id => `<div class="post-reel"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/${id}/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/${id}/">Watch on Instagram</a></blockquote></div>`;
-const IG = `<script async src="https://www.instagram.com/embed.js"></script>`;
+// Instagram embeds are loaded by assets/js/main.js when a visitor scrolls near them
+const IG = "";
 const card = p => `      <a class="blog-card" href="/blog/${p.slug}">
         <div class="blog-card-img"><img src="/assets/img/${p.img}" alt="" width="1200" height="800" loading="lazy"></div>
         <div class="blog-card-body"><span class="tag">${p.tag} · ${fmt(p.date)}</span><h3>${p.short}</h3><span class="blog-card-more">Read more →</span></div>
@@ -70,7 +94,7 @@ ${related.map(card).join("\n")}
   </div>
 </section>
 ${p.reel ? IG : ""}`;
-  page(`blog/${p.slug}.html`, `/blog/${p.slug}`, `${p.title} | Living in Eastlake`, p.desc, p.img, main);
+  page(`blog/${p.slug}.html`, `/blog/${p.slug}`, SEO_TITLES[p.slug] || `${p.title} | Living in Eastlake`, p.desc, p.img, main);
 }
 
 // Index, grouped by topic
@@ -104,7 +128,7 @@ ${posts.filter(p => p.tag === t).map(card).join("\n")}
     <div class="btn-row" style="justify-content:center"><a class="btn btn-square" href="https://www.instagram.com/bettytorano/" rel="noopener">Follow @bettytorano <span aria-hidden="true">↗</span></a><a class="btn secondary" href="mailto:betty.torano@exprealty.com">Email Betty</a></div>
   </div>
 </section>`;
-page("blog.html", "/blog", "Living in Eastlake Blog | Eastlake History, Guides &amp; Insights", "Eastlake, Chula Vista stories and guides from Betty Torano, an Eastlake resident since 1987: neighborhoods, HOAs, Mello-Roos, selling and community history.", "eastlake-paddleboat.jpg", index);
+page("blog.html", "/blog", "Living in Eastlake Blog | History, Guides &amp; Insights", "Eastlake, Chula Vista stories and guides from Betty Torano, an Eastlake resident since 1987: neighborhoods, HOAs, Mello-Roos, selling and community history.", "eastlake-paddleboat.jpg", index);
 
 // Keep tools/seo.js page list in sync
 let j = read("tools/seo.js");
