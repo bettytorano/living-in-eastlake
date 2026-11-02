@@ -26,7 +26,7 @@ body: `<p>Chula Vista offers some of San Diego County's most appealing neighborh
 </ul>
 <p><strong>Insider tip:</strong> Many Otay Ranch homes are newer construction, a good fit if you want a move-in-ready home. Newer areas often carry Mello-Roos, so check the tax bill for each address.</p>
 
-<h2>3. Rancho Del Rey: Established Streets and Generous Lots</h2>
+<h2>3. Rancho Del Rey: Tree-Lined Streets and Generous Lots</h2>
 <p>Rancho del Rey has mature landscaping, spacious homes and a central location.</p>
 <ul>
 <li>Larger homes and generous lots</li>
