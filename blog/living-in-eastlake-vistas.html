@@ -17,25 +17,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css?v=102">
-  <!-- Meta Pixel (dataset "Betty Torano Homes") -->
+  <!-- Meta Pixel (dataset "Betty Torano Homes") and Google Analytics 4 (property "SellingEastlake.com").
+       Both start recording right away; their scripts download after the page is up (first scroll/tap or 3.5 s after load). -->
   <script>
-  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-  n.push=n;n.loaded=!0;n.version="2.0";n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-  document,"script","https://connect.facebook.net/en_US/fbevents.js");
+  !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[]}(window);
   fbq("init", "718102365539482");
   fbq("track", "PageView");
-  </script>
-  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=718102365539482&ev=PageView&noscript=1"></noscript>
-  <!-- Google Analytics 4 (property "SellingEastlake.com") -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJGLSJP8ZH"></script>
-  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag("js", new Date());
   gtag("config", "G-WJGLSJP8ZH");
+  (function () {
+    var done = false;
+    function go() {
+      if (done) return;
+      done = true;
+      ["https://connect.facebook.net/en_US/fbevents.js", "https://www.googletagmanager.com/gtag/js?id=G-WJGLSJP8ZH"].forEach(function (u) {
+        var s = document.createElement("script"); s.async = true; s.src = u; document.head.appendChild(s);
+      });
+    }
+    ["scroll", "pointerdown", "keydown", "touchstart"].forEach(function (ev) { addEventListener(ev, go, { once: true, passive: true }); });
+    addEventListener("load", function () { setTimeout(go, 3500); });
+  })();
   </script>
+  <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=718102365539482&ev=PageView&noscript=1"></noscript>
   <!-- schema:start -->
   <script type="application/ld+json">
 {
@@ -311,7 +316,7 @@
 <p>Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Because attendance boundaries can change, always confirm the assigned schools for a specific address with each district.</p>
 
 <h2>Who Is Eastlake Vistas Right For?</h2>
-<p>Because it offers everything from condos and townhomes to larger detached homes and a collection of gated homes, the Vistas appeals to an unusually broad range of buyers. First-time buyers and downsizers will find low-maintenance condo and townhome living, move-up buyers can step into a larger single-family home, and buyers seeking privacy and views will be drawn to the gated homes overlooking the Otay Lakes. The condos and townhomes also attract investors looking for steady rental demand in a desirable neighborhood.</p>
+<p>Because it offers everything from condos and townhomes to larger detached homes and a collection of gated homes, the Vistas appeals to an unusually broad range of buyers. First-time buyers and downsizers will find low-maintenance condo and townhome living, move-up buyers can step into a larger single-family home, and buyers seeking privacy and views will be drawn to the gated homes overlooking the Otay Lakes. The condos and townhomes also attract investors looking for steady rental demand near the lake and parks.</p>
 <p>It is an excellent fit for outdoor enthusiasts, buyers who want views, and anyone who appreciates newer construction close to the Otay Lakes.</p>
 
 <h2>Ready to Buy or Sell in Eastlake Vistas?</h2>

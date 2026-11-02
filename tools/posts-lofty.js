@@ -197,7 +197,7 @@ body: `<p>Perched along Eastlake's eastern hills near Mountain Hawk Park and the
 <p>Elementary schools are in the Chula Vista Elementary School District, and middle and high schools are in the Sweetwater Union High School District. Because attendance boundaries can change, always confirm the assigned schools for a specific address with each district.</p>
 
 <h2>Who Is Eastlake Vistas Right For?</h2>
-<p>Because it offers everything from condos and townhomes to larger detached homes and a collection of gated homes, the Vistas appeals to an unusually broad range of buyers. First-time buyers and downsizers will find low-maintenance condo and townhome living, move-up buyers can step into a larger single-family home, and buyers seeking privacy and views will be drawn to the gated homes overlooking the Otay Lakes. The condos and townhomes also attract investors looking for steady rental demand in a desirable neighborhood.</p>
+<p>Because it offers everything from condos and townhomes to larger detached homes and a collection of gated homes, the Vistas appeals to an unusually broad range of buyers. First-time buyers and downsizers will find low-maintenance condo and townhome living, move-up buyers can step into a larger single-family home, and buyers seeking privacy and views will be drawn to the gated homes overlooking the Otay Lakes. The condos and townhomes also attract investors looking for steady rental demand near the lake and parks.</p>
 <p>It is an excellent fit for outdoor enthusiasts, buyers who want views, and anyone who appreciates newer construction close to the Otay Lakes.</p>
 
 <h2>Ready to Buy or Sell in Eastlake Vistas?</h2>
@@ -513,7 +513,7 @@ title: "The Ultimate Guide to Living in Eastlake, CA",
 short: "The ultimate guide to living in Eastlake",
 desc: "Everything to know about living in Eastlake, Chula Vista: the neighborhoods in the order they were built, the three HOAs, schools, recreation and shopping.",
 date: "2025-12-09", img: "eastlake-greens-view.jpg", tag: "Eastlake Guide",
-body: `<p>If you are thinking about living in <strong>Eastlake, California</strong>, you are considering one of the most desirable master-planned communities in San Diego County, in the city of Chula Vista. Eastlake offers beautiful neighborhoods, schools within the community, scenic walking trails, resort-style amenities and a welcoming community where neighbors connect and lifestyle and convenience come together.</p>
+body: `<p>If you are thinking about living in <strong>Eastlake, California</strong>, you are considering a master-planned community in San Diego County, in the city of Chula Vista. Eastlake offers beautiful neighborhoods, schools within the community, scenic walking trails, resort-style amenities and a welcoming community where neighbors connect and lifestyle and convenience come together.</p>
 <p>As a local Realtor, longtime Eastlake resident and active community volunteer, I have helped many buyers and sellers here. This guide gives you a full overview of what life in Eastlake is like and why so many people choose to call it home.</p>
 <h2>What Makes Eastlake Special</h2>
 <p>Eastlake was designed with a clear purpose: create a master-planned community that blends beauty, practicality and healthy living. With a thoughtful layout, abundant parks and neighborhood amenities throughout, Eastlake remains one of the top places to live in Chula Vista.</p>
@@ -522,7 +522,7 @@ body: `<p>If you are thinking about living in <strong>Eastlake, California</stro
 <h2>Eastlake Neighborhoods in Development Order</h2>
 <p>Eastlake has grown steadily since the mid-1980s. Here are the neighborhoods in roughly the order they were developed, which helps explain both the history and the layout of the community. You can also explore them on my <a href="/neighborhoods">interactive neighborhood map</a>.</p>
 <h3>1. Eastlake Hills</h3>
-<p>One of the two original Eastlake neighborhoods. Known for quiet streets, mature trees and close proximity to parks, schools and early community amenities. <a href="/blog/living-in-eastlake-hills">Read my guide to Eastlake Hills</a>.</p>
+<p>One of the two original Eastlake neighborhoods. Known for curving residential streets, mature trees and close proximity to parks, schools and early community amenities. <a href="/blog/living-in-eastlake-hills">Read my guide to Eastlake Hills</a>.</p>
 <h3>2. Eastlake Shores</h3>
 <p>The sister neighborhood to Eastlake Hills and also one of the originals. Shores is known for its lakeside views, beautifully maintained scenery and easy access to the Eastlake Beach Club. The lake, mature trees and walking path give it a peaceful setting. <a href="/blog/living-in-eastlake-shores">Read my guide to Eastlake Shores</a>.</p>
 <h3>3. Eastlake Greens</h3>
@@ -664,7 +664,7 @@ body: `<p>Many people are surprised to learn that one of the oldest and most res
 <p>Surrounded by classic neighborhoods and mature landscaping, the country club provides a quiet, scenic retreat. Its wide fairways, shade trees and open green spaces make it a favorite among golfers and longtime residents.</p>
 <p>The location is also convenient. Residents enjoy being minutes from downtown Chula Vista's Third Avenue district, known for coffee shops, dining and community events.</p>
 <h2>Close to Some of Chula Vista's Most Popular Neighborhoods</h2>
-<p>Several of Chula Vista's most desirable residential communities are a short drive from the club:</p>
+<p>Several Chula Vista residential communities are a short drive from the club:</p>
 <ul><li><strong>Eastlake:</strong> Known for its lake, parks and resort-style amenities, with an easy trip to the club from a peaceful master-planned community.</li><li><strong>Otay Ranch:</strong> A modern, walkable community with shopping, trails and newer homes.</li><li><strong>Rancho del Rey:</strong> Rolling hills, larger homes and mature parks, just minutes from the course.</li><li><strong>Rolling Hills Ranch:</strong> An upscale, scenic community with beautiful homes and quick access to parks and trails.</li></ul>
 <h2>A Growing Area: The Chula Vista Bayfront</h2>
 <p>Just minutes from the country club, one of Southern California's most exciting developments is taking shape along the <strong>Chula Vista Bayfront</strong>, with waterfront parks, dining, walkways and the <strong>Gaylord Pacific Resort and Convention Center</strong>, a major destination for tourism, events and entertainment.</p>
