@@ -18,7 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/css/styles.css?v=102">
   <!-- Meta Pixel (dataset "Betty Torano Homes") and Google Analytics 4 (property "SellingEastlake.com").
-       Both start recording right away; their scripts download after the page is up (first scroll/tap or 3.5 s after load). -->
+       Both start recording right away; on this page their scripts load right away. -->
   <script>
   !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version="2.0";n.queue=[]}(window);
   fbq("init", "718102365539482");
@@ -37,7 +37,7 @@
       });
     }
     ["scroll", "pointerdown", "keydown", "touchstart"].forEach(function (ev) { addEventListener(ev, go, { once: true, passive: true }); });
-    addEventListener("load", function () { setTimeout(go, 3500); });
+    go(); // thank-you page: load right away so every lead is counted
   })();
   </script>
   <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=718102365539482&ev=PageView&noscript=1"></noscript>
