@@ -1147,3 +1147,16 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .rv-src .rv-count { color: var(--gold-soft); font-weight: 600; font-size: .9rem; }
 .nb-pin-up .nb-pin-label { top: -28px; left: 6px; }
 .nb-pin-left .nb-pin-label { left: auto; right: 4px; }
+
+/* ============================================================
+   Softer banners: soft slate-blue header and footer
+   ============================================================ */
+:root { --soft-blue: #4f6f8f; --soft-blue-dark: #435f7c; }
+.site-header { background: rgba(79,111,143,.98); border-bottom: 2px solid rgba(217,191,122,.7); }
+.header-exp img, .brand-logo { filter: brightness(1.12); }
+.header-phone, .header-email, .nav a.btn { color: #e6cf8f; }
+@media (max-width: 900px) { .nav { background: var(--soft-blue); } }
+.site-footer { background: var(--soft-blue-dark); }
+.site-footer a { color: #f3dca0; }
+.cred-band, .stat-band { background: var(--soft-blue-dark); }
+.quote-band, .hoa-hoods a, .mobile-cta { background: var(--soft-blue); }
