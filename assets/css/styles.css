@@ -1147,3 +1147,28 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .rv-src .rv-count { color: var(--gold-soft); font-weight: 600; font-size: .9rem; }
 .nb-pin-up .nb-pin-label { top: -28px; left: 6px; }
 .nb-pin-left .nb-pin-label { left: auto; right: 4px; }
+
+/* ============================================================
+   Softer banners: light cream header, soft slate-blue footer
+   ============================================================ */
+:root { --soft-blue: #4f6f8f; --soft-blue-dark: #435f7c; --cream: #f8f4ec; --header-ink: #2f5679; }
+.site-header { background: rgba(248,244,236,.98); border-bottom: 1px solid #e3d6b8; }
+.header-exp img, .brand-logo { filter: brightness(.82) saturate(1.15); }
+.brand-combo { content: url("../img/logo-betty-exp.png"); opacity: .85; }
+.header-phone { color: var(--header-ink); }
+.header-phone:hover { color: var(--lake); }
+.header-email { color: #8a6d2c; }
+.header-email:hover { color: var(--header-ink); }
+.nav a { color: var(--header-ink); }
+.nav a:hover { color: #8a6d2c; border-bottom-color: var(--gold); }
+.nav a.btn { color: #7a5f22; border-color: var(--gold); }
+.nav a.btn:hover { background: var(--gold); color: var(--ink); }
+.nav-toggle { color: var(--header-ink); border-color: #d8cba9; }
+@media (max-width: 900px) {
+  .nav { background: var(--cream); border-bottom: 1px solid #e3d6b8; }
+  .nav a { border-top-color: #ece2cc; }
+}
+.site-footer { background: var(--soft-blue); color: #fff; }
+.site-footer a { color: #f3dca0; }
+.cred-band, .stat-band { background: var(--soft-blue-dark); }
+.quote-band, .hoa-hoods a, .mobile-cta { background: var(--soft-blue); }
