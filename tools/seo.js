@@ -73,6 +73,14 @@ const FAQ = {
     ["Which school districts serve Eastlake?", "Eastlake is served by the Chula Vista Elementary School District for elementary grades and the Sweetwater Union High School District for middle and high school. Boundaries can change, so confirm the assigned schools for a specific address with each district."],
     ["Where can I see homes for sale in a specific Eastlake neighborhood?", "Each neighborhood section on this page has a \"See homes for sale\" button with current listings, or you can <a href=\"https://bettytorano.com/neighborhood/158384753/eastlake\" rel=\"noopener\">search all Eastlake homes</a>."]
   ],
+  "relocation-guide.html": [
+    ["How far is Eastlake from downtown San Diego?", "About 16 miles, roughly a 20 to 25 minute drive without traffic via State Route 125 and State Route 54 or Interstate 805. Weekday rush hour can add a lot, so test your commute at the time you would actually drive it."],
+    ["How far is Eastlake from the San Diego military bases?", "Without traffic, Naval Base San Diego is about 20 minutes away, Naval Amphibious Base Coronado and MCAS Miramar about 30 minutes, Naval Air Station North Island about 30 to 35 minutes, and Camp Pendleton about an hour. Morning traffic can add 15 to 30 minutes or more."],
+    ["Can I use a VA loan to buy in Eastlake?", "Yes. With full VA entitlement there is no VA loan limit, so many buyers purchase with no down payment. Condos and townhomes must be in a VA-approved project, and lenders count HOA dues and Mello-Roos in your monthly budget, so confirm those early."],
+    ["Can I buy a home in Eastlake before I move to San Diego?", "Yes. I tour homes with out-of-town buyers by live video, and offers, disclosures and most escrow paperwork are signed electronically. Escrow often takes about 30 to 45 days."],
+    ["What should I budget for besides the mortgage?", "Property tax (a base of 1% of the purchase price plus local charges), HOA dues for the master association and any sub-association, Mello-Roos or other special taxes if the home has them, and homeowners insurance."],
+    ["Which school districts serve Eastlake?", "The Chula Vista Elementary School District for grades K–6 and the Sweetwater Union High School District for grades 7–12. Boundaries can change, so confirm the assigned schools for a specific address with each district."]
+  ],
   "buyers-guide.html": [
     ["Does every Eastlake home have Mello-Roos?", "No. Whether a home pays Mello-Roos, and how much, depends on the parcel and when it was built. Check the property tax bill for special tax lines. My <a href=\"/mello-roos-eastlake\">Mello-Roos in Eastlake guide</a> walks through it step by step."],
     ["Does Mello-Roos go up when I buy a resale home?", "No. Mello-Roos is set by each district’s formula, often per home or by square footage, not by the price you pay. Your base property tax is reassessed when you buy, but Mello-Roos stays with the home through every sale. It changes only by any annual increase the district allows, until the tax ends."],
@@ -125,6 +133,7 @@ const PAGES = {
   "index.html":            { url: "/",                  type: "WebPage",        crumbs: [] },
   "neighborhoods.html":    { url: "/neighborhoods",     type: "CollectionPage", crumbs: [["Neighborhoods", "/neighborhoods"]], places: true },
   "buyers-guide.html":     { url: "/buyers-guide",      type: "WebPage",        crumbs: [["Buyer's Guide", "/buyers-guide"]] },
+  "relocation-guide.html": { url: "/relocation-guide", type: "Article",       crumbs: [["Buyer's Guide", "/buyers-guide"], ["Relocation Guide", "/relocation-guide"]], published: "2026-11-07" },
   "sellers-guide.html":    { url: "/sellers-guide",     type: "WebPage",        crumbs: [["Seller's Guide", "/sellers-guide"]] },
   "home-value.html":       { url: "/home-value",        type: "WebPage",        crumbs: [["Home Value", "/home-value"]] },
   "life-in-eastlake.html": { url: "/life-in-eastlake",  type: "WebPage",        crumbs: [["Life in Eastlake", "/life-in-eastlake"]] },

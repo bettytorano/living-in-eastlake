@@ -16,6 +16,7 @@
 const FORM_LABELS = {
   "home-value": "Home Value Request",
   "buyer": "Buyer Question",
+  "relocation": "Relocation Question",
   "neighborhood": "Neighborhood Question",
   "mello-roos": "Mello-Roos Question",
   "contact": "General Question",
@@ -227,7 +228,7 @@ async function sendToGHL(env, lead) {
   // Only tag Seller/Buyer when the form makes it clear (home value = seller, Buyer's Guide = buyer)
   const tags = ["SellingEastlake.com", label];
   if (lead.formType === "home-value") tags.push("Seller");
-  if (lead.formType === "buyer") tags.push("Buyer");
+  if (lead.formType === "buyer" || lead.formType === "relocation") tags.push("Buyer");
   if (lead.neighborhood) tags.push(lead.neighborhood);
   if (lead.smsConsent) tags.push("SMS Opt-In");
 
@@ -285,7 +286,7 @@ async function updateGHLFields(base, headers, id, lead) {
   if (!current[GHL_FIELDS.leadSource]) fields.push({ id: GHL_FIELDS.leadSource, field_value: "SellingEastlake.com" });
   if (GHL_TIMEFRAMES.includes(lead.timeframe)) fields.push({ id: GHL_FIELDS.timeframe, field_value: lead.timeframe });
   if (GHL_AREAS.includes(lead.neighborhood)) fields.push(addTo(GHL_FIELDS.area, lead.neighborhood));
-  const type = lead.formType === "home-value" ? "Seller" : lead.formType === "buyer" ? "Buyer" : null;
+  const type = lead.formType === "home-value" ? "Seller" : lead.formType === "buyer" || lead.formType === "relocation" ? "Buyer" : null;
   if (type) fields.push(addTo(GHL_FIELDS.clientType, type));
   const customFields = fields.filter(Boolean);
   if (!customFields.length) return;
