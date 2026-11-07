@@ -1162,3 +1162,4 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .site-footer a { color: #f3dca0; }
 .cred-band, .stat-band { background: var(--soft-blue-dark); }
 .quote-band, .hoa-hoods a, .mobile-cta { background: var(--soft-blue); }
+@media (min-width: 641px) { .nowrap-wide { white-space: nowrap; } }
