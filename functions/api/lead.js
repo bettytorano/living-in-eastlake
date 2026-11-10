@@ -66,6 +66,8 @@ export async function onRequestPost({ request, env }) {
     page: clean(request.headers.get("referer"), 300),
     // Optional SMS opt-in checkbox (A2P 10DLC): only text leads who checked it
     smsConsent: clean(form.get("sms_consent")) === "yes",
+    // Separate optional box for promotional texts (A2P requires marketing consent on its own)
+    smsMarketing: clean(form.get("sms_marketing")) === "yes",
     fillMs: Number(clean(form.get("fill_ms"))) || 0,
     // "yes" when the visitor picked the address from Google's suggestions (assets/js/main.js), "no" when typed by hand
     addressPicked: clean(form.get("address_picked")),
@@ -174,6 +176,7 @@ async function sendEmail(env, lead) {
     lead.timeframe ? `Timeframe: ${lead.timeframe}` : null,
     lead.message ? `Message: ${lead.message}` : null,
     `Text messages OK: ${lead.smsConsent ? "Yes (checked the SMS consent box)" : "No"}`,
+    `Promotional texts OK: ${lead.smsMarketing ? "Yes (checked the promotional text box)" : "No"}`,
     "",
     `Submitted from: ${lead.page || "-"}`,
   ].filter(l => l != null);
@@ -204,7 +207,7 @@ async function sendToSheet(env, lead) {
       secret: env.LEAD_SHEET_SECRET || "",
       label: (lead.suspect ? "Possible spam: " : "") + (FORM_LABELS[lead.formType] || "Website Lead"),
       ...lead,
-      message: [lead.message, `Text messages OK: ${lead.smsConsent ? "Yes" : "No"}`].filter(Boolean).join(" | "),
+      message: [lead.message, `Text messages OK: ${lead.smsConsent ? "Yes" : "No"}`, `Promotional texts OK: ${lead.smsMarketing ? "Yes" : "No"}`].filter(Boolean).join(" | "),
     }),
     redirect: "follow",
   });
@@ -231,6 +234,7 @@ async function sendToGHL(env, lead) {
   if (lead.formType === "buyer" || lead.formType === "relocation") tags.push("Buyer");
   if (lead.neighborhood) tags.push(lead.neighborhood);
   if (lead.smsConsent) tags.push("SMS Opt-In");
+  if (lead.smsMarketing) tags.push("SMS Marketing Opt-In");
 
   const contact = {
     locationId: env.GHL_LOCATION_ID,
@@ -257,6 +261,9 @@ async function sendToGHL(env, lead) {
       lead.smsConsent
         ? `SMS consent: Yes, checked the text message box on ${new Date().toISOString()} (consent text and terms: https://sellingeastlake.com/privacy#sms)`
         : "SMS consent: No (do not text)",
+      lead.smsMarketing
+        ? `Promotional SMS consent: Yes, checked the separate promotional text box on ${new Date().toISOString()}`
+        : "Promotional SMS consent: No (no marketing texts)",
       lead.page ? `Page: ${lead.page}` : null,
     ].filter(Boolean).join("\n");
     const n = await fetch(`${base}/contacts/${id}/notes`, { method: "POST", headers, body: JSON.stringify({ body }) });
@@ -359,6 +366,7 @@ async function sendToLofty(env, lead) {
     lead.timeframe && `Timeframe: ${lead.timeframe}`,
     lead.message && `Message: ${lead.message}`,
     `Text messages OK: ${lead.smsConsent ? "Yes" : "No"}`,
+    `Promotional texts OK: ${lead.smsMarketing ? "Yes" : "No"}`,
     lead.page && `Page: ${lead.page}`,
   ].filter(Boolean).join("\n");
   if (id) {
