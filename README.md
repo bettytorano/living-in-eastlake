@@ -95,6 +95,23 @@ Forms email you via **Resend** (free up to 3,000 emails/month) and also go into 
 
 Then **Deployments → ⋯ → Retry deployment** so the settings take effect. Submit a test form and confirm the email arrives and the lead appears in Lofty.
 
+**Current setup (checked November 15, 2026)**
+
+| Name | Type | Value |
+|---|---|---|
+| `RESEND_API_KEY` | Secret | Resend key "Living in Eastlake website" (account bettytorano, shared with SanDiegoSeniorMoves.com) |
+| `LEAD_TO_EMAIL` | Text | `bettytorano@gmail.com` |
+| `LEAD_FROM_EMAIL` | Text | `Living in Eastlake <leads@sellingeastlake.com>` |
+| `GHL_API_KEY`, `GHL_LOCATION_ID` | Secret / Text | GoHighLevel private integration "SellingEastlake website" |
+| `LEAD_SHEET_URL`, `LEAD_SHEET_SECRET` | Text | Google Sheet (Apps Script in `tools/lead-sheet.gs`), shared with SanDiegoSeniorMoves.com |
+| `TURNSTILE_SECRET` | Secret | secret key of the "Website lead forms" Turnstile widget |
+| `LOFTY_API_KEY` | Secret | not set, so leads don't go to Lofty |
+
+- **Resend:** `sellingeastlake.com` was verified on November 15, 2026, with three records added by hand in Cloudflare DNS (TXT `resend._domainkey`, CNAME `send` and CNAME `rsend` → `*.forge.rmta.net`, DNS only). Before that, lead emails came from Resend's test address `onboarding@resend.dev` and were more likely to land in spam. The Mailgun records on `mail.sellingeastlake.com` are separate and still in place.
+- **Turnstile bot check:** `assets/js/main.js` adds Cloudflare's invisible "not a robot" check to every `form.lead-form`, and `functions/api/lead.js` verifies it with `TURNSTILE_SECRET`. The same widget covers SanDiegoSeniorMoves.com. If you change `main.js`, raise the `?v=` number on every page (currently `main.js?v=15`).
+- **Spam handling:** 2 or more warning signs = dropped quietly. 1 sign ("possible spam") = **Google Sheet only**, labeled "Possible spam", with no email and nothing sent to GoHighLevel. Check the sheet now and then for a real person who got flagged.
+- **See what the form did:** Cloudflare → living-in-eastlake → Deployments → current deployment → **Functions → Begin log stream**, then submit a form.
+
 ### 5. Meta Pixel (for ads)
 In Meta Events Manager, create a Pixel, copy its base code, and paste it into every page where the `<!-- META PIXEL -->` comment is. The thank-you page already fires a **Lead** event, so Meta can optimize ads for actual form submissions.
 
@@ -105,7 +122,7 @@ Add the site in Google Search Console (https://search.google.com/search-console)
 
 ## Still to do
 - Move SellingEastlake.com DNS from GoDaddy to Cloudflare (step 3 above), then delete or redirect the posts that were moved from the Lofty site.
-- Add the Lofty API key so leads also go into Lofty.
+- Add the Lofty API key so leads also go into Lofty (optional; GoHighLevel and the sheet already get every lead).
 - Send a test message from the "Let's Make a Plan" popup and the home value form.
 
 ## Making changes later
