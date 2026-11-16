@@ -2,7 +2,7 @@
 
 Betty Torano's Eastlake website. Plain HTML pages hosted free on **Cloudflare Pages**, with the files stored on **GitHub**. Every time a change is pushed to GitHub, Cloudflare updates the live site automatically within about a minute.
 
-- Live site (until the domain moves): https://living-in-eastlake.pages.dev
+- Live site: https://sellingeastlake.com (DNS on Cloudflare; https://living-in-eastlake.pages.dev still works, but forms sent from it count as "possible spam")
 - Previews: each GitHub branch gets its own address, `https://<branch-name>.living-in-eastlake.pages.dev`
 
 ## What's in here
@@ -20,7 +20,7 @@ Betty Torano's Eastlake website. Plain HTML pages hosted free on **Cloudflare Pa
 | `home-value.html` | `/home-value`: seller landing page (use for seller ads) |
 | `blog.html`, `blog/*.html` | Blog and posts, **generated** by `tools/build-blog.js` (do not edit the HTML directly) |
 | `thank-you.html`, `form-error.html`, `404.html`, `privacy.html`, `photo-credits.html` | Supporting pages |
-| `functions/api/lead.js` | Form handler: emails each lead (Resend) and sends it to Lofty |
+| `functions/api/lead.js` | Form handler: spam and bot checks, emails each lead (Resend), sends it to GoHighLevel and the Google Sheet (and Lofty, if a key is set) |
 | `assets/css/styles.css` | Colors, fonts and layout |
 | `assets/js/main.js` | Menu, popup contact form |
 | `assets/js/nbr-map.js` | Neighborhood boundary maps (one outline per neighborhood) |
@@ -121,7 +121,7 @@ Add the site in Google Search Console (https://search.google.com/search-console)
 ---
 
 ## Still to do
-- Move SellingEastlake.com DNS from GoDaddy to Cloudflare (step 3 above), then delete or redirect the posts that were moved from the Lofty site.
+- Delete or redirect the posts that were moved from the Lofty site (the DNS move in step 3 is done).
 - Add the Lofty API key so leads also go into Lofty (optional; GoHighLevel and the sheet already get every lead).
 - Send a test message from the "Let's Make a Plan" popup and the home value form.
 
