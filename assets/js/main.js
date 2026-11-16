@@ -23,6 +23,26 @@ document.addEventListener("DOMContentLoaded", function () {
       if (btn) { btn.dataset.label = btn.dataset.label || btn.textContent; btn.disabled = true; btn.textContent = "Sending…"; }
     });
   });
+  // Cloudflare Turnstile: an invisible "not a robot" check on every lead form.
+  // Most visitors never see it; a few get a single checkbox. The server checks the token (functions/api/lead.js).
+  var TURNSTILE_SITEKEY = "0x4AAAAAAGC8YmByLIEF80NW";
+  var leadForms = document.querySelectorAll("form.lead-form");
+  if (leadForms.length && TURNSTILE_SITEKEY) {
+    window.onTurnstileLoad = function () {
+      leadForms.forEach(function (form) {
+        var btn = form.querySelector("button[type=submit]");
+        var box = document.createElement("div");
+        box.className = "ts-box";
+        box.style.margin = "4px 0 12px";
+        if (btn && btn.parentNode) btn.parentNode.insertBefore(box, btn); else form.appendChild(box);
+        window.turnstile.render(box, { sitekey: TURNSTILE_SITEKEY, appearance: "interaction-only", action: "lead" });
+      });
+    };
+    var ts = document.createElement("script");
+    ts.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad";
+    ts.async = true;
+    document.head.appendChild(ts);
+  }
 });
 
 // Coming back to a form page (Back button / restored tab) must not leave the button stuck on "Sending…"

@@ -9,6 +9,7 @@
 //   LOFTY_API_URL             optional: defaults to https://api.lofty.com/v1.0
 //   LEAD_SHEET_URL            optional: Google Apps Script web app URL that logs every lead to a Google Sheet
 //   LEAD_SHEET_SECRET (secret) optional: shared password the Apps Script checks (see tools/lead-sheet.gs)
+//   TURNSTILE_SECRET (secret) optional: Cloudflare Turnstile secret key; turns on the invisible bot check
 //   GHL_API_KEY     (secret)  optional: GoHighLevel Private Integration token (pit-…),
 //                             scopes View + Edit Contacts and View + Edit Opportunities
 //   GHL_LOCATION_ID           optional: GoHighLevel sub-account Location ID (Settings > Business Profile)
@@ -78,9 +79,11 @@ export async function onRequestPost({ request, env }) {
   }
 
   // Bot filter. 2+ warning signs = dropped quietly (the bot still sees the thank-you page).
-  // 1 sign = "possible spam": Betty gets the email and a sheet row, but nothing goes to GoHighLevel or Lofty,
-  // so no instant reply, task or pipeline card is created for it.
+  // 1 sign = "possible spam": only a sheet row (labeled "Possible spam"), no email alert, nothing to GoHighLevel or Lofty,
+  // so no instant reply, task or pipeline card is created for it. Betty can check the sheet for real people.
   const signs = spamSigns(lead);
+  const botCheck = await turnstileSign(env, form, request);
+  if (botCheck) signs.push(botCheck);
   if (signs.length >= 2) {
     console.log("Spam dropped:", signs.join(", "), lead.email);
     return Response.redirect(`${origin}/thank-you?r=s`, 303);
@@ -95,7 +98,7 @@ export async function onRequestPost({ request, env }) {
     : lead.addressPicked === "yes" ? "picked from Google's address list" : "typed by hand, please double-check";
 
   const results = await Promise.allSettled(lead.suspect
-    ? [sendEmail(env, lead), Promise.resolve(false), sendToSheet(env, lead), Promise.resolve(false)]
+    ? [Promise.resolve(false), Promise.resolve(false), sendToSheet(env, lead), Promise.resolve(false)]
     : [sendEmail(env, lead), sendToLofty(env, lead), sendToSheet(env, lead), sendToGHL(env, lead)]);
   const names = ["Email", "Lofty", "Sheet", "GHL"];
   results.forEach((r, i) => {
@@ -153,6 +156,21 @@ async function emailDomainWorks(email) {
   } catch (e) {
     console.error("Email domain check skipped:", e);
     return true;
+  }
+}
+
+// Cloudflare Turnstile, the invisible "not a robot" check added to every form by assets/js/main.js.
+// Only active once TURNSTILE_SECRET is set in Cloudflare. Returns a spam sign, or "" when the check passes.
+async function turnstileSign(env, form, request) {
+  if (!env.TURNSTILE_SECRET) return "";
+  const token = clean(form.get("cf-turnstile-response"), 4000);
+  if (!token) return "no bot-check token";
+  try {
+    const body = new URLSearchParams({ secret: env.TURNSTILE_SECRET, response: token, remoteip: request.headers.get("cf-connecting-ip") || "" });
+    const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", { method: "POST", body, signal: AbortSignal.timeout(3000) });
+    return (await res.json()).success ? "" : "failed the bot check";
+  } catch {
+    return ""; // Cloudflare unreachable: never block a real lead over it
   }
 }
 
