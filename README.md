@@ -126,7 +126,8 @@ Add the site in Google Search Console (https://search.google.com/search-console)
 - Send a test message from the "Let's Make a Plan" popup and the home value form.
 
 ## Change log
-- **November 16, 2026:** no site changes. This README was corrected: the live address is sellingeastlake.com (DNS on Cloudflare), the form handler description now includes GoHighLevel and the Google Sheet, and the finished DNS move came off the to-do list. Today's header change on SanDiegoSeniorMoves.com ("Free Consultation" at the right end of the menu row) copies this site's "What's My Home Worth?" button.
+- **November 17, 2026:** no site changes. SanDiegoSeniorMoves.com added a blog whose layout copies this site's Blog page (featured post with photo, photo cards using the same `blog-card` styles), so changes to one can be copied to the other.
+- **November 16, 2026:** no site changes. This README was corrected: the live address is sellingeastlake.com (DNS on Cloudflare), the form handler description now includes GoHighLevel and the Google Sheet, and the finished DNS move came off the to-do list. Today's header change on SanDiegoSeniorMoves.com ("Free Consultation" at the right end of the menu row) copies this site's "What's My Home Worth?" button. Also, the old Lofty page **bettytorano.com/living-in-eastlake now redirects to sellingeastlake.com**, set up with a small script in Lofty (CMS → Settings → Tools → Custom Style & Script) until Lofty Support adds a permanent 301 redirect (requested November 16).
 - **November 15, 2026:**
   - `sellingeastlake.com` verified in Resend, so lead emails now come from `Living in Eastlake <leads@sellingeastlake.com>` instead of `onboarding@resend.dev`.
   - Cloudflare Turnstile bot check added to every lead form (`main.js?v=15`), with `TURNSTILE_SECRET` set in Cloudflare.
