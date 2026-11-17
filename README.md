@@ -125,6 +125,13 @@ Add the site in Google Search Console (https://search.google.com/search-console)
 - Add the Lofty API key so leads also go into Lofty (optional; GoHighLevel and the sheet already get every lead).
 - Send a test message from the "Let's Make a Plan" popup and the home value form.
 
+## Change log
+- **November 16, 2026:** no site changes. This README was corrected: the live address is sellingeastlake.com (DNS on Cloudflare), the form handler description now includes GoHighLevel and the Google Sheet, and the finished DNS move came off the to-do list. Today's header change on SanDiegoSeniorMoves.com ("Free Consultation" at the right end of the menu row) copies this site's "What's My Home Worth?" button.
+- **November 15, 2026:**
+  - `sellingeastlake.com` verified in Resend, so lead emails now come from `Living in Eastlake <leads@sellingeastlake.com>` instead of `onboarding@resend.dev`.
+  - Cloudflare Turnstile bot check added to every lead form (`main.js?v=15`), with `TURNSTILE_SECRET` set in Cloudflare.
+  - "Possible spam" leads now go to the Google Sheet only, with no email alert. Leads with 2 or more warning signs are dropped.
+
 ## Making changes later
 Edit the `.html` files (any text editor works), then commit and push to GitHub. Cloudflare redeploys automatically.
 
