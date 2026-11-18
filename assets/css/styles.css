@@ -1163,3 +1163,15 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .cred-band, .stat-band { background: var(--soft-blue-dark); }
 .quote-band, .hoa-hoods a, .mobile-cta { background: var(--soft-blue); }
 @media (min-width: 641px) { .nowrap-wide { white-space: nowrap; } }
+
+/* Phones: smaller home banner photo so the first screen loads faster (Nov 18, 2026) */
+@media (max-width: 900px) {
+  .hero-home {
+    background:
+      linear-gradient(90deg, rgba(43,94,158,.86) 0%, rgba(54,112,189,.62) 38%, rgba(54,112,189,.14) 66%, rgba(54,112,189,0) 100%),
+      linear-gradient(180deg, rgba(0,0,0,.0) 60%, rgba(43,94,158,.25) 100%),
+      url("../img/hero-eastlake-900.jpg") center/cover no-repeat,
+      var(--brand);
+  }
+}
+.hero-portrait picture { display: block; }
