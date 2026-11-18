@@ -38,10 +38,20 @@ document.addEventListener("DOMContentLoaded", function () {
         window.turnstile.render(box, { sitekey: TURNSTILE_SITEKEY, appearance: "interaction-only", action: "lead" });
       });
     };
-    var ts = document.createElement("script");
-    ts.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad";
-    ts.async = true;
-    document.head.appendChild(ts);
+    // Load the check on the visitor's first scroll, tap or key press (always well before they can submit),
+    // so it doesn't slow the first view of the page.
+    var tsLoaded = false;
+    var loadTurnstile = function () {
+      if (tsLoaded) return;
+      tsLoaded = true;
+      var ts = document.createElement("script");
+      ts.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit&onload=onTurnstileLoad";
+      ts.async = true;
+      document.head.appendChild(ts);
+    };
+    ["scroll", "pointerdown", "touchstart", "keydown", "focusin"].forEach(function (ev) {
+      window.addEventListener(ev, loadTurnstile, { once: true, passive: true });
+    });
   }
 });
 
