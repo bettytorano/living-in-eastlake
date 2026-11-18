@@ -1175,3 +1175,6 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
   }
 }
 .hero-portrait picture { display: block; }
+
+/* Phones: the logo shrinks without being squished (Nov 18, 2026) */
+.brand-combo { object-fit: contain; }

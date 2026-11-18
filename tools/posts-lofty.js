@@ -70,7 +70,7 @@ body: `<p>Eastlake Trails is home to the celebrated Eastlake Little League field
 <p>Eastlake Trails sits just east of Eastlake Greens, bounded by Hunte Parkway to the west, Otay Lakes Road to the north, Old Janal Ranch Road to the east and Olympic Parkway to the south. Trails North is the narrow strip just north of Otay Lakes Road, along the west side of Hunte Parkway. Eastlake Trails is in ZIP code 91915, and Trails North is in 91914.</p>
 <div class="nbr-map" data-nbr="eastlake-trails,eastlake-trails-north" role="region" aria-label="Map of the Eastlake Trails and Trails North boundaries"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=17" defer></script>
+<script src="/assets/js/nbr-map.js?v=18" defer></script>
 
 <h2>The Eastlake III Association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which also includes Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Residents enjoy:</p>
@@ -122,7 +122,7 @@ body: `<p>The Woods is part of the Eastlake III association, with hillside stree
 <p>The Woods sits on Eastlake's eastern hills, east of Hunte Parkway and north of Otay Lakes Road, stretching up toward Proctor Valley Road. EastLake Middle School and the District at Eastlake shops are close by. Its ZIP code is 91914 (Chula Vista, CA 91914).</p>
 <div class="nbr-map" data-nbr="the-woods" role="region" aria-label="Map of The Woods boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=17" defer></script>
+<script src="/assets/js/nbr-map.js?v=18" defer></script>
 
 <h2>The Eastlake III Association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which also includes Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Residents enjoy:</p>
@@ -170,7 +170,7 @@ body: `<p>Perched along Eastlake's eastern hills near Mountain Hawk Park and the
 <p>Eastlake Vistas is on the eastern edge of Eastlake, bounded by Otay Lakes Road to the north, Old Janal Ranch Road to the west and Wueste Road to the east, with a small section just south of Olympic Parkway. Mountain Hawk Park and the Lower Otay Reservoir are close by. Its ZIP code is 91915 (Chula Vista, CA 91915).</p>
 <div class="nbr-map" data-nbr="eastlake-vistas" role="region" aria-label="Map of the Eastlake Vistas boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=17" defer></script>
+<script src="/assets/js/nbr-map.js?v=18" defer></script>
 
 <h2>The Eastlake III Association</h2>
 <p>Every home here belongs to the <strong>Eastlake III</strong> master association, which also includes Eastlake Trails, Trails North, The Woods and Eastlake Vistas. Residents enjoy:</p>
@@ -216,7 +216,7 @@ body: `<p>Eastlake Greens unfolds around the fairways of the Enagic Golf Club at
 <p>Eastlake Greens sits in the middle of Eastlake, bounded by Otay Lakes Road to the north, Eastlake Parkway to the west, Hunte Parkway to the east and Olympic Parkway to the south. Its ZIP code is 91915 (Chula Vista, CA 91915).</p>
 <div class="nbr-map" data-nbr="eastlake-greens" role="region" aria-label="Map of the Eastlake Greens boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=17" defer></script>
+<script src="/assets/js/nbr-map.js?v=18" defer></script>
 
 <h2>The Eastlake II Association</h2>
 <p>Every home in the Greens belongs to the Eastlake II master association, whose amenities are reserved exclusively for Greens residents:</p>
@@ -419,7 +419,7 @@ body: `<p>Eastlake Hills is one of the two original neighborhoods of Eastlake, C
 <p>Eastlake Hills sits on the west side of Eastlake, between Corral Canyon Road and East H Street, just west of State Route 125. Its ZIP code is 91913 (Chula Vista, CA 91913).</p>
 <div class="nbr-map" data-nbr="eastlake-hills" role="region" aria-label="Map of the Eastlake Hills boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=17" defer></script>
+<script src="/assets/js/nbr-map.js?v=18" defer></script>
 <h2>The Original Eastlake: A Neighborhood with Real History</h2>
 <p>When Eastlake launched in the mid-1980s, it was a defining moment for Chula Vista. As the city's first master-planned community, Eastlake set the standard for how large-scale residential development would work in Southern California. Eastlake Hills and Eastlake Shores were the pioneering first phases, the neighborhoods that set the look of Eastlake before the golf course, the later villages and the gated enclaves followed.</p>
 <p>That founding status gives Eastlake Hills real depth: decades of history, an engaged resident base and a reputation that has only strengthened over time.</p>
@@ -452,7 +452,7 @@ body: `<p>Eastlake Shores is one of the two founding neighborhoods of Eastlake, 
 <p>Eastlake Shores sits around the Eastlake lake, between East H Street and State Route 125, just across East H Street from Eastlake Hills. Its ZIP code is 91913 (Chula Vista, CA 91913).</p>
 <div class="nbr-map" data-nbr="eastlake-shores" role="region" aria-label="Map of the Eastlake Shores boundary"></div>
 <p class="nbr-map-note">Boundary is approximate. Ask me about a specific address.</p>
-<script src="/assets/js/nbr-map.js?v=17" defer></script>
+<script src="/assets/js/nbr-map.js?v=18" defer></script>
 <h2>A Founding Neighborhood with Four Decades of Community</h2>
 <p>Eastlake Shores was one of the first addresses to take shape when Eastlake launched. The neighborhood was designed around a community lake, giving it a resort-inspired character that was distinctive from day one. Mature landscaping, the lake and common areas cared for since the late 1980s give Shores a settled look that newer developments rarely achieve.</p>
 <h2>Homes and Architecture</h2>
