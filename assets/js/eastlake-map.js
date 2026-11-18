@@ -3,25 +3,25 @@
 // (e.g. /neighborhoods?edit), drag the pin, and copy the coordinates shown.
 
 var EASTLAKE_NEIGHBORHOODS = [
-  { name: "Eastlake Hills", slug: "eastlake-hills", hoa: "Eastlake I", lat: 32.6575, lng: -116.9835,
+  { name: "Eastlake Hills", slug: "eastlake-hills", guide: "/blog/living-in-eastlake-hills", hoa: "Eastlake I", lat: 32.6575, lng: -116.9835,
     desc: "One of Eastlake's original neighborhoods and Betty's home since 1987. Many original homes are past their Mello-Roos district.",
     listings: "https://bettytorano.com/neighborhood/159144632/eastlakehills" },
-  { name: "Eastlake Shores", slug: "eastlake-shores", hoa: "Eastlake I", lat: 32.6525, lng: -116.9765,
+  { name: "Eastlake Shores", slug: "eastlake-shores", guide: "/blog/living-in-eastlake-shores", hoa: "Eastlake I", lat: 32.6525, lng: -116.9765,
     desc: "Built around Eastlake's lake, home of the Beach Club and lagoon.",
     listings: "https://bettytorano.com/neighborhood/159144633/eastlakeshores" },
-  { name: "Eastlake Greens", slug: "eastlake-greens", hoa: "Eastlake II", lat: 32.6345, lng: -116.9579,
+  { name: "Eastlake Greens", slug: "eastlake-greens", guide: "/blog/living-in-eastlake-greens", hoa: "Eastlake II", lat: 32.6345, lng: -116.9579,
     desc: "Surrounding the Enagic Golf Club at Eastlake (formerly EastLake Country Club), with its own association and amenities.",
     listings: "https://bettytorano.com/neighborhood/159144634/eastlakegreens" },
-  { name: "Eastlake Trails", slug: "eastlake-trails", hoa: "Eastlake III", lat: 32.6445, lng: -116.9498,
+  { name: "Eastlake Trails", slug: "eastlake-trails", guide: "/blog/living-in-eastlake-trails", hoa: "Eastlake III", lat: 32.6445, lng: -116.9498,
     desc: "Home of the permanent Eastlake Little League fields and Arroyo Vista Elementary.",
     listings: "https://bettytorano.com/neighborhood/159144636/eastlaketrails" },
-  { name: "Eastlake Trails North", slug: "eastlake-trails-north", hoa: "Eastlake III", lat: 32.6500, lng: -116.9512,
+  { name: "Eastlake Trails North", slug: "eastlake-trails-north", guide: "/blog/living-in-eastlake-trails#trails-north", hoa: "Eastlake III", lat: 32.6500, lng: -116.9512,
     desc: "Part of the Eastlake III association alongside the Trails, Vistas and the Woods.",
     listings: "https://bettytorano.com/neighborhood/159144637/eastlaketrailsnorth" },
-  { name: "The Woods", slug: "the-woods", hoa: "Eastlake III", lat: 32.6556, lng: -116.9450,
+  { name: "The Woods", slug: "the-woods", guide: "/blog/living-in-the-woods-eastlake", hoa: "Eastlake III", lat: 32.6556, lng: -116.9450,
     desc: "Home of EastLake Middle School and close to the District at Eastlake shops.",
     listings: "https://bettytorano.com/neighborhood/159144638/thewoodsateastlake" },
-  { name: "Eastlake Vistas", slug: "eastlake-vistas", hoa: "Eastlake III", lat: 32.6392, lng: -116.9425,
+  { name: "Eastlake Vistas", slug: "eastlake-vistas", guide: "/blog/living-in-eastlake-vistas", hoa: "Eastlake III", lat: 32.6392, lng: -116.9425,
     desc: "Part of the Eastlake III association. Ask Betty about current Mello-Roos status.",
     listings: "https://bettytorano.com/neighborhood/159144635/eastlakevistas" }
 ];
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "<h3>" + n.name + "</h3>" +
         "<p>" + n.desc + "</p>" +
         '<a class="btn small" href="' + n.listings + '" rel="noopener">See homes for sale</a>' +
-        '<a class="nb-popup-more" href="/neighborhoods#' + n.slug + '">About ' + n.name + " →</a>" +
+        '<a class="nb-popup-more" href="' + n.guide + '">About ' + n.name + " →</a>" +
         '<a class="nb-popup-more" href="/home-value">What\'s my home worth? →</a>' +
       "</div>",
       { maxWidth: 280, autoPanPadding: [20, 20] }
