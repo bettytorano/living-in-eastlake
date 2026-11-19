@@ -48,6 +48,8 @@ Betty Torano's Eastlake website. Plain HTML pages hosted free on **Cloudflare Pa
 - Neighborhood ZIP codes: Hills & Shores 91913 · Trails North & The Woods 91914 · Greens, Trails & Vistas 91915.
 - No ZIP-level home values on the homepage: each ZIP covers more than Eastlake, so the numbers mislead.
 - **Text messages (A2P 10DLC)**: every lead form has an optional, unchecked SMS consent box (`sms_consent`) naming Torano Realty Inc.; only text leads who checked it (GHL tag "SMS Opt-In"). Registered via GoHighLevel MANUAL A2P setup (no chat widget). SMS terms: /terms#sms and /privacy#sms. Keep the box when adding new forms.
+- **YouTube links:** the footer YouTube icon and "YouTube" link on every page open the **Living in Eastlake playlist** (`https://www.youtube.com/playlist?list=PLA7Vl_Pr57NWVVL2iGve7PLFYjxp0M50k`). The channel (`@bettytoranorealtor`) is used only in Google's profile data (`sameAs` in `tools/seo.js` and each page's JSON-LD). New blog posts need no change: `tools/build-blog.js` doesn't write the footer.
+- **This site is not SanDiegoSeniorMoves.com.** Here the header button is **What's My Home Worth?** and the phone bar is Call Betty + Home Value, because Eastlake visitors are mostly sellers and buyers. SanDiegoSeniorMoves.com (seniors and families) keeps **Book a Consultation** in its header and **Free Guides** in its phone bar, with home value sections only on pages where they fit. Don't copy header or phone bar changes from one site to the other without asking.
 
 ---
 
@@ -126,6 +128,9 @@ Add the site in Google Search Console (https://search.google.com/search-console)
 - Send a test message from the "Let's Make a Plan" popup and the home value form.
 
 ## Change log
+- **November 18, 2026:**
+  - **Footer YouTube links** (the icon and the "YouTube" link) now open the Living in Eastlake playlist instead of the whole channel, on all 38 pages. Google's profile data still lists the channel.
+  - **No other site changes.** SanDiegoSeniorMoves.com briefly copied this site's "What's My Home Worth?" header button and Home Value phone-bar button, then went back to its own ("Book a Consultation" and "Free Guides"). It added home value sections to 7 pages instead (see Site style and content rules).
 - **November 17, 2026:** no site changes. SanDiegoSeniorMoves.com added a blog whose layout copies this site's Blog page (featured post with photo, photo cards using the same `blog-card` styles), so changes to one can be copied to the other.
 - **November 16, 2026:** no site changes. This README was corrected: the live address is sellingeastlake.com (DNS on Cloudflare), the form handler description now includes GoHighLevel and the Google Sheet, and the finished DNS move came off the to-do list. Today's header change on SanDiegoSeniorMoves.com ("Free Consultation" at the right end of the menu row) copies this site's "What's My Home Worth?" button. Also, the old Lofty page **bettytorano.com/living-in-eastlake now redirects to sellingeastlake.com**, set up with a small script in Lofty (CMS → Settings → Tools → Custom Style & Script) until Lofty Support adds a permanent 301 redirect (requested November 16).
 - **November 15, 2026:**
