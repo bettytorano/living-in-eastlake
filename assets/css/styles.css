@@ -1202,3 +1202,6 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .bg-step { color: #f1d995; }
 .wp-section .eyebrow, .plan-band .eyebrow { color: #f1d995; }
 .sg-feature .eyebrow { color: #fff8e6; }
+/* Footer and blue-band small text: brighter for contrast */
+.legal, .wp-row small { color: rgba(255,255,255,.88); }
+.designations { color: #f7dfae; }
