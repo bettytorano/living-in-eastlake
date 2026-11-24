@@ -1200,3 +1200,5 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 /* Readable labels: deeper gold on light backgrounds (contrast 5:1+), lighter step numbers on blue */
 .eyebrow, .hero-light .eyebrow { color: #7f611b; }
 .bg-step { color: #f1d995; }
+.wp-section .eyebrow, .plan-band .eyebrow { color: #f1d995; }
+.sg-feature .eyebrow { color: #fff8e6; }
