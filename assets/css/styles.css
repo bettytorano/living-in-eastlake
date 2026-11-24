@@ -1178,3 +1178,22 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 
 /* Phones: the logo shrinks without being squished (Nov 18, 2026) */
 .brand-combo { object-fit: contain; }
+
+/* Shopping in Eastlake page */
+.shop-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 22px 0 30px; }
+.shop-facts div { background: var(--white); border: 1px solid var(--line); border-left: 3px solid var(--gold); padding: 12px 16px; }
+.shop-facts dt { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--lake); }
+.shop-facts dd { margin: 4px 0 0; font-weight: 600; color: var(--ink); font-size: .95rem; }
+.store-groups { columns: 4 220px; column-gap: 32px; }
+.store-group { break-inside: avoid; margin-bottom: 22px; }
+.store-group h3 { font-size: 1.1rem; margin-bottom: 8px; }
+.store-group ul { list-style: none; padding: 0; margin: 0; }
+.store-group li { padding: 6px 0; border-top: 1px solid var(--line); font-size: .93rem; }
+.store-group li:first-child { border-top: 0; }
+.shop-note { font-size: .9rem; color: var(--muted); font-style: italic; }
+.shop-links { margin-top: 8px; }
+.shop-timeline { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--gold); }
+.shop-timeline li { position: relative; padding: 10px 0 10px 24px; display: flex; flex-direction: column; }
+.shop-timeline li::before { content: ""; position: absolute; left: -7px; top: 16px; width: 12px; height: 12px; border-radius: 50%; background: var(--gold); }
+.shop-year { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.shop-timeline a { font-family: var(--serif); font-size: 1.2rem; text-decoration: none; }
