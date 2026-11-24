@@ -1206,3 +1206,15 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .legal, .wp-row small { color: rgba(255,255,255,.88); }
 .designations { color: #f7dfae; }
 .mobile-cta .value { color: #10345f; }
+/* Schools in Eastlake page */
+.hero-light.hero-school { background-position: 0 0, 60% 40%, 0 0; }
+.school-grid { margin-top: 26px; }
+.school-card { display: flex; flex-direction: column; }
+.school-card h3 { margin-bottom: 8px; }
+.school-card .eat-map { margin-top: auto; padding-top: 14px; align-self: flex-start; border-bottom: 0; }
+.school-facts { list-style: none; padding: 0; margin: 4px 0 0; font-size: .9rem; }
+.school-facts li { padding: 6px 0; border-top: 1px solid var(--line); }
+.school-facts b { display: inline-block; min-width: 72px; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--lake); }
+.shop-tl-text { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); }
+.school-steps { margin: 0; padding-left: 1.2em; }
+.school-steps li { padding: 10px 0; border-bottom: 1px solid var(--line); }
