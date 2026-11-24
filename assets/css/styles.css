@@ -627,7 +627,6 @@ h1, h2, h3 { color: #10345f; }
 }
 .todo-banner h2 { color: #fff; font-size: clamp(2rem, 4.5vw, 3.2rem); margin-bottom: 10px; text-shadow: 0 2px 14px rgba(0,0,0,.35); }
 .todo-banner p { max-width: 640px; margin: 0 auto; font-size: 1.1rem; color: rgba(255,255,255,.95); text-shadow: 0 1px 8px rgba(0,0,0,.4); }
-.todo-banner .eyebrow { color: #f1d995; }
 .todo-grid { margin-top: -36px; position: relative; padding: 0 18px; }
 .card.todo { transition: transform .2s ease, box-shadow .2s ease; }
 .card.todo:hover { transform: translateY(-4px); box-shadow: 0 18px 40px rgba(54,112,189,.16); }
@@ -1198,3 +1197,6 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .shop-year { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 .shop-timeline a { font-family: var(--serif); font-size: 1.2rem; text-decoration: none; }
 .hero-light.hero-shop { background-position: 0 0, 70% 75%, 0 0; }
+/* Readable labels: deeper gold on light backgrounds (contrast 5:1+), lighter step numbers on blue */
+.eyebrow, .hero-light .eyebrow { color: #7f611b; }
+.bg-step { color: #f1d995; }
