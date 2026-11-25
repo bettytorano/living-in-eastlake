@@ -1207,7 +1207,7 @@ section[id], [id].nb-card, h2[id] { scroll-margin-top: 96px; }
 .designations { color: #f7dfae; }
 .mobile-cta .value { color: #10345f; }
 /* Schools in Eastlake page */
-.hero-light.hero-school { background-size: auto, auto max(100%, 48vw), auto; background-position: 0 0, left 15vw center, 0 0; }
+.hero-light.hero-school { background-position: 0 0, center 75%, 0 0; }
 .school-grid { margin-top: 26px; }
 .school-card { display: flex; flex-direction: column; }
 .school-card h3 { margin-bottom: 8px; }
